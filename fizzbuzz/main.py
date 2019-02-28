@@ -1,0 +1,1 @@
+print(['FizzBuzz' if n % 3 == 0 and n % 5 == 0 else 'Fizz' if n % 3 == 0 else 'Buzz' if n % 5 == 0 and n % 5 == 0 else n for n in range(1, int(__import__('sys').argv[1]) + 1)])
