@@ -3,6 +3,7 @@
 
 |ディレクトリ名|言語|説明|
 |:--|:--|:--|
+|botkit_slack|JS|Node.js + BotkitによるSlack Botのサンプル|
 |fizzbuzz|Python|ワンライナーのFizzBuzzのサンプル|
 |dom|JS|DOMを取得するサンプル|
 |daemon|C|バックグラウンド実行のサンプル|
