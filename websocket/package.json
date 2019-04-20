@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Kazukichi <kazukiti201@gmail.com> (https://tyokinuhata.github.io/portfolio/)",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "ws": "^6.1.2"
   }
