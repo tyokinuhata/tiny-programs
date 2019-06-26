@@ -8,6 +8,7 @@
 |dom|JS|DOMを取得するサンプル|
 |daemon|C|バックグラウンド実行のサンプル|
 |make|C/Makefile|Makefikeのサンプル|
+|no_init|C|変数の初期化を行わない場合のサンプル|
 |overflow|C|オーバーフロー(桁あふれ)のサンプル|
 |pragma|C|プラグマ演算子のサンプル|
 |stdc_version|C|Cコンパイラのバージョン確認を行うサンプル|
