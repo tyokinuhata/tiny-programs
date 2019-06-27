@@ -18,6 +18,7 @@
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
 |prototype_declaration|プロトタイプ宣言のサンプル|
+|random|rand関数・srand関数のサンプル|
 |sizeof_operator|sizeof演算子のサンプル|
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
