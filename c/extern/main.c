@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// extern指定子
+// 記憶クラス指定子の一つ
 // 外部ファイルにあるグローバル変数の読み込み
 extern int global;
 

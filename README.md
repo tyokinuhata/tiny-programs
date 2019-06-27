@@ -5,6 +5,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|const|const指定子のサンプル|
 |daemon|バックグラウンド実行のサンプル|
 |extern|extern指定子のサンプル|
 |global_variable|大域変数のサンプル|
