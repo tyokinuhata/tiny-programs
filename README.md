@@ -21,6 +21,7 @@
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |strtol|strtol関数のサンプル|
+|time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 
 ### JS
