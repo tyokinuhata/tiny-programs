@@ -7,6 +7,7 @@
 |:--|:--|
 |comma_operator|カンマ演算子のサンプル|
 |const|const指定子のサンプル|
+|ctime|ctime関数のサンプル|
 |daemon|バックグラウンド実行のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
