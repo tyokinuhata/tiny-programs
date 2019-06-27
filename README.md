@@ -6,6 +6,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |daemon|バックグラウンド実行のサンプル|
+|extern|extern指定子のサンプル|
 |global_variable|大域変数のサンプル|
 |make|Makefikeのサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
