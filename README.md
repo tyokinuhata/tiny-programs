@@ -13,6 +13,7 @@
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
+|sizeof_operator|sizeof演算子のサンプル|
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |trigraphs|トライグラフのサンプル|
