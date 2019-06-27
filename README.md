@@ -20,6 +20,7 @@
 |sizeof_operator|sizeof演算子のサンプル|
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
+|strtol|strtol関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 
 ### JS
