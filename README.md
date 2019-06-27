@@ -5,6 +5,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|comma_operator|カンマ演算子のサンプル|
 |const|const指定子のサンプル|
 |daemon|バックグラウンド実行のサンプル|
 |extern|extern指定子のサンプル|
