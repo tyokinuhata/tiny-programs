@@ -9,6 +9,7 @@
 |const|const指定子のサンプル|
 |ctime|ctime関数のサンプル|
 |daemon|バックグラウンド実行のサンプル|
+|define|define命令のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
 |global_variable|大域変数のサンプル|
