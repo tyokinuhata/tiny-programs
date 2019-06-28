@@ -5,6 +5,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|address_operator|アドレス演算子(&)のサンプル|
 |comma_operator|カンマ演算子のサンプル|
 |const|const指定子のサンプル|
 |ctime|ctime関数のサンプル|
@@ -21,7 +22,7 @@
 |make|Makefikeのサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
-|pointer_amp_operator|ポインタの&演算子のサンプル|
+|pointer_operator|ポインタ変数と間接演算子(*)のサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
 |prototype_declaration|プロトタイプ宣言のサンプル|
 |random|rand関数・srand関数のサンプル|
