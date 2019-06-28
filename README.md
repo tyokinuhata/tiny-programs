@@ -27,6 +27,7 @@
 |strtol|strtol関数のサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
+|undef|undef命令のサンプル|
 
 ### JS
 
