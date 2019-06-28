@@ -17,6 +17,7 @@
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
 |header|自作のヘッダファイルを作るサンプル|
+|macro_function|マクロ関数のサンプル|
 |make|Makefikeのサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
