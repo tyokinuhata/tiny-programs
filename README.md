@@ -21,6 +21,7 @@
 |make|Makefikeのサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
+|pointer_amp_operator|ポインタの&演算子のサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
 |prototype_declaration|プロトタイプ宣言のサンプル|
 |random|rand関数・srand関数のサンプル|
