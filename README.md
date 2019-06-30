@@ -36,6 +36,7 @@
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |undef|undef命令のサンプル|
+|void_pointer|voidポインタのサンプル|
 
 ### JS
 
