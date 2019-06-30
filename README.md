@@ -38,6 +38,7 @@
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |undef|undef命令のサンプル|
+|union|共用体のサンプル|
 |void_pointer|voidポインタのサンプル|
 
 ### JS
