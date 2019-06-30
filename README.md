@@ -6,6 +6,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |address_operator|アドレス演算子(&)のサンプル|
+|alignment|アラインメントのサンプル|
 |comma_operator|カンマ演算子のサンプル|
 |const|const指定子のサンプル|
 |ctime|ctime関数のサンプル|
