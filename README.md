@@ -36,6 +36,7 @@
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |strcat|strcat関数を使った文字列の連結を行うサンプル|
+|strcmp|strcmp関数を使った文字列比較のサンプル|
 |strcpy|strcpy関数を使った文字列のコピーのサンプル|
 |strlen|strlen関数を使った文字列の長さを求めるサンプル|
 |strncat|strncat関数を使った文字列の連結を行うサンプル|
