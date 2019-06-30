@@ -15,6 +15,7 @@
 |define_ifdef|ifdef命令のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
+|function_pointer|関数ポインタのサンプル|
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
 |header|自作のヘッダファイルを作るサンプル|
