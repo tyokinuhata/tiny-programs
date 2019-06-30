@@ -36,9 +36,11 @@
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |strtol|strtol関数のサンプル|
+|strcpy|strcpy関数を使った文字列のコピーのサンプル|
 |struct|構造体のサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
+|typedef|typedefのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
 |void_pointer|voidポインタのサンプル|
