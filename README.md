@@ -15,6 +15,7 @@
 |define|define命令のサンプル|
 |define_if|if命令のサンプル|
 |define_ifdef|ifdef命令のサンプル|
+|enum|列挙型のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
 |function_pointer|関数ポインタのサンプル|
