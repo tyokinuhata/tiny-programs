@@ -7,6 +7,7 @@ int main(int argc, char *argv[]) {
 
     // 文字列の長さを求める関数
     // size_t型で返ってくる
+    // NULLチェック・サイズチェックは行われないので注意
     len = strlen(s);
 
     printf("%zu\n", len);
