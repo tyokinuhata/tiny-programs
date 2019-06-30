@@ -35,9 +35,10 @@
 |sizeof_operator|sizeof演算子のサンプル|
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
-|strtol|strtol関数のサンプル|
 |strcpy|strcpy関数を使った文字列のコピーのサンプル|
+|strlen|strlen関数を使った文字列の長さを求めるサンプル|
 |strncpy|strncpy関数を使った文字列のコピー(制限付き)のサンプル|
+|strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
