@@ -37,6 +37,7 @@
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |strtol|strtol関数のサンプル|
 |strcpy|strcpy関数を使った文字列のコピーのサンプル|
+|strncpy|strncpy関数を使った文字列のコピー(制限付き)のサンプル|
 |struct|構造体のサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|

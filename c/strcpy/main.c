@@ -8,6 +8,8 @@ int main(int argc, char *argv[]) {
 
     printf("%s\n", s2);
 
+    // 文字列のコピー
+    // strcpy(コピー先, コピー元)
     strcpy(s2, s1);
 
     printf("%s\n", s2);
