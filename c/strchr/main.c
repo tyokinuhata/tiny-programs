@@ -7,6 +7,8 @@ int main(int argc, char *argv[]) {
     // strchr
     // 文字列の検索
     // strchr(検索対象文字列, 検索文字)
+    // 最初に「検索文字」が現れた位置へのポインタを返す
+    // 見つからない場合はNULLを返す
     char *s2 = strchr(s1, 'w');
 
     printf("%s\n", s2);
