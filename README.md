@@ -40,6 +40,7 @@
 |strcpy|strcpy関数を使った文字列のコピーのサンプル|
 |strlen|strlen関数を使った文字列の長さを求めるサンプル|
 |strncat|strncat関数を使った文字列の連結を行うサンプル|
+|strncmp|strncmp関数を使った文字列比較のサンプル|
 |strncpy|strncpy関数を使った文字列のコピー(制限付き)のサンプル|
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
