@@ -33,6 +33,7 @@
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |strtol|strtol関数のサンプル|
+|struct|構造体のサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |undef|undef命令のサンプル|
