@@ -45,6 +45,7 @@
 |strncpy|strncpy関数を使った文字列のコピー(制限付き)のサンプル|
 |strpbrk|strpbrk関数を使った文字列の検索のサンプル|
 |strstr|strstr関数を使った文字列の検索のサンプル|
+|strtok||
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
 |time|time関数のサンプル|
