@@ -8,6 +8,7 @@
 |address_operator|アドレス演算子(&)のサンプル|
 |alignment|アラインメントのサンプル|
 |bit_field|ビットフィールドのサンプル|
+|character_function|文字関数のis系のサンプル|
 |comma_operator|カンマ演算子のサンプル|
 |const|const指定子のサンプル|
 |ctime|ctime関数のサンプル|
