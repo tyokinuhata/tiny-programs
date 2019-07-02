@@ -9,5 +9,7 @@ int main(int argc, char *argv[]) {
     // calloc(要素数, １要素あたりに必要なサイズ(バイト))
     p = calloc(16, 4);
 
+    free(p);
+
     return 0;
 }

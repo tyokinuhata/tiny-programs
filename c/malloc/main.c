@@ -12,5 +12,9 @@ int main(int argc, char *argv[]) {
     // 戻り値はvoidポインタ
     s = malloc(14);
 
+    // free関数
+    // メモリの開放
+    free(s);
+
     return 0;
 }
