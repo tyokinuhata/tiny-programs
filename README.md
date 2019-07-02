@@ -13,6 +13,7 @@
 |character_to_function|文字関数のto系のサンプル|
 |comma_operator|カンマ演算子のサンプル|
 |const|const指定子のサンプル|
+|copy_on_write|コピーオンライトのサンプル|
 |ctime|ctime関数のサンプル|
 |daemon|バックグラウンド実行のサンプル|
 |define|define命令のサンプル|
