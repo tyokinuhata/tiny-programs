@@ -35,6 +35,7 @@
 |prototype_declaration|プロトタイプ宣言のサンプル|
 |random|rand関数・srand関数のサンプル|
 |sizeof_operator|sizeof演算子のサンプル|
+|snprintf|snprintf関数のサンプル|
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
 |strcat|strcat関数を使った文字列の連結を行うサンプル|
