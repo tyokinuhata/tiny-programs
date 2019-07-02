@@ -26,6 +26,7 @@
 |header|自作のヘッダファイルを作るサンプル|
 |macro_function|マクロ関数のサンプル|
 |make|Makefikeのサンプル|
+|malloc|malloc関数によるメモリ確保のサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |pointer_function|ポインタを使って関数でやり取りするサンプル|
