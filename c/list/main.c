@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 構造体の宣言(struct)と型の作成(type_def)を同時に行っている
 typedef struct tag_list {
     int key;
     char *value;
@@ -27,16 +28,14 @@ int main(int argc, char *argv[]) {
     add(2, "bar");
     add(3, "baz");
 
-    t_list *list = start;
-    while (list != NULL) {
-        printf("%d\n", list->key);
-        printf("%s\n", list->value);
-        list = list->next;
-    }
+    // 要素の検索
+    t_list *foo = find(1);
+    printf("%d: %s\n", foo->key, foo->value);
 
     return 0;
 }
 
+// 要素の追加
 void add(int key, char *value) {
     // 先頭要素がNULLの場合
     if (current == NULL) {
@@ -66,9 +65,15 @@ void add(int key, char *value) {
     }
 }
 
-// struct tag_list *find(int key) {
-
-// }
+// 要素の検索
+t_list *find(int key) {
+    t_list *list = start;
+    while (list != NULL) {
+        if (list->key == key) return list;
+        list = list->next;
+    }
+    return NULL;
+}
 
 // int delete(int key) {
 
