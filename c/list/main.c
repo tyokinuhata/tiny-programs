@@ -8,6 +8,7 @@ typedef struct tag_list {
 } t_list;
 
 t_list *head = NULL;
+void *start = NULL;
 
 // データ追加
 void add(int, char *);
@@ -25,7 +26,7 @@ int main(int argc, char *argv[]) {
     add(2, "bar");
     add(3, "baz");
 
-    t_list *list = head;
+    t_list *list = start;
     while (list != NULL) {
         printf("%d\n", list->key);
         printf("%s\n", list->value);
@@ -47,6 +48,8 @@ void add(int key, char *value) {
         head->key = key;
         head->value = value;
         head->next = NULL;
+
+        start = head;
     }
     else {
         // 古いヘッドを退避
@@ -54,11 +57,11 @@ void add(int key, char *value) {
 
         // 新しいヘッドの作成
         head = malloc(sizeof(t_list));
-
-        // データ挿入
         head->key = key;
         head->value = value;
-        head->next = old_head;
+        head->next = NULL;
+
+        old_head->next = head;
     }
 }
 
