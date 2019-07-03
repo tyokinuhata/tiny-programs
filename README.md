@@ -29,6 +29,8 @@
 |macro_function|マクロ関数のサンプル|
 |make|Makefikeのサンプル|
 |malloc|malloc関数によるメモリ確保のサンプル|
+|memcpy|memcpy関数のサンプル|
+|memset|memset関数のサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |pointer_function|ポインタを使って関数でやり取りするサンプル|
