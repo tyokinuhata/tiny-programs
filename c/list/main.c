@@ -11,16 +11,16 @@ typedef struct tag_list {
 t_list *current = NULL;
 void *start = NULL;
 
-// 要素追加
+// 要素の追加
 void add(int, char *);
 // 要素の検索
 struct tag_list *find();
-// 要素削除
+// 要素の削除
 int delete(int);
-// 全要素表示
+// 要素の全表示
 void show(void);
-// 全要素削除
-int truncate(void);
+// 要素の全削除
+void truncate(void);
 
 int main(int argc, char *argv[]) {
     // 要素の追加
@@ -31,6 +31,12 @@ int main(int argc, char *argv[]) {
     // 要素の検索
     t_list *foo = find(1);
     printf("%d: %s\n", foo->key, foo->value);
+
+    // 要素の全表示
+    show();
+
+    // 要素の全削除
+    truncate();
 
     return 0;
 }
@@ -79,6 +85,17 @@ t_list *find(int key) {
 
 // }
 
-// int truncate(void) {
+// 要素の全表示
+void show() {
+    t_list *list = start;
+    while (list != NULL) {
+        printf("%d: %s\n", list->key, list->value);
+        list = list->next;
+    }
+}
 
-// }
+// 要素の全削除
+void truncate(void) {
+    current = NULL;
+    start = NULL;
+}
