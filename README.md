@@ -22,6 +22,7 @@
 |enum|列挙型のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
+|file|ファイルの読み込み・書き込みのサンプル|
 |function_pointer|関数ポインタのサンプル|
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
