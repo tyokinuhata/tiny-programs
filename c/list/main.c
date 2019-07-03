@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// 構造体の宣言(struct)と型の作成(type_def)を同時に行っている
+// 構造体の宣言(struct)と型の作成(typedef)を同時に行っている
 typedef struct tag_list {
     int key;
     char *value;
