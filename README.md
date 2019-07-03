@@ -29,6 +29,7 @@
 |macro_function|マクロ関数のサンプル|
 |make|Makefikeのサンプル|
 |malloc|malloc関数によるメモリ確保のサンプル|
+|memcmp|memcmp関数のサンプル|
 |memcpy|memcpy関数のサンプル|
 |memset|memset関数のサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
