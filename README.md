@@ -26,6 +26,7 @@
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
 |header|自作のヘッダファイルを作るサンプル|
+|list|単方向リストのサンプル|
 |macro_function|マクロ関数のサンプル|
 |make|Makefikeのサンプル|
 |malloc|malloc関数によるメモリ確保のサンプル|
