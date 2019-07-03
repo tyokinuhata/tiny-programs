@@ -35,8 +35,13 @@ int main(int argc, char *argv[]) {
     // 要素の全表示
     show();
 
+    // 要素の削除
+    delete(1);
+    show();
+
     // 要素の全削除
     truncate();
+    show();
 
     return 0;
 }
@@ -81,9 +86,36 @@ t_list *find(int key) {
     return NULL;
 }
 
-// int delete(int key) {
+// 要素の削除
+int delete(int key) {
+    t_list *list = start;
+    t_list *beforeList = NULL;
 
-// }
+    while (list != NULL) {
+        if (list->key == key) {
+            // 先頭要素の場合
+            if (list == start) {
+                start = list->next;
+                return 0;
+            }
+
+            // 最後の要素の場合
+            else if (list->next == NULL) {
+                beforeList->next = NULL;
+                return 0;
+            }
+
+            // その他の場合
+            else {
+                beforeList->next = list->next;
+                return 0;
+            }
+        }
+        beforeList = list;
+        list = list->next;
+    }
+    return -1;
+}
 
 // 要素の全表示
 void show() {
