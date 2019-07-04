@@ -7,6 +7,7 @@
 |:--|:--|
 |address_operator|アドレス演算子(&)のサンプル|
 |alignment|アラインメントのサンプル|
+|array_and_pointer|配列とポインタの比較のサンプル|
 |bit_field|ビットフィールドのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
 |character_is_function|文字関数のis系のサンプル|
