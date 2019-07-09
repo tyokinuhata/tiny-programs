@@ -19,5 +19,9 @@ int main() {
     printf("%p\n", s2); // 0x7ffeeebc48b
     printf("%p\n", s3); // 0x10103bf9c <- 離れている
 
+    // 文字列リテラルがcharへのポインタではないことが分かる例
+    printf("%d\n", (int)sizeof(char *)); // 8
+    printf("%d\n", (int)sizeof "abcdefghijklmnopqrstuvwxyz"); // 27
+
     return 0;
 }
