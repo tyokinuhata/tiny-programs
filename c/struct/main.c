@@ -35,5 +35,9 @@ int main(int argc, char *argv[]) {
     printf("%f\n", pcoord->x);
     printf("%f\n", pcoord->y);
 
+    // ちなみに構造体におけるアロー演算子は, 上記の例でいうと(*pcoord).xのシンタックスシュガーである
+    printf("%f\n", (*pcoord).x);
+    printf("%f\n", (*pcoord).y);
+
     return 0;
 }
