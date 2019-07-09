@@ -11,6 +11,7 @@
 |assert|assert関数のサンプル|
 |auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
+|byte_order|バイトオーダーのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
 |character_is_function|文字関数のis系のサンプル|
 |character_to_function|文字関数のto系のサンプル|
