@@ -59,6 +59,7 @@
 |strchr|strchr関数を使った文字列の検索のサンプル|
 |strcmp|strcmp関数を使った文字列比較のサンプル|
 |strcpy|strcpy関数を使った文字列のコピーのサンプル|
+|string|文字列のサンプル|
 |strlen|strlen関数を使った文字列の長さを求めるサンプル|
 |strncat|strncat関数を使った文字列の連結を行うサンプル|
 |strncmp|strncmp関数を使った文字列比較のサンプル|
