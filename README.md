@@ -8,6 +8,8 @@
 |address_operator|アドレス演算子(&)のサンプル|
 |alignment|アラインメントのサンプル|
 |array_and_pointer|配列とポインタの比較のサンプル|
+|assert|assert関数のサンプル|
+|auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
 |character_is_function|文字関数のis系のサンプル|
@@ -29,6 +31,7 @@
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
 |header|自作のヘッダファイルを作るサンプル|
+|ip_eq_pi|p[i] == i[p]になるサンプル|
 |list|単方向リストのサンプル|
 |macro_function|マクロ関数のサンプル|
 |make|Makefikeのサンプル|
@@ -45,6 +48,7 @@
 |prototype_declaration|プロトタイプ宣言のサンプル|
 |random|rand関数・srand関数のサンプル|
 |realloc|realloc関数のサンプル|
+|register|register指定子のサンプル|
 |sizeof_operator|sizeof演算子のサンプル|
 |snprintf|snprintf関数のサンプル|
 |static_variable|静的変数のサンプル|
