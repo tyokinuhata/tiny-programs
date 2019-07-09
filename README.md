@@ -71,6 +71,7 @@
 |typedef|typedefのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
+|vla|可変長配列(VLA)のサンプル|
 |void_pointer|voidポインタのサンプル|
 
 ### JS
