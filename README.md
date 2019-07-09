@@ -32,6 +32,7 @@
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
 |header|自作のヘッダファイルを作るサンプル|
+|indirection_operator|ポインタ変数と間接演算子(*)のサンプル|
 |ip_eq_pi|p[i] == i[p]になるサンプル|
 |list|単方向リストのサンプル|
 |macro_function|マクロ関数のサンプル|
@@ -43,7 +44,6 @@
 |no_init|変数の初期化を行わない場合のサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |pointer_function|ポインタを使って関数でやり取りするサンプル|
-|pointer_operator|ポインタ変数と間接演算子(*)のサンプル|
 |pointer_pointer|ダブルポインタ, トリプルポインタのサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
 |prototype_declaration|プロトタイプ宣言のサンプル|
