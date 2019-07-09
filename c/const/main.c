@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// void read_only(const int foo, const int *bar, const int * const baz);
+void read_only(const int foo, const int *bar, int * const baz, const int * const qux);
 
 int main (int argc, char *argv[]) {
     // const指定子
