@@ -10,6 +10,12 @@ struct tag_coord {
     double y;
 };
 
+// ちなみに構造体名は可能な限り省略したほうが良いとされているので(そういうスタイルもあるということ),
+typedef struct {
+    // somethig ...
+} t_foo;
+// というふうにtypedefで定義してしまったほうが好ましい
+
 int main(int argc, char *argv[]) {
     // 宣言
     // struct 構造体タグ名 変数名; といった形式で宣言する
