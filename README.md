@@ -9,6 +9,7 @@
 |alignment|アラインメントのサンプル|
 |array_and_pointer|配列とポインタの比較のサンプル|
 |assert|assert関数のサンプル|
+|atexit|atexit関数のサンプル|
 |auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
 |byte_order|バイトオーダーのサンプル|
