@@ -79,6 +79,7 @@
 |union|共用体のサンプル|
 |vla|可変長配列(VLA)のサンプル|
 |void_pointer|voidポインタのサンプル|
+|wide_character|ワイド文字のサンプル|
 
 ### JS
 
