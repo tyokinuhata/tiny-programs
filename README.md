@@ -25,6 +25,7 @@
 |define_if|if命令のサンプル|
 |define_ifdef|ifdef命令のサンプル|
 |defined_macro|定義済みマクロのサンプル|
+|double_include_guard|二重includeの防止のサンプル|
 |enum|列挙型のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
