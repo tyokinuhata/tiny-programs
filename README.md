@@ -30,6 +30,7 @@
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
 |file|ファイルの読み込み・書き込みのサンプル|
+|flexible_array_member|フレキシブル配列メンバのサンプル|
 |function_pointer|関数ポインタのサンプル|
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
