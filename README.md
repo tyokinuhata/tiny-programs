@@ -56,6 +56,7 @@
 |random|rand関数・srand関数のサンプル|
 |realloc|realloc関数のサンプル|
 |register|register指定子のサンプル|
+|restrict|restrict修飾子のサンプル|
 |sizeof_operator|sizeof演算子のサンプル|
 |snprintf|snprintf関数のサンプル|
 |static_variable|静的変数のサンプル|
