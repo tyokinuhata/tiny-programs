@@ -8,6 +8,7 @@
 |address_operator|アドレス演算子(&)のサンプル|
 |alignment|アラインメントのサンプル|
 |array_and_pointer|配列とポインタの比較のサンプル|
+|array_array|配列の配列のサンプル|
 |assert|assert関数のサンプル|
 |atexit|atexit関数のサンプル|
 |auto|auto指定子のサンプル|
