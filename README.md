@@ -50,6 +50,7 @@
 |no_init|変数の初期化を行わない場合のサンプル|
 |offsetof|offsetofマクロのサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
+|permutation|再帰を使った順列のサンプル|
 |pointer_function|ポインタを使って関数でやり取りするサンプル|
 |pointer_pointer|ダブルポインタ, トリプルポインタのサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
