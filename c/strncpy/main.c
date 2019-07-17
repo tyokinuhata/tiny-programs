@@ -22,5 +22,8 @@ int main(int argc, char *argv[]) {
 
     printf("%s\n", s3);
 
+    // C11からstrcpy_s関数が追加された
+    // 元々はMSによりVisual Studio2005で実装されたものだった
+
     return 0;
 }

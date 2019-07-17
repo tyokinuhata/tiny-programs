@@ -23,5 +23,7 @@ int main(int argc, char *argv[]) {
     // 元の文字列は破壊される
     puts(s1); // foo
 
+    // C11からはstrtok_s関数も追加された
+
     return 0;
 }
