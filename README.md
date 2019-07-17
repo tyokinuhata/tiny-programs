@@ -14,6 +14,7 @@
 |atexit|atexit関数のサンプル|
 |auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
+|bool|_Bool型のサンプル|
 |byte_order|バイトオーダーのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
 |character_is_function|文字関数のis系のサンプル|
