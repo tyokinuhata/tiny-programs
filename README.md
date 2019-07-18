@@ -8,6 +8,7 @@
 |address_operator|アドレス演算子(&)のサンプル|
 |alignment|アラインメントのサンプル|
 |annex_k|Annex Kのサンプル|
+|anonymous_struct|無名構造体のサンプル|
 |array_and_pointer|配列とポインタの比較のサンプル|
 |array_array|配列の配列のサンプル|
 |assert|assert関数のサンプル|
