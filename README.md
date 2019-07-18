@@ -22,6 +22,7 @@
 |character_to_function|文字関数のto系のサンプル|
 |cmd_line_param|コマンドライン引数のサンプル|
 |comma_operator|カンマ演算子のサンプル|
+|compound_literal|複合リテラルのサンプル|
 |const|const指定子のサンプル|
 |copy_on_write|コピーオンライトのサンプル|
 |ctime|ctime関数のサンプル|
