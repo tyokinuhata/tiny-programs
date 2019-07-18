@@ -30,6 +30,7 @@
 |define_if|if命令のサンプル|
 |define_ifdef|ifdef命令のサンプル|
 |defined_macro|定義済みマクロのサンプル|
+|designated_initializer|要素指示子付きの初期化のサンプル|
 |double_include_guard|二重includeの防止のサンプル|
 |dynamic_array|mallocを使った動的配列のサンプル|
 |enum|列挙型のサンプル|
