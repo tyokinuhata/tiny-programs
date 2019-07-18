@@ -90,6 +90,7 @@
 |typedef|typedefのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
+|va|可変長引数のサンプル|
 |vla|可変長配列(VLA)のサンプル|
 |void_pointer|voidポインタのサンプル|
 |wide_character|ワイド文字のサンプル|
