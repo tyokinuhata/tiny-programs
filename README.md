@@ -13,6 +13,7 @@
 |array_array|配列の配列のサンプル|
 |assert|assert関数のサンプル|
 |atexit|atexit関数のサンプル|
+|atoi|atoi関数のサンプル|
 |auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
 |bool|_Bool型のサンプル|
@@ -85,6 +86,7 @@
 |strtok|strtok関数のサンプル|
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
+|tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |typedef|typedefのサンプル|
