@@ -87,6 +87,7 @@
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
+|tcp_server|ソケットAPIを用いたTCPサーバーのサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |typedef|typedefのサンプル|

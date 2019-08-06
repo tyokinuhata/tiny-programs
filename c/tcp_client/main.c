@@ -25,6 +25,7 @@
 #define RECV_BUF_SIZE 32
 
 // ./a.out 127.0.0.1 'hello, world!'
+// ./a.out 127.0.0.1 'hello, world!' 7
 int main (int argc, char **argv)
 {
     // コマンドライン引数のチェック
@@ -55,7 +56,7 @@ int main (int argc, char **argv)
     memset(&serv_addr, 0, sizeof(serv_addr)); // ゼロクリア. 処理系によっては必要が無い場合もある
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = inet_addr(serv_ip); // inet_addr関数はドット10進表記のIPアドレスを32ビットの2進数表現に変換する
-    serv_addr.sin_port = htons(serv_port);
+    serv_addr.sin_port = htons(serv_port); // ポート番号を適切な型に変換
 
     // サーバへの接続を確立
     // int connect(int socket, struct sockaddr *foreignAddress, unsigned int addressLength)
@@ -95,4 +96,6 @@ int main (int argc, char **argv)
     close(sock);
 
     exit(EXIT_SUCCESS);
+
+    // クライアントの処理の流れは, socket -> connect -> send -> recv -> close の順
 }
