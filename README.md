@@ -41,6 +41,7 @@
 |file|ファイルの読み込み・書き込みのサンプル|
 |flexible_array_member|フレキシブル配列メンバのサンプル|
 |function_pointer|関数ポインタのサンプル|
+|getppid|getppid関数による親プロセスのプロセスIDを取得するサンプル|
 |global_variable|大域変数のサンプル|
 |goto|goto文のサンプル|
 |header|自作のヘッダファイルを作るサンプル|
