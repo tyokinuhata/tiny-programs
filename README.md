@@ -92,6 +92,7 @@
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |typedef|typedefのサンプル|
+|udp_client|ソケットAPIを用いたUDPクライアントのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
 |va|可変長引数のサンプル|
