@@ -17,6 +17,8 @@
 
 #define MSG_MAX_LEN 255
 
+// ./a.out 127.0.0.1 'hello, world!'
+// ./a.out 127.0.0.1 'hello, world!' 7
 int main (int argc, char **argv)
 {
     // コマンドライン引数のチェック

@@ -88,11 +88,12 @@
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
-|tcp_server|ソケットAPIを用いたTCPサーバーのサンプル|
+|tcp_server|ソケットAPIを用いたTCPサーバのサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |typedef|typedefのサンプル|
 |udp_client|ソケットAPIを用いたUDPクライアントのサンプル|
+|udp_server|ソケットAPIを用いたUDPサーバのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
 |va|可変長引数のサンプル|
