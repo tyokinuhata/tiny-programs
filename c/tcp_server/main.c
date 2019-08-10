@@ -7,6 +7,7 @@
 
 // 同時にキューが可能な接続要求の最大数
 #define MAX_PENDING 5
+#define RECV_BUF_SIZE 32
 
 void echo_back(int);
 
@@ -42,7 +43,7 @@ int main (int argc, char **argv)
     // int bind(int socket, struct sockaddr *localAddress, unsigned int addressLength)
     // 成功時には0, 失敗時には-1を返す
     // 指定したポートが既に使用済みの場合や, 処理系によってはウェルノウンポートに権限無しで指定した場合などに失敗することが多い
-    if (bind(serv_sock, (struct sockaddr *)&serv_sock, sizeof(serv_addr)) < 0) exit(EXIT_FAILURE);
+    if (bind(serv_sock, (struct sockaddr *)&serv_addr, sizeof(struct sockaddr_in)) < 0) exit(EXIT_FAILURE);
 
     // リッスン
     // ソケットの接続準備
@@ -66,13 +67,26 @@ int main (int argc, char **argv)
         // 処理に成功した場合, cliantAddressには接続元の情報が入る
         if ((clnt_sock = accept(serv_sock, (struct sockaddr *)&clnt_addr, &clnt_addr_len)) < 0) exit(EXIT_FAILURE);
 
+        // inet_ntol関数
+        // inet_addr関数 ... ドット10進表記のIPアドレス -> 32ビットの２進数表現 に変換
+        // inet_ntol関数 ... その逆で, 32ビットの２信州表現 -> ドット10進数表記のIPアドレス に変換
         printf("Handling client: %s\n", inet_ntoa(clnt_addr.sin_addr));
 
         echo_back(clnt_sock);
+
+        close(clnt_sock);
     }
 }
 
+// エコーバック
 void echo_back (int clnt_sock)
 {
-    // TODO
+    int recv_msg_len;
+    char recv_buf[RECV_BUF_SIZE];
+    if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) exit(EXIT_FAILURE);
+
+    while (recv_msg_len > 0) {
+        if (send(clnt_sock, recv_buf, recv_msg_len, 0) != recv_msg_len) exit(EXIT_FAILURE);
+        if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) exit(EXIT_FAILURE);
+    }
 }

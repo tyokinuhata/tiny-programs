@@ -33,7 +33,7 @@ int main (int argc, char **argv)
 
     // サーバのIPアドレスと送信するメッセージの設定
     char *serv_ip = argv[1];
-    char *echo_msg = argv[2];
+    char *send_msg = argv[2];
 
     // サーバのポート番号の設定
     unsigned short serv_port = 7;
@@ -71,30 +71,29 @@ int main (int argc, char **argv)
     // msgLength ... 送信する文字列の長さ
     // flags ... 0を指定するとデフォルトの振る舞いをする
     // send関数を実行するとデータが全て送信されるまでプログラムは一旦停止する
-    int echo_msg_len = strlen(echo_msg);
-    if (send(sock, echo_msg, echo_msg_len, 0) != echo_msg_len) exit(EXIT_FAILURE); // 区切り文字\0は送信されない
+    int send_msg_len = strlen(send_msg);
+    if (send(sock, send_msg, send_msg_len, 0) != send_msg_len) exit(EXIT_FAILURE); // 区切り文字\0は送信されない
 
     // 同じ文字列をサーバから受信
-    int byte_rcvd = 0, total_byte_rcvd = 0;
-    char echo_buf[RECV_BUF_SIZE];
+    int recv_msg_byte = 0, recv_msg_total_byte = 0;
+    char recv_buf[RECV_BUF_SIZE];
     printf("Received: ");
-    while (total_byte_rcvd < echo_msg_len) {
+    while (recv_msg_total_byte < send_msg_len) {
         // int recv(int socket, const void *rcvBuffer, unsigned int bufferLength, int flags)
         // rcvBuffer ... 受信するデータを格納するバッファへのポインタ
         // bufferLength ... 一度に受信可能なバイト数の最大値
-        // recv関数はデータが利用可能になるまでプログラムの実行をブロックする
         // flags ... send関数と同じ
+        // recv関数はデータが利用可能になるまでプログラムの実行をブロックする
         // データ受信後は成功時にバッファにコピーしたデータのバイト数、失敗時に-1を返す
-        if ((byte_rcvd = recv(sock, echo_buf, RECV_BUF_SIZE - 1, 0)) <= 0) exit(EXIT_FAILURE);
-        total_byte_rcvd += byte_rcvd;
-        echo_buf[byte_rcvd] = '\0';
-        printf("%s", echo_buf);
+        if ((recv_msg_byte = recv(sock, recv_buf, RECV_BUF_SIZE, 0)) <= 0) exit(EXIT_FAILURE);
+        recv_msg_total_byte += recv_msg_byte;
+        recv_buf[recv_msg_byte] = '\0';
+        printf("%s", recv_buf);
     }
     puts("");
 
     // 切断
     close(sock);
-
     exit(EXIT_SUCCESS);
 
     // クライアントの処理の流れは, socket -> connect -> send -> recv -> close の順
