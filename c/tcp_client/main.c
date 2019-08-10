@@ -56,6 +56,10 @@ int main (int argc, char **argv)
     memset(&serv_addr, 0, sizeof(serv_addr)); // ゼロクリア. 処理系によっては必要が無い場合もある
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = inet_addr(serv_ip); // inet_addr関数はドット10進表記のIPアドレスを32ビットの2進数表現に変換する
+    // htonl ... host to network longの略. 4byteの値をプロセッサ固有のバイト順からネットワークバイト順に変換する.
+    // htons ... host to network shortの略. 2byteの値をプロセッサ固有のバイト順からネットワークバイト順に変換する.
+    // ntohl ... network to host longの略. 4byteの値をネットワークバイト順からプロセッサ固有のバイト順に変換する.
+    // ntohs ... network to host shortの略. 2byteの値をネットワークバイト順からプロセッサ固有のバイト順に変換する.
     serv_addr.sin_port = htons(serv_port); // ポート番号を適切な型に変換
 
     // サーバへの接続を確立
