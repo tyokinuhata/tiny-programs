@@ -68,6 +68,7 @@
 |realloc|realloc関数のサンプル|
 |register|register指定子のサンプル|
 |restrict|restrict修飾子のサンプル|
+|signal|シグナルの動作を変更するサンプル|
 |sizeof_operator|sizeof演算子のサンプル|
 |snprintf|snprintf関数のサンプル|
 |sscanf|sscanf関数のサンプル|
