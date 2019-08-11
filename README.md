@@ -57,6 +57,7 @@
 |memcpy|memcpy関数のサンプル|
 |memset|memset関数のサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
+|non_blocking_io|ノンブロッキングI/Oを用いたUDPサーバのサンプル|
 |offsetof|offsetofマクロのサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |permutation|再帰を使った順列のサンプル|
