@@ -57,7 +57,6 @@
 |memcpy|memcpy関数のサンプル|
 |memset|memset関数のサンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
-|non_blocking_io|ノンブロッキングI/Oを用いたUDPサーバのサンプル|
 |offsetof|offsetofマクロのサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |permutation|再帰を使った順列のサンプル|
@@ -96,6 +95,7 @@
 |typedef|typedefのサンプル|
 |udp_client|ソケットAPIを用いたUDPクライアントのサンプル|
 |udp_server|ソケットAPIを用いたUDPサーバのサンプル|
+|udp_server_non_blocking_io|ノンブロッキングI/Oを用いたUDPサーバのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
 |va|可変長引数のサンプル|

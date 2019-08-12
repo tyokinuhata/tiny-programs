@@ -28,7 +28,7 @@ int main (int argc, char **argv)
     char *serv_ip = argv[1];
     char *send_msg = argv[2];
 
-    // 送信するメッセージの長さの範囲チェック
+    // 送信するメッセージの長さのチェック
     int send_msg_len;
     if ((send_msg_len = strlen(send_msg)) > MSG_MAX_LEN) exit(EXIT_FAILURE);
 
@@ -66,9 +66,11 @@ int main (int argc, char **argv)
     // 送信時のIPアドレスと受信時のIPアドレスが一致しているかのチェック
     if (send_addr.sin_addr.s_addr != recv_addr.sin_addr.s_addr) exit(EXIT_FAILURE);
 
+    // 受信データの表示
     recv_msg[recv_msg_len] = '\0';
     printf("Received: %s\n", recv_msg);
 
+    // 終了処理
     close(sock);
     exit(EXIT_SUCCESS);
 }
