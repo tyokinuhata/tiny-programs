@@ -9,7 +9,7 @@
 #include <sys/wait.h>
 #include "tcp_server.h"
 
-int main(int argc, char **argv)
+int main (int argc, char **argv)
 {
     // コマンドライン引数のチェック
     if (argc > 2) exit(EXIT_FAILURE);
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
     // 待ち受け用のソケットの作成 -> バインド -> リッスン
     int serv_sock;
-    if ((serv_sock = setup_tcp_serv_sock(serv_port) < 0)) exit(EXIT_FAILURE);
+    if ((serv_sock = setup_tcp_serv_sock(serv_port)) < 0) exit(EXIT_FAILURE);
 
     int clnt_sock;
     pid_t process_id;

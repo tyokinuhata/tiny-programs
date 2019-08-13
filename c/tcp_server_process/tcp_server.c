@@ -5,6 +5,7 @@
 
 // 最大接続数
 #define MAX_PENDING 5
+// バッファのサイズ
 #define RECV_BUF_SIZE 32
 
 // TCPサーバのソケットをセットアップ
@@ -37,23 +38,24 @@ int ac_tcp_serv_con(int serv_sock)
     unsigned int clnt_addr_len = sizeof(struct sockaddr_in);
     int clnt_sock;
 
-    if ((clnt_sock = accept(serv_sock, (struct sockaddr *)&clnt_addr, &clnt_addr_len) < 0)) return -1;
+    if ((clnt_sock = accept(serv_sock, (struct sockaddr *)&clnt_addr, &clnt_addr_len)) < 0) return -1;
 
-    printf("Handling client %s\n", inet_ntoa(clnt_addr.sin_addr));
+    printf("Handling client: %s\n", inet_ntoa(clnt_addr.sin_addr));
 
     return clnt_sock;
 }
 
 // エコーバック
-int echo_back(int clnt_sock)
+int echo_back (int clnt_sock)
 {
     int recv_msg_len;
     char recv_buf[RECV_BUF_SIZE];
     if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) return -1;
 
     while (recv_msg_len > 0) {
-         if (send(clnt_sock, recv_buf, recv_msg_len, 0) != recv_msg_len) return -1;
-         if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) return -1;
+        if (send(clnt_sock, recv_buf, recv_msg_len, 0) != recv_msg_len) return -1;
+        if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) return -1;
     }
+
     return 0;
 }
