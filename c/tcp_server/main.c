@@ -22,7 +22,7 @@ int main (int argc, char **argv)
     unsigned short serv_port = 7;
     if (argc == 2) serv_port = atoi(argv[1]);
 
-    // 待ち受け用のソケットを作成
+    // 待ち受け用のソケットの作成
     int serv_sock;
     if ((serv_sock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) exit(EXIT_FAILURE);
 

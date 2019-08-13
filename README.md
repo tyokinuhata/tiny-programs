@@ -40,6 +40,7 @@
 |fgets|fgets関数のサンプル|
 |file|ファイルの読み込み・書き込みのサンプル|
 |flexible_array_member|フレキシブル配列メンバのサンプル|
+|fork|プロセスをフォークするサンプル|
 |function_pointer|関数ポインタのサンプル|
 |getppid|getppid関数による親プロセスのプロセスIDを取得するサンプル|
 |global_variable|大域変数のサンプル|
@@ -90,6 +91,7 @@
 |struct|構造体のサンプル|
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
 |tcp_server|ソケットAPIを用いたTCPサーバのサンプル|
+|tcp_server_process|リクエスト毎にプロセスを生成するTCPサーバのサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |typedef|typedefのサンプル|
