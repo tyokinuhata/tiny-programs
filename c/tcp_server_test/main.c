@@ -23,11 +23,13 @@ int main (int argc, char **argv)
     if ((serv_sock = setup_tcp_serv_sock(serv_port)) < 0) exit(EXIT_FAILURE);
 
     int clnt_sock;
+    pid_t process_id;
+    unsigned int child_proc_cnt = 0;
     for (;;) {
         // accept
         if((clnt_sock = ac_tcp_serv_con(serv_sock)) < 0) exit(EXIT_FAILURE);
 
-        echo_back(clnt_sock);
+        if(echo_back(clnt_sock) < 0) exit(EXIT_FAILURE);
 
         close(clnt_sock);
     }

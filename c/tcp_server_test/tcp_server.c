@@ -47,14 +47,16 @@ int ac_tcp_serv_con(int serv_sock)
 }
 
 // エコーバック
-void echo_back (int clnt_sock)
+int echo_back (int clnt_sock)
 {
     int recv_msg_len;
     char recv_buf[RECV_BUF_SIZE];
-    if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) exit(EXIT_FAILURE);
+    if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) return -1;
 
     while (recv_msg_len > 0) {
-        if (send(clnt_sock, recv_buf, recv_msg_len, 0) != recv_msg_len) exit(EXIT_FAILURE);
-        if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) exit(EXIT_FAILURE);
+        if (send(clnt_sock, recv_buf, recv_msg_len, 0) != recv_msg_len) return -1;
+        if ((recv_msg_len = recv(clnt_sock, recv_buf, RECV_BUF_SIZE, 0)) < 0) return -1;
     }
+
+    return 0;
 }
