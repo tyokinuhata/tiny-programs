@@ -1,9 +1,12 @@
+// TCPサーバ
+// リクエスト毎にプロセスを生成する方式
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
+// fork関数, pid_t型を使うために必要
 #include <unistd.h>
+// waitpid関数を使うために必要
+#include <sys/wait.h>
 #include "tcp_server.h"
 
 int main (int argc, char **argv)
@@ -15,12 +18,10 @@ int main (int argc, char **argv)
     unsigned short serv_port = 7;
     if (argc == 2) serv_port = atoi(argv[1]);
 
-    // 待ち受け用のソケットの作成
+    // 待ち受け用のソケットの作成 -> バインド -> リッスン
     int serv_sock;
     if ((serv_sock = setup_tcp_serv_sock(serv_port)) < 0) exit(EXIT_FAILURE);
 
-    struct sockaddr_in clnt_addr;
-    unsigned int clnt_addr_len = sizeof(struct sockaddr_in);
     int clnt_sock;
     for (;;) {
         // accept
