@@ -92,6 +92,7 @@
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
 |tcp_server|ソケットAPIを用いたTCPサーバのサンプル|
 |tcp_server_process|リクエスト毎にプロセスを生成するTCPサーバのサンプル|
+|tcp_server_thread|リクエスト毎にスレッド(PThread)を生成するTCPサーバのサンプル|
 |time|time関数のサンプル|
 |trigraphs|トライグラフのサンプル|
 |typedef|typedefのサンプル|

@@ -58,7 +58,7 @@ int main (int argc, char **argv)
 }
 
 // スレッド
-void *thread_main(void *thread_args)
+void *thread_main (void *thread_args)
 {
     // pthread_detach関数
     // スレッドが終了してメイン関数に制御が返っても, デフォルトではそのリソースが親に回収されるまで終了状態が保持される
