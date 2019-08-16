@@ -91,6 +91,7 @@
 |strtok|strtok関数のサンプル|
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
+|struct_empty|空の構造体のサンプル|
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
 |tcp_server|ソケットAPIを用いたTCPサーバのサンプル|
 |tcp_server_process|リクエスト毎にプロセスを生成するTCPサーバのサンプル|
