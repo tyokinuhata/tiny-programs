@@ -52,6 +52,7 @@
 |ip_eq_pi|p[i] == i[p]になるサンプル|
 |list|単方向リストのサンプル|
 |macro_function|マクロ関数のサンプル|
+|macro_parentheses|マクロ関数の丸括弧に関するサンプル|
 |make|Makefikeのサンプル|
 |malloc|malloc関数によるメモリ確保のサンプル|
 |memcmp|memcmp関数のサンプル|
