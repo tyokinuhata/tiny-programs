@@ -95,6 +95,7 @@
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
 |tcp_server|ソケットAPIを用いたTCPサーバのサンプル|
 |tcp_server_process|リクエスト毎にプロセスを生成するTCPサーバのサンプル|
+|tcp_server_select|select関数を用いて多重化したTCPサーバのサンプル|
 |tcp_server_thread|リクエスト毎にスレッド(PThread)を生成するTCPサーバのサンプル|
 |ternary_operator|三項演算子(条件演算子)のサンプル|
 |time|time関数のサンプル|
