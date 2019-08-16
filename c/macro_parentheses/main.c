@@ -1,4 +1,5 @@
 // マクロ関数の丸括弧
+// gccの拡張機能
 
 #include <stdio.h>
 

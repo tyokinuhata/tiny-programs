@@ -5,6 +5,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|128bit_integer|128ビット整数のサンプル|
 |address_operator|アドレス演算子(&)のサンプル|
 |alignment|アラインメントのサンプル|
 |annex_k|Annex Kのサンプル|
