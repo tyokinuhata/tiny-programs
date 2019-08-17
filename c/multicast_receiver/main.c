@@ -1,4 +1,4 @@
-// ブロードキャスト(受信側)
+// マルチキャスト(受信側)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,15 +9,17 @@
 
 #define MSG_MAX_LEN 255
 
-// ./a.out <port(optional)>
+// ./a.out <ip_address> <port(optional)>
 int main (int argc, char **argv)
 {
     // コマンドライン引数のチェック
-    if (argc < 1 || argc > 2) exit(EXIT_FAILURE);
+    if (argc < 2 || argc > 3) exit(EXIT_FAILURE);
+
+    char *multicast_ip = argv[1];
 
     // サーバのポート番号の設定
     unsigned short port = 7;
-    if (argc == 2) port = atoi(argv[1]);
+    if (argc == 3) port = atoi(argv[2]);
 
     // ソケットの作成
     int sock;
@@ -32,6 +34,12 @@ int main (int argc, char **argv)
 
     // バインド
     if (bind(sock, (struct sockaddr *)&addr, sizeof(struct sockaddr_in)) < 0) exit(EXIT_FAILURE);
+
+    // マルチキャストグループの設定
+    struct ip_mreq multicast_request;
+    multicast_request.imr_multiaddr.s_addr = inet_addr(multicast_ip);
+    multicast_request.imr_interface.s_addr = htonl(INADDR_ANY);
+    if (setsockopt(sock, IPPROTO_IP, IP_ADD_MEMBERSHIP, (void *)&multicast_request, sizeof(struct ip_mreq)) < 0) exit(EXIT_FAILURE);
 
     // メッセージの受信処理
     int recv_msg_len;

@@ -18,8 +18,8 @@
 |auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
 |bool|_Bool型のサンプル|
-|broadcast_sender|ブロードキャストの送信サンプル|
 |broadcast_receiver|ブロードキャストの受信サンプル|
+|broadcast_sender|ブロードキャストの送信サンプル|
 |byte_order|バイトオーダーのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
 |character_is_function|文字関数のis系のサンプル|
@@ -61,6 +61,7 @@
 |memcmp|memcmp関数のサンプル|
 |memcpy|memcpy関数のサンプル|
 |memset|memset関数のサンプル|
+|multicast_receiver|マルチキャストの受信サンプル|
 |multicast_sender|マルチキャストの送信サンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |offsetof|offsetofマクロのサンプル|
