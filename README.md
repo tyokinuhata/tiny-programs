@@ -75,6 +75,7 @@
 |realloc|realloc関数のサンプル|
 |register|register指定子のサンプル|
 |resolve_name|gethostbyname関数を用いた名前解決のサンプル|
+|resolve_service|サービス名とプロトコルからサービスの情報を検索するサンプル|
 |restrict|restrict修飾子のサンプル|
 |signal|シグナルの動作を変更するサンプル|
 |sizeof_operator|sizeof演算子のサンプル|

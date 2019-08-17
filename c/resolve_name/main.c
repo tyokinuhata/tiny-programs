@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+// hostent構造体, gethostbyname関数を使うために必要
 #include <netdb.h>
 #include <arpa/inet.h>
 
@@ -30,7 +31,7 @@ struct in_addr *resolve_name (const char *host_name)
     // DNSかローカルにあるDBから情報は取得する(実装依存)
     // struct hostent *gethostbyname(const char *hostName)
     // 戻り値はhostent構造体
-    // gethostbynameと逆の作用をする関数としてgethostbyaddr関数も用意されている
+    // gethostbyname関数と逆の作用をする関数としてgethostbyaddr関数も用意されている
     if ((host = gethostbyname(host_name)) == NULL) return NULL;
 
     static struct in_addr addr;
