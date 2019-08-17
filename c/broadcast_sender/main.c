@@ -45,7 +45,7 @@ int main (int argc, char **argv)
     memset(&addr, 0, sizeof(addr));
     addr.sin_family = AF_INET;
     addr.sin_addr.s_addr = inet_addr(broadcast_ip);
-    addr.sin_port = port;
+    addr.sin_port = htons(port);
 
     unsigned int send_msg_len = strlen(send_msg);
     for (;;) {
