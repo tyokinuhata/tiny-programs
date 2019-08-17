@@ -1,9 +1,11 @@
+// ホスト名 -> IPアドレス の名前解決
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <netdb.h>
 #include <arpa/inet.h>
 
-struct in_addr *resolve_name(char *);
+struct in_addr *resolve_name(const char *);
 
 // ./a.out google.com
 int main (int argc, char **argv)
@@ -20,13 +22,15 @@ int main (int argc, char **argv)
 }
 
 // 名前解決
-struct in_addr *resolve_name (char *host_name)
+struct in_addr *resolve_name (const char *host_name)
 {
     struct hostent *host;
     // gethostbyname関数
     // ホスト名を引数として取り, IPアドレス等のホスト情報を返す関数
+    // DNSかローカルにあるDBから情報は取得する(実装依存)
     // struct hostent *gethostbyname(const char *hostName)
     // 戻り値はhostent構造体
+    // gethostbynameと逆の作用をする関数としてgethostbyaddr関数も用意されている
     if ((host = gethostbyname(host_name)) == NULL) return NULL;
 
     static struct in_addr addr;
