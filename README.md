@@ -61,6 +61,7 @@
 |memcmp|memcmp関数のサンプル|
 |memcpy|memcpy関数のサンプル|
 |memset|memset関数のサンプル|
+|multicast_sender|マルチキャストの送信サンプル|
 |no_init|変数の初期化を行わない場合のサンプル|
 |offsetof|offsetofマクロのサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
