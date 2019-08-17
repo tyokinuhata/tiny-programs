@@ -74,6 +74,7 @@
 |random|rand関数・srand関数のサンプル|
 |realloc|realloc関数のサンプル|
 |register|register指定子のサンプル|
+|resolve_name|gethostbyname関数を用いた名前解決のサンプル|
 |restrict|restrict修飾子のサンプル|
 |signal|シグナルの動作を変更するサンプル|
 |sizeof_operator|sizeof演算子のサンプル|
