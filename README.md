@@ -18,6 +18,7 @@
 |auto|auto指定子のサンプル|
 |bit_field|ビットフィールドのサンプル|
 |bool|_Bool型のサンプル|
+|broadcast_sender|ブロードキャストの送信サンプル|
 |byte_order|バイトオーダーのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
 |character_is_function|文字関数のis系のサンプル|
