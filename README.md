@@ -44,6 +44,7 @@
 |file|ファイルの読み込み・書き込みのサンプル|
 |flexible_array_member|フレキシブル配列メンバのサンプル|
 |fork|プロセスをフォークするサンプル|
+|fork_and_exec|forkで子プロセス生成 -> execveで新規プロセス生成を行うサンプル|
 |fork2|プロセスをフォークするサンプル２|
 |function_pointer|関数ポインタのサンプル|
 |getppid|getppid関数による親プロセスのプロセスIDを取得するサンプル|
