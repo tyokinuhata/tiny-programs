@@ -72,6 +72,7 @@
 |pointer_function|ポインタを使って関数でやり取りするサンプル|
 |pointer_pointer|ダブルポインタ, トリプルポインタのサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
+|process_scheduler|プロセススケジューラのサンプル|
 |prototype_declaration|プロトタイプ宣言のサンプル|
 |random|rand関数・srand関数のサンプル|
 |realloc|realloc関数のサンプル|

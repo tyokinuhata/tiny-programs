@@ -1,11 +1,17 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
-    goto label;
+int main ()
+{
+    goto label_a;
 
-    printf("This statement doesn't execute.\n");
+    puts("This statement doesn't execute.\n");
 
-label:
+label_a:
+    puts("Reached label_a.");
+
+label_b:
+    // これは実行される
+    puts("Reached label_b.");
 
     return 0;
 }
