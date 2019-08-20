@@ -9,13 +9,15 @@
 #include <err.h>
 // timespec構造体, clock_gettime関数を使うために必要
 #include <time.h>
-// kill関数を使うために必要
+// kill関数, SIGINTを使うために必要
 #include <signal.h>
+// pid_t型を使うために必要
 #include <sys/types.h>
+// wait関数を使うために必要
 #include <sys/wait.h>
 
 // ULを付けるとunsigned longとして扱われる
-#define NLOOP_FOR_ESTIMATION 1000000000UL
+#define ESTIMATION_LOOP_NUM 1000000000UL
 #define NSECS_PER_MSEC 1000000UL
 #define NSECS_PER_SEC 1000000000UL
 
@@ -59,7 +61,7 @@ int main (int argc, char **argv)
     if (!log_buf) err(EXIT_FAILURE, "malloc(log_buf) failed.");
 
     puts("Estimating workload which takes just one milisecond.");
-    unsigned long nloop_per_resol = loops_per_msec() * measure_interval;
+    unsigned long loops_per_measure = loops_per_msec() * measure_interval;
     puts("End estimatation.");
 
     pids = malloc(proc_num * sizeof(pid_t));
@@ -76,23 +78,32 @@ int main (int argc, char **argv)
     // int clock_gettime(clockid_t clk_id, struct timespec *tp)
     clock_gettime(CLOCK_MONOTONIC, &start);
 
-    int ncreated = 0;
-    for (int i = 0; i < proc_num; i++, ncreated++) {
+    int created_num = 0;
+    for (int i = 0; i < proc_num; i++, created_num++) {
         pids[i] = fork();
         // エラーの場合
         if (pids[i] < 0)        goto wait_children;
         // 子プロセスの場合
-        else if (pids[i] == 0)  child(i, log_buf, measure_num, nloop_per_resol, start);
+        else if (pids[i] == 0)  child(i, log_buf, measure_num, loops_per_measure, start);
     }
     ret = EXIT_SUCCESS;
 
 wait_children:
     if (ret == EXIT_FAILURE) {
-        for (int i = 0; i < ncreated; i++) {
+        for (int i = 0; i < created_num; i++) {
+            // kill関数
+            // 指定したプロセスに指定したシグナルを送る
+            // int kill(pid_t pid, int sig)
             if (kill(pids[i], SIGINT) < 0) warn("Kill(%d) failed.", pids[i]);
         }
     }
-    for (int i = 0; i < ncreated; i++) {
+    for (int i = 0; i < created_num; i++) {
+        // wait関数
+        // 子プロセスの状態変化を待つ関数
+        // 子プロセスの状態変化がすでに発生していた場合はすぐに復帰する
+        // 状態変化には, 子プロセスの終了, シグナルによる子プロセスの停止, シグナルによる子プロセスの再開 が該当する
+        // pid_t wait(int *status)
+        // statusには, 子プロセスからの終了ステータスを格納する変数をしていするが, 終了ステータスが不要な場合はNULLを指定する
         if (wait(NULL) < 0) warn("wait() failed.");
     }
 
@@ -113,12 +124,12 @@ unsigned long loops_per_msec ()
     struct timespec before, after;
     clock_gettime(CLOCK_MONOTONIC, &before);
 
-    for (unsigned long i = 0; i < NLOOP_FOR_ESTIMATION; i++)
+    for (unsigned long i = 0; i < ESTIMATION_LOOP_NUM; i++)
         ;
 
     clock_gettime(CLOCK_MONOTONIC, &after);
 
-    return NLOOP_FOR_ESTIMATION * NSECS_PER_MSEC / diff_nsec(before, after);
+    return ESTIMATION_LOOP_NUM * NSECS_PER_MSEC / diff_nsec(before, after);
 }
 
 // インライン関数
@@ -134,17 +145,18 @@ static inline long diff_nsec (struct timespec before, struct timespec after)
     return ((after.tv_sec * NSECS_PER_MSEC + after.tv_nsec) - (before.tv_sec * NSECS_PER_MSEC + before.tv_nsec));
 }
 
-static void child (int id, struct timespec *buf, int nrecord, unsigned long nloop_per_resol, struct timespec start)
+// 子プロセス
+static void child (int id, struct timespec *buf, int created_num, unsigned long loops_per_measure, struct timespec start)
 {
-    for (int i = 0; i < nrecord; i++) {
+    for (int i = 0; i < created_num; i++) {
         struct timespec ts;
 
-        load(nloop_per_resol);
+        load(loops_per_measure);
         clock_gettime(CLOCK_MONOTONIC, &ts);
         buf[i] = ts;
     }
-    for (int i = 0; i < nrecord; i++) {
-        printf("%d\t%ld\t%d\n", id, diff_nsec(start, buf[i]) / NSECS_PER_MSEC, (i + 1) * 100 / nrecord);
+    for (int i = 0; i < created_num; i++) {
+        printf("%d\t%ld\t%d\n", id, diff_nsec(start, buf[i]) / NSECS_PER_MSEC, (i + 1) * 100 / created_num);
     }
     exit(EXIT_SUCCESS);
 }
