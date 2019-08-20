@@ -142,7 +142,7 @@ unsigned long loops_per_msec ()
 // コンパイラの最適化レベルが低かったり, コンパイラの制限に従っていない場合, インライン化されないため注意
 static inline long diff_nsec (struct timespec before, struct timespec after)
 {
-    return ((after.tv_sec * NSECS_PER_MSEC + after.tv_nsec) - (before.tv_sec * NSECS_PER_MSEC + before.tv_nsec));
+    return ((after.tv_sec * NSECS_PER_SEC + after.tv_nsec) - (before.tv_sec * NSECS_PER_SEC + before.tv_nsec));
 }
 
 // 子プロセス
