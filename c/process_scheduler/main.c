@@ -1,5 +1,6 @@
 // プロセススケジューラの実験
-// ./a.out <process_number> <total_usec> <statistics_collect_interval>
+// 同時に動作させるプロセス数, プログラムを動作させる時間(ミリ秒), 統計情報の採取間隔(ミリ秒)を渡すと, プロセスID, プログラム開始からの経過時間, 進捗(%)を出力する
+// ./a.out <process_number> <total_usec> <statistics_measure_interval>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,6 +14,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
+// ULを付けるとunsigned longとして扱われる
 #define NLOOP_FOR_ESTIMATION 1000000000UL
 #define NSECS_PER_MSEC 1000000UL
 #define NSECS_PER_SEC 1000000000UL
@@ -35,29 +37,29 @@ int main (int argc, char **argv)
     int proc_num = atoi(argv[1]);
     // プロセスを動作させる合計時間(ミリ秒)
     int total_usec = atoi(argv[2]);
-    // 統計時間の採取間隔(ミリ秒)
-    int statistic_collect_interval = atoi(argv[3]);
+    // 統計情報の採取間隔(ミリ秒)
+    int measure_interval = atoi(argv[3]);
 
     // 各パラメータが1以上の整数であるかのチェック
-    if (proc_num < 1 || total_usec < 1 || statistic_collect_interval < 1) err(EXIT_FAILURE, "Invalid parameters.");
+    if (proc_num < 1 || total_usec < 1 || measure_interval < 1) err(EXIT_FAILURE, "Invalid parameters.");
 
     // 割り切れるかどうかのチェック
-    if (total_usec % statistic_collect_interval) err(EXIT_FAILURE, "<process total usec> should be multiple of <statistics collect number>");
+    if (total_usec % measure_interval) err(EXIT_FAILURE, "<process total usec> should be multiple of <statistics collect number>");
 
     // 統計の採取回数の取得
-    int statistic_collect_num = total_usec / statistic_collect_interval;
+    int measure_num = total_usec / measure_interval;
 
     // timespec構造体
     // time_t tv_sec(秒) と long tv_nsec(ナノ秒) で構成される
     // timeval構造体は long tv_sec(1970/1/1からの経過秒数. いわゆるエポック秒) と long tv_usec(ミリ秒) で構成される
     // timespec構造体はC11から追加された
-    struct timespec *log_buf = malloc(statistic_collect_num * sizeof(struct timespec));
+    struct timespec *log_buf = malloc(measure_num * sizeof(struct timespec));
 
     // mallocできているかのチェック
     if (!log_buf) err(EXIT_FAILURE, "malloc(log_buf) failed.");
 
     puts("Estimating workload which takes just one milisecond.");
-    unsigned long nloop_per_resol = loops_per_msec() * statistic_collect_interval;
+    unsigned long nloop_per_resol = loops_per_msec() * measure_interval;
     puts("End estimatation.");
 
     pids = malloc(proc_num * sizeof(pid_t));
@@ -80,7 +82,7 @@ int main (int argc, char **argv)
         // エラーの場合
         if (pids[i] < 0)        goto wait_children;
         // 子プロセスの場合
-        else if (pids[i] == 0)  child(i, log_buf, statistic_collect_num, nloop_per_resol, start);
+        else if (pids[i] == 0)  child(i, log_buf, measure_num, nloop_per_resol, start);
     }
     ret = EXIT_SUCCESS;
 
