@@ -84,7 +84,7 @@ int main (int argc, char **argv)
         // エラーの場合
         if (pids[i] < 0)        goto wait_children;
         // 子プロセスの場合
-        else if (pids[i] == 0)  child(i, log_buf, measure_num, loops_per_measure, start);
+        else if (pids[i] == 0)  child(i, log_buf, created_num, loops_per_measure, start);
     }
     ret = EXIT_SUCCESS;
 
