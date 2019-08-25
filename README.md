@@ -16,6 +16,7 @@
 |atexit|atexit関数のサンプル|
 |atoi|atoi関数のサンプル|
 |auto|auto指定子のサンプル|
+|bel|ベル(警告音)を鳴らすサンプル|
 |bit_field|ビットフィールドのサンプル|
 |bool|_Bool型のサンプル|
 |broadcast_receiver|ブロードキャストの受信サンプル|
