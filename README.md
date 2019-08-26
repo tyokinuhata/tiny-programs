@@ -88,6 +88,7 @@
 |sscanf|sscanf関数のサンプル|
 |static_variable|静的変数のサンプル|
 |stdc_version|Cコンパイラのバージョン確認を行うサンプル|
+|stdint|intXX_t, uintXX_t系のサンプル|
 |strcat|strcat関数を使った文字列の連結を行うサンプル|
 |strchr|strchr関数を使った文字列の検索のサンプル|
 |strcmp|strcmp関数を使った文字列比較のサンプル|
