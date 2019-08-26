@@ -117,6 +117,7 @@
 |udp_server_non_blocking_io|ノンブロッキングI/Oを用いたUDPサーバのサンプル|
 |undef|undef命令のサンプル|
 |union|共用体のサンプル|
+|unpack_struct|アンパック構造体のサンプル|
 |va|可変長引数のサンプル|
 |vla|可変長配列(VLA)のサンプル|
 |void_pointer|voidポインタのサンプル|
