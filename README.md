@@ -56,6 +56,7 @@
 |indirection_operator|ポインタ変数と間接演算子(*)のサンプル|
 |input|scanf関数とgets関数のサンプル|
 |integer_promotion|整数拡張のサンプル|
+|inttypes|PRIxXX系のサンプル|
 |ip_eq_pi|p[i] == i[p]になるサンプル|
 |list|単方向リストのサンプル|
 |macro_function|マクロ関数のサンプル|
