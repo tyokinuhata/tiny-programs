@@ -37,6 +37,7 @@ int main (int argc, char **argv)
     // level: SOL_SOCKET ... プロトコルに依存せずにソケットレイヤ自体で処理する場合
     //        IPPROTO_TCP ... トランスポート層固有のオプションの場合
     //        IPPROTO_IP ... ネットワーク層固有のオプションの場合
+    // optName: SO_REFUSEADDR ... TIME_WAIT状態のコネクションのポートを再利用する. ポートの枯渇への対応策
     // ソケットのオプションを取得する関数にgetsockopt関数も存在する
     if (setsockopt(sock, SOL_SOCKET, SO_BROADCAST, (void *)&broadcast_permission, sizeof(int)) < 0) exit(EXIT_FAILURE);
 
