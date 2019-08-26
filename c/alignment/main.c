@@ -65,6 +65,6 @@ int main()
     printf("%zu\t%p\t%lu\n", sizeof(d3.b), &d3.b, (uintptr_t)&d3.b - (uintptr_t)&d3);
     printf("%zu\t%p\t%lu\n", sizeof(d3.c), &d3.c, (uintptr_t)&d3.c - (uintptr_t)&d3);
     printf("%zu\t%p\t%lu\n", sizeof(d3.d), &d3.d, (uintptr_t)&d3.d - (uintptr_t)&d3);
-    printf("%zu\t%p\t%lu\n", sizeof(d3.d), &d3.d, (uintptr_t)&d3.e - (uintptr_t)&d3);
+    printf("%zu\t%p\t%lu\n", sizeof(d3.e), &d3.e, (uintptr_t)&d3.e - (uintptr_t)&d3);
 
 }
