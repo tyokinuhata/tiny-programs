@@ -1,18 +1,26 @@
 #include <stdio.h>
+#include <stdint.h>
 
-struct tag_s {
-    char c;
-    double f;
+struct data {
+    uint8_t a;
+    uint16_t b;
+    uint64_t c;
 };
 
-int main(int argc, char *argv[]) {
-    struct tag_s s;
+int main()
+{
+    struct data d;
 
-    // char型は1byte, double型は8byteだが9byteにはならず16byteになる
-    // これはアラインメントによるもので, 32bitのCPUであれば4byteずつ, 64bitのCPUであれば8byteずつ読み込む
-    // 64bitのCPUの場合, 8の倍数になっていなければデータのアクセス効率が悪くなる
-    // そのため, 8の倍数になるようにパディングされる
-    printf("%zu\n", sizeof s);
+    // 1byte + 2byte + 8byte = 11byte
+    // になると思いきや
+    // 4byte + 4byte + 8byte = 16byte
+    // になる
+    // これがアラインメント
+    // メモリアクセスの制限や効率化(各フィールドが４の倍数のアドレスに配置されることが望ましい)のためにパディング(詰め物)がされる
+    // x86系のアーキテクチャはアラインメントされていないデータへアクセスしても問題ない
+    printf("%zu\n", sizeof(d));
 
-    return 0;
+    printf("%zu\t%p\t%lu\n", sizeof(d.a), &d.a, (uintptr_t)&d.a - (uintptr_t)&d);
+    printf("%zu\t%p\t%lu\n", sizeof(d.b), &d.b, (uintptr_t)&d.b - (uintptr_t)&d);
+    printf("%zu\t%p\t%lu\n", sizeof(d.c), &d.c, (uintptr_t)&d.c - (uintptr_t)&d);
 }
