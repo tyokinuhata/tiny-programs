@@ -7,8 +7,13 @@
 #include <err.h>
 #include <unistd.h>
 #include <sys/socket.h>
+// ssize_t型を使用するために必要
+#include <sys/types.h>
+#include <arpa/inet.h>
 // if_indextoname関数を使用するために必要
 #include <net/if.h>
+// #include <netpacket/packet.h>
+// #include <net/ethernet.h>
 
 int main()
 {
@@ -32,7 +37,7 @@ int main()
     // unsigned int型のエイリアス
     socklen_t addr_len;
     // ssize_t型
-    // 自分の環境ではlong型のエイリアスだった
+    // 自分の環境では符号付きlong型のエイリアスだった(size_t型は符号無し)
     ssize_t recv_len;
     char buf[2048];
     // IF_NAMESIZE ... インタフェース名のサイズ(自分の環境では16だった)
