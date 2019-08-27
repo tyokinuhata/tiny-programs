@@ -7,13 +7,15 @@
 #include <err.h>
 #include <unistd.h>
 #include <sys/socket.h>
-// ssize_t型を使用するために必要
+// ssize_t型を使うために必要
 #include <sys/types.h>
 #include <arpa/inet.h>
-// if_indextoname関数を使用するために必要
+// if_indextoname関数を使うために必要
 #include <net/if.h>
-// #include <netpacket/packet.h>
-// #include <net/ethernet.h>
+// sockaddr_ll構造体を使うために必要
+#include <netpacket/packet.h>
+// ETH_P_ALLを使うために必要
+#include <net/ethernet.h>
 
 int main()
 {
