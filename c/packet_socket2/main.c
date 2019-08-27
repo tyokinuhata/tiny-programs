@@ -1,3 +1,8 @@
+// パケットソケット
+// インタフェース名を指定した場合はそのインタフェースのパケットのみ取得する
+// sudo ./a.out <if_name>
+// sudo ./a.out
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -39,6 +44,7 @@ int main (int argc, char **argv)
                 close(sock);
                 exit(EXIT_FAILURE);
             }
+            // インタフェースの情報をアドレスに設定してバインドする
             memset(&addr, 0, sizeof(addr));
             addr.sll_family = AF_PACKET;
             addr.sll_protocol = htons(ETH_P_ALL);
@@ -55,6 +61,7 @@ int main (int argc, char **argv)
             exit(EXIT_FAILURE);
     }
 
+    // 受信処理
     socklen_t addr_len;
     ssize_t recv_size;
     char buf[2048];
