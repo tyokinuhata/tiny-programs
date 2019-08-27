@@ -1,5 +1,7 @@
 // パケットソケット
 // ソケットAPIの枠組みの中でリンク層へアクセスする仕組み
+// 実行にはsudoが必要
+// sudo ./a.out
 
 #include <stdio.h>
 #include <stdlib.h>
