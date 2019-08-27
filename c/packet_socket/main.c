@@ -15,10 +15,10 @@
 #include <arpa/inet.h>
 // if_indextoname関数を使うために必要
 #include <net/if.h>
-// sockaddr_ll構造体を使うために必要
-#include <netpacket/packet.h>
 // ETH_P_ALLを使うために必要
 #include <net/ethernet.h>
+// sockaddr_ll構造体を使うために必要
+#include <netpacket/packet.h>
 
 int main ()
 {

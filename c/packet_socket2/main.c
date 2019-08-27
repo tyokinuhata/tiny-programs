@@ -11,6 +11,7 @@
 // ifreq構造体を使うために必要
 #include <net/if.h>
 #include <net/ethernet.h>
+#include <netpacket/packet.h>
 
 int main (int argc, char **argv)
 {
