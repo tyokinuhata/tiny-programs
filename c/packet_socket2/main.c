@@ -53,28 +53,28 @@ int main (int argc, char **argv)
             fprintf(stderr, "usage: %s [if_name]\n", argv[0]);
             close(sock);
             exit(EXIT_FAILURE);
-
-        socklen_t addr_len;
-        ssize_t recv_size;
-        char buf[2048];
-        char if_name[IF_NAMESIZE];
-        for (;;) {
-            addr_len = sizeof(addr);
-            recv_size = recvfrom(sock, buf, sizeof(buf), 0, (struct sockaddr *)&addr, &addr_len);
-            if (recv_size < 0) {
-                if (errno == EINTR) continue;
-                perror("recvfrom");
-                close(sock);
-                exit(EXIT_FAILURE);
-            }
-            if (!if_indextoname(addr.sll_ifindex, if_name)) {
-                perror("if_indextoname");
-                close(sock);
-                exit(EXIT_FAILURE);
-            }
-            printf("recvfrom: %zd bytes via %s\n", recv_size, if_name);
-        }
-        close(sock);
-        exit(EXIT_SUCCESS);
     }
+
+    socklen_t addr_len;
+    ssize_t recv_size;
+    char buf[2048];
+    char if_name[IF_NAMESIZE];
+    for (;;) {
+        addr_len = sizeof(addr);
+        recv_size = recvfrom(sock, buf, sizeof(buf), 0, (struct sockaddr *)&addr, &addr_len);
+        if (recv_size < 0) {
+            if (errno == EINTR) continue;
+            perror("recvfrom");
+            close(sock);
+            exit(EXIT_FAILURE);
+        }
+        if (!if_indextoname(addr.sll_ifindex, if_name)) {
+            perror("if_indextoname");
+            close(sock);
+            exit(EXIT_FAILURE);
+        }
+        printf("recvfrom: %zd bytes via %s\n", recv_size, if_name);
+    }
+    close(sock);
+    exit(EXIT_SUCCESS);
 }
