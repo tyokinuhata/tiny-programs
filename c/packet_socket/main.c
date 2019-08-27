@@ -1,5 +1,6 @@
 // パケットソケット
 // ソケットAPIの枠組みの中でリンク層へアクセスする仕組み
+// このサンプルコードでは全てのネットワークインタフェースから受信する
 // 実行にはsudoが必要
 // sudo ./a.out
 
@@ -19,7 +20,7 @@
 // ETH_P_ALLを使うために必要
 #include <net/ethernet.h>
 
-int main()
+int main ()
 {
     // PF_PACKET ... リンク層やネットワーク層の生データを扱えるようにするプロトコルファミリー
     // SOCK_RAW ... リンク層のデータを扱えるようにする
@@ -42,14 +43,14 @@ int main()
     socklen_t addr_len;
     // ssize_t型
     // 自分の環境では符号付きlong型のエイリアスだった(size_t型は符号無し)
-    ssize_t recv_len;
+    ssize_t recv_size;
     char buf[2048];
     // IF_NAMESIZE ... インタフェース名のサイズ(自分の環境では16だった)
     char if_name[IF_NAMESIZE];
     for (;;) {
         addr_len = sizeof(addr);
-        recv_len = recvfrom(sock, buf, sizeof(buf), 0, (struct sockaddr *)&addr, &addr_len);
-        if (recv_len < 0) {
+        recv_size = recvfrom(sock, buf, sizeof(buf), 0, (struct sockaddr *)&addr, &addr_len);
+        if (recv_size < 0) {
             if (errno == EINTR) continue;
             perror("recvfrom");
             close(sock);
@@ -64,7 +65,7 @@ int main()
             close(sock);
             exit(EXIT_FAILURE);
         }
-        printf("recvfrom: %zd bytes via %s\n", recv_len, if_name);
+        printf("recvfrom: %zd bytes via %s\n", recv_size, if_name);
     }
     close(sock);
     exit(EXIT_SUCCESS);

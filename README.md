@@ -73,6 +73,7 @@
 |offsetof|offsetofマクロのサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
 |packet_socket|パケットソケットのサンプル|
+|packet_socket2|パケットソケットのサンプル|
 |permutation|再帰を使った順列のサンプル|
 |pointer_function|ポインタを使って関数でやり取りするサンプル|
 |pointer_pointer|ダブルポインタ, トリプルポインタのサンプル|
