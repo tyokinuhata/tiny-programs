@@ -41,6 +41,7 @@
 |double_include_guard|二重includeの防止のサンプル|
 |dynamic_array|mallocを使った動的配列のサンプル|
 |enum|列挙型のサンプル|
+|errno|エラー処理のサンプル|
 |extern|extern指定子のサンプル|
 |fgets|fgets関数のサンプル|
 |file|ファイルの読み込み・書き込みのサンプル|
