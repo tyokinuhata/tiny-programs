@@ -69,7 +69,7 @@ int main (int argc, char **argv)
         if ((clnt_sock = accept(serv_sock, (struct sockaddr *)&clnt_addr, &clnt_addr_len)) < 0) exit(EXIT_FAILURE);
 
         // inet_ntoa関数
-        // inet_addr関数 ... ドット10進表記のIPアドレス -> 32ビットの２進数表現 に変換
+        // inet_addr関数 ... ドット10進表記のIPアドレス -> 32ビットの２進数表現 に変換. 不正な値の場合はINADDR_NONE(通常は-1)が返される
         // inet_ntoa関数 ... その逆で, 32ビットの２信州表現 -> ドット10進数表記のIPアドレス に変換
         // inet_ntop関数 ... inet_ntoa関数を拡張して複数のアドレスファミリを扱えるようにしたもの
         printf("Handling client: %s\n", inet_ntoa(clnt_addr.sin_addr));
