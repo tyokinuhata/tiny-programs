@@ -47,6 +47,11 @@ int main (int argc, char **argv)
     send_addr.sin_addr.s_addr = inet_addr(serv_ip);
     send_addr.sin_port = htons(serv_port);
 
+    // UDPでもconnect関数を呼び出すことが可能
+    // TCPの場合はconnect関数を呼び出すとコネクション確立要求のSYNが送信される
+    // UDPの場合はコネクションの確立をしないため, 何もパケットは流れないが, そのソケットを使用した通信が特定の相手(IPアドレス, ポート)に限定されるようになる
+    // つまり, sendtoやrecvfromを使用する必要はなくなり, sendやrecvを使用できる
+
     // メッセージの送信
     // sendto関数
     // sendto(int socket, const void *msg, unsigned int msgLength, int flags, struct sockaddr *destAddr, unsigned int addrLen)
