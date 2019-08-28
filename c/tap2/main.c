@@ -16,7 +16,7 @@ int main (int argc, char **argv)
 {
     // ファイルディスクリプタの作成
     int fd = open(CLONE_DEVICE, O_RDWR);
-    if (fd != -1) {
+    if (fd == -1) {
         perror("open");
         exit(EXIT_FAILURE);
     }
