@@ -60,6 +60,7 @@
 |integer_promotion|整数拡張のサンプル|
 |inttypes|PRIxXX系のサンプル|
 |ip_eq_pi|p[i] == i[p]になるサンプル|
+|is_linux|Linuxかどうかの判定をするサンプル|
 |list|単方向リストのサンプル|
 |macro_function|マクロ関数のサンプル|
 |macro_parentheses|マクロ関数の丸括弧に関するサンプル|

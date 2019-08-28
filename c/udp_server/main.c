@@ -29,6 +29,7 @@ int main (int argc, char **argv)
     // バインド
     if (bind(serv_sock, (struct sockaddr *)&serv_addr, sizeof(struct sockaddr_in)) < 0) exit(EXIT_FAILURE);
 
+    // 受信
     struct sockaddr_in clnt_addr;
     unsigned int clnt_addr_len = sizeof(struct sockaddr_in);
     int recv_msg_len;
