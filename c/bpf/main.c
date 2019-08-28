@@ -40,7 +40,7 @@ int main (int argc, char **argv)
         // O_RDWR ... 読み書き両用でオープンする
         // modeはファイル作成時のモード(0はおそらくデフォルト)
         fd = open(path, O_RDWR, 0);
-        if (fd < 0) break;
+        if (fd != -1) break;
     }
     if (fd < 0) err(EXIT_FAILURE, "open");
 
