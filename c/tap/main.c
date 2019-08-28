@@ -14,6 +14,7 @@
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <net/if.h>
+#include <linux/if_tun.h>
 
 #define CLONE_DEVICE "/dev/net/tun"
 
