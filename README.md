@@ -110,6 +110,8 @@
 |strtol|strtol関数のサンプル|
 |struct|構造体のサンプル|
 |struct_empty|空の構造体のサンプル|
+|tap|TUNデバイス(インタフェース名は自動生成)のサンプル|
+|tap2|TUNデバイス(インタフェース名を指定可能)のサンプル|
 |tcp_client|ソケットAPIを用いたTCPクライアントのサンプル|
 |tcp_server|ソケットAPIを用いたTCPサーバのサンプル|
 |tcp_server_process|リクエスト毎にプロセスを生成するTCPサーバのサンプル|
