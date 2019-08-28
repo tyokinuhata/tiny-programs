@@ -14,12 +14,14 @@
 
 int main (int argc, char **argv)
 {
+    // ファイルディスクリプタの作成
     int fd = open(CLONE_DEVICE, O_RDWR);
     if (fd != -1) {
         perror("open");
         exit(EXIT_FAILURE);
     }
 
+    // インタフェース名の設定
     struct ifreq if_req;
     memset(&if_req, 0, sizeof(if_req));
     switch (argc) {
