@@ -13,6 +13,8 @@
 #include <sys/ioctl.h>
 #include <arpa/inet.h>
 #include <net/if.h>
+#include <net/ethernet.h>
+#include <netpacket/packet.h>
 
 int main (int argc, char **argv)
 {
