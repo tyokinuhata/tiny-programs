@@ -38,6 +38,7 @@ int main ()
         exit(EXIT_FAILURE);
     }
 
+    // 受信
     char *if_name = if_req.ifr_name;
     printf("if_name: %s\n", if_name);
     ssize_t recv_size;
