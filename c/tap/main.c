@@ -28,7 +28,10 @@ int main ()
 
     struct ifreq if_req;
     memset(&if_req, 0, sizeof(if_req));
+    // IFF_TAP ... TAPデバイス
+    // IFF_NO_PI ... パケット情報を提供しない
     if_req.ifr_flags = IFF_TAP | IFF_NO_PI;
+    // TAPデバイスにインタフェースの設定を適用
     if (ioctl(fd, TUNSETIFF, &if_req) < 0) {
         perror("ioctl [TUNSETIFF]");
         close(fd);
@@ -36,7 +39,7 @@ int main ()
     }
 
     char *if_name = if_req.ifr_name;
-    fprintf(stderr, "if_name: %s\n", if_name);
+    printf("if_name: %s\n", if_name);
     ssize_t recv_size;
     char buf[2046];
     for (;;) {
