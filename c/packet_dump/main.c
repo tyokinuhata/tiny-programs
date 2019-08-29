@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
@@ -15,7 +16,7 @@
 void dump_ethernet(u_char *);
 void dump_ip(u_char *);
 void dump_tcp(u_char *);
-bool is_ssh(u_char *);
+bool is_ssh(const u_char *, ssize_t);
 char *mac_ntoa(u_char *);
 
 int main ()
@@ -48,7 +49,7 @@ void dump_ethernet (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
 
-    if (is_ssh(buf)) return;
+    if (is_ssh(buf, sizeof(buf))) return;
 
     puts("----- Ethernet Header -----");
     printf("Dest Mac: %s\n", mac_ntoa(eth_header->ether_dhost));
@@ -110,9 +111,10 @@ void dump_tcp (u_char *buf)
 }
 
 // SSHかどうか(弾かないと無限ループするため)
-bool is_ssh (u_char *buf)
+bool is_ssh (const u_char *buf, ssize_t size)
 {
-    u_char cp_buf = *buf;
+    u_char cp_buf;
+    memcpy(cp_buf, buf, size);
     struct ether_header *eth_header = (struct ether_header *)&cp_buf;
 
     // IPパケットかどうか
