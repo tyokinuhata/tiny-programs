@@ -114,7 +114,7 @@ bool is_ssh (u_char *buf)
                 struct tcphdr *tcp_header = (struct tcphdr *)tcp_buf;
 
                 // SSHかどうか
-                if (tcp_header->dest == 22) return true;
+                if (ntohs(tcp_header->source) == 22 || ntohs(tcp_header->dest) == 22) return true;
             }
             return false;
     }
