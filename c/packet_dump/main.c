@@ -58,7 +58,6 @@ void dump_ethernet (u_char *buf)
     switch (ntohs(eth_header->ether_type)) {
         case ETH_P_IP:
             puts("IP");
-            puts("--------------------");
             u_char *ip_buf = buf;
             ip_buf += sizeof(struct ether_header);
             dump_ip(ip_buf);
@@ -90,7 +89,6 @@ void dump_ip (u_char *buf)
     printf("Identification: %u\n", ntohs(ip_header->id));
     printf("Time to Live: %u\n", ip_header->ttl);
     printf("Protocol: %u\n", ip_header->protocol);
-    puts("--------------------");
 
     // 上位層のプロトコルがTCP(6)の場合
     if (ip_header->protocol == 6) {
@@ -98,6 +96,7 @@ void dump_ip (u_char *buf)
         tcp_buf += ip_header->ihl * 4;
         dump_tcp(tcp_buf);
     }
+    else puts("--------------------");
 }
 
 // TCPセグメントのダンプ
