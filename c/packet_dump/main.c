@@ -6,7 +6,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <net/ethernet.h>
-// #include <netpacket/packet.h>
+#include <netpacket/packet.h>
 #include <netinet/ip.h>
 #include <netinet/tcp.h>
 
@@ -56,7 +56,7 @@ void dump_ethernet (u_char *buf)
             printf("IP\n");
             dump_ip(buf);
             break;
-        case ETH_P_IPv6:
+        case ETH_P_IPV6:
             printf("IPv6\n");
             break;
         case ETH_P_ARP:
@@ -77,7 +77,7 @@ bool is_ssh (u_char *buf)
 
 void dump_ip (u_char *buf)
 {
-    struct iphdr *ip_header = (struct iphdr *)buf;
+    // struct iphdr *ip_header = (struct iphdr *)buf;
     printf("----- IP header -----\n");
 }
 
