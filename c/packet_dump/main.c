@@ -46,9 +46,7 @@ void dump_ethernet (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
 
-    // if (ntohs(eth_header->ether_type) == ETH_P_IP) {
-    //     if (is_ssh(buf)) return;
-    // }
+    if (is_ssh(buf)) return;
 
     printf("Ether Type: ");
     switch (ntohs(eth_header->ether_type)) {
@@ -70,13 +68,6 @@ void dump_ethernet (u_char *buf)
     }
 }
 
-// bool is_ssh (u_char *buf)
-// {
-//     struct tcphdr *tcp_header = (struct tcphdr *)buf;
-//     if (tcp_header->dest == 22) return true;
-//     return false;
-// }
-
 void dump_ip (u_char *buf)
 {
     struct iphdr *ip_header = (struct iphdr *)buf;
@@ -90,9 +81,9 @@ void dump_ip (u_char *buf)
     printf("Protocol: %u\n", ip_header->protocol);
     puts("");
 
-    // 上位層のプロトコルがTCP(6)に場合
+    // 上位層のプロトコルがTCP(6)の場合
     if (ip_header->protocol == 6) {
-        u_char tcp_buf = buf;
+        u_char *tcp_buf = buf;
         tcp_buf += ip_header->ihl * 4;
         dump_tcp(tcp_buf);
     }
@@ -104,4 +95,28 @@ void dump_tcp (u_char *buf)
     puts("----- TCP Header -----");
     printf("Source port: %u\n", ntohs(tcp_header->source));
     printf("Destination port: %u\n", ntohs(tcp_header->dest));
+}
+
+bool is_ssh (u_char *buf)
+{
+    struct ether_header *eth_header = (struct ether_header *)buf;
+
+    // IPパケットかどうか
+    if (ntohs(eth_header->ether_type) == ETH_P_IP) {
+            u_char *ip_buf = buf;
+            ip_buf += sizeof(struct ether_header);
+            struct iphdr *ip_header = (struct iphdr *)ip_buf;
+
+            // TCPセグメントかどうか
+            if (ip_header->protocol == 6) {
+                u_char *tcp_buf = ip_buf;
+                tcp_buf += ip_header->ihl * 4;
+                struct tcphdr *tcp_header = (struct tcphdr *)tcp_buf;
+
+                // SSHかどうか
+                if (tcp_header->source == 22) return true;
+            }
+            return false;
+    }
+    return false;
 }
