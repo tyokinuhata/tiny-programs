@@ -89,12 +89,18 @@ void dump_ip (u_char *buf)
     printf("Time to Live: %u\n", ip_header->ttl);
     printf("Protocol: %u\n", ip_header->protocol);
     puts("");
+
+    // 上位層のプロトコルがTCP(6)に場合
+    if (ip_header->protocol == 6) {
+        char *tcp_buf = ((struct iphdr *)buf)->ihl * 4;
+        dump_tcp(tcp_buf);
+    }
 }
 
 void dump_tcp (u_char *buf)
 {
     struct tcphdr *tcp_header = (struct tcphdr *)buf;
-    printf("----- TCP header -----\n");
+    puts("----- TCP Header -----");
     printf("Source port: %u\n", ntohs(tcp_header->source));
     printf("Destination port: %u\n", ntohs(tcp_header->dest));
 }
