@@ -1,15 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <net/ethernet.h>
-#include <netpacket/packet.h>
+// #include <netpacket/packet.h>
+#include <netinet/ip.h>
+#include <netinet/tcp.h>
 
 #define BUF_SIZE 65535
 
 void dump_ethernet(u_char *);
+void dump_ip(u_char *);
+void dump_tcp(u_char *);
+bool is_ssh(u_char *);
 
 int main ()
 {
@@ -40,16 +46,45 @@ void dump_ethernet (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
 
-    printf("type: ");
+    if (ntohs(eth_header->ether_type) == ETH_P_IP) {
+        if (is_ssh(buf)) return;
+    }
+
+    printf("Ether Type: ");
     switch (ntohs(eth_header->ether_type)) {
         case ETH_P_IP:
-            printf("ip\n");
+            printf("IP\n");
+            dump_ip(buf);
+            break;
+        case ETH_P_IPv6:
+            printf("IPv6\n");
             break;
         case ETH_P_ARP:
-            printf("arp\n");
+            printf("ARP\n");
             break;
         default:
-            printf("unknown\n");
+            printf("UNKNOWN\n");
             break;
     }
+}
+
+bool is_ssh (u_char *buf)
+{
+    struct tcphdr *tcp_header = (struct tcphdr *)buf;
+    if (tcp_header->dest == 22) return true;
+    return false;
+}
+
+void dump_ip (u_char *buf)
+{
+    struct iphdr *ip_header = (struct iphdr *)buf;
+    printf("----- IP header -----\n");
+}
+
+void dump_tcp (u_char *buf)
+{
+    struct tcphdr *tcp_header = (struct tcphdr *)buf;
+    printf("----- TCP header -----\n");
+    printf("Source port: %u\n", ntohs(tcp_header->source));
+    printf("Destination port: %u\n", ntohs(tcp_header->dest));
 }
