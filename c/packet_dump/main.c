@@ -112,11 +112,12 @@ void dump_tcp (u_char *buf)
 // SSHかどうか(弾かないと無限ループするため)
 bool is_ssh (u_char *buf)
 {
-    struct ether_header *eth_header = (struct ether_header *)buf;
+    u_char cp_buf = *buf;
+    struct ether_header *eth_header = (struct ether_header *)&cp_buf;
 
     // IPパケットかどうか
     if (ntohs(eth_header->ether_type) == ETH_P_IP) {
-            u_char *ip_buf = buf;
+            u_char *ip_buf = &cp_buf;
             ip_buf += sizeof(struct ether_header);
             struct iphdr *ip_header = (struct iphdr *)ip_buf;
 
