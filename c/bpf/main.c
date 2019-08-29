@@ -31,6 +31,11 @@ int main (int argc, char **argv)
     // fd ... file descriptor
     int fd = -1;
     char path[16];
+    // /dev/bpfX 形式のデバイスファイルが複数用意されている
+    // 複数用意されているのは複数のプロセスで同時にBPFを利用できるようにするため
+    // BPFのデバイスファイルは一度オープンするとクローズするまで他のプロセスからはオープンできない
+    // そのため, BPFを使用する際は, デバイスファイルのうち使用されていないものをオープンする必要がある
+    // そのための探索処理
     for (int i = 0; i < BPF_DEVICE_NUM; i++) {
         // snprintf関数
         // int snprintf(char *restrict s, size_t n, const char *restrict format, ...)

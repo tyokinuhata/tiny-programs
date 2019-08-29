@@ -26,6 +26,8 @@ int main ()
     // SOCK_RAW ... リンク層のデータを扱えるようにする
     // SOCK_DGRAM ... ネットワーク層のデータを扱えるようにする
     // ETH_P_ALL ... 全てのプロトコルが受信される
+    // どうやら, SOCK_PACKETを指定する方式もあるらしい(ただし廃止されている)
+    // ちなみに, ETH_P_IPやETH_P_ARP, ETH_P_IPV6等も用意されている
     int sock = socket(PF_PACKET, SOCK_RAW, htons(ETH_P_ALL));
     if (sock < 0) err(EXIT_FAILURE, "socket");
 
