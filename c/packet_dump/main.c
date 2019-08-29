@@ -16,6 +16,7 @@ void dump_ethernet(u_char *);
 void dump_ip(u_char *);
 void dump_tcp(u_char *);
 bool is_ssh(u_char *);
+char *mac_ntoa(u_char *);
 
 int main ()
 {
@@ -42,32 +43,42 @@ int main ()
     }
 }
 
+// イーサネットフレームのダンプ
 void dump_ethernet (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
 
     if (is_ssh(buf)) return;
 
+    puts("----- Ethernet Header -----");
+    printf("Dest Mac: %s\n", mac_ntoa(eth_header->ether_dhost));
+    printf("Source Mac: %s\n", mac_ntoa(eth_header->ether_shost));
+
     printf("Ether Type: ");
     switch (ntohs(eth_header->ether_type)) {
         case ETH_P_IP:
             puts("IP");
+            puts("--------------------");
             u_char *ip_buf = buf;
             ip_buf += sizeof(struct ether_header);
             dump_ip(ip_buf);
             break;
         case ETH_P_IPV6:
             puts("IPv6");
+            puts("--------------------");
             break;
         case ETH_P_ARP:
             puts("ARP");
+            puts("--------------------");
             break;
         default:
             puts("UNKNOWN");
+            puts("--------------------");
             break;
     }
 }
 
+// IPデータグラムのダンプ
 void dump_ip (u_char *buf)
 {
     struct iphdr *ip_header = (struct iphdr *)buf;
@@ -79,7 +90,7 @@ void dump_ip (u_char *buf)
     printf("Identification: %u\n", ntohs(ip_header->id));
     printf("Time to Live: %u\n", ip_header->ttl);
     printf("Protocol: %u\n", ip_header->protocol);
-    puts("");
+    puts("--------------------");
 
     // 上位層のプロトコルがTCP(6)の場合
     if (ip_header->protocol == 6) {
@@ -89,14 +100,17 @@ void dump_ip (u_char *buf)
     }
 }
 
+// TCPセグメントのダンプ
 void dump_tcp (u_char *buf)
 {
     struct tcphdr *tcp_header = (struct tcphdr *)buf;
     puts("----- TCP Header -----");
-    printf("Source port: %u\n", ntohs(tcp_header->source));
-    printf("Destination port: %u\n", ntohs(tcp_header->dest));
+    printf("Source Port: %u\n", ntohs(tcp_header->source));
+    printf("Destination Port: %u\n", ntohs(tcp_header->dest));
+    puts("--------------------");
 }
 
+// SSHかどうか(弾かないと無限ループするため)
 bool is_ssh (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
@@ -119,4 +133,15 @@ bool is_ssh (u_char *buf)
             return false;
     }
     return false;
+}
+
+// MACアドレスを文字列に変換する
+char *mac_ntoa (u_char *network_mac)
+{
+    #define MAX_MAC_LEN 50
+    static char str_mac[MAX_MAC_LEN];
+
+    snprintf(str_mac, MAX_MAC_LEN, "%02x:%02x:%02x:%02x:%02x:%02x", network_mac[0], network_mac[1], network_mac[2], network_mac[3]network_mac[4], network_mac[5]);
+
+    return str_mac;
 }
