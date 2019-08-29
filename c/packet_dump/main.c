@@ -54,7 +54,7 @@ void dump_ethernet (u_char *buf)
     printf("Dest Mac: %s\n", mac_ntoa(eth_header->ether_dhost));
     printf("Source Mac: %s\n", mac_ntoa(eth_header->ether_shost));
 
-    printf("Ether Type: ");
+    printf("Type: ");
     switch (ntohs(eth_header->ether_type)) {
         case ETH_P_IP:
             puts("IP");
@@ -64,15 +64,15 @@ void dump_ethernet (u_char *buf)
             break;
         case ETH_P_IPV6:
             puts("IPv6");
-            puts("--------------------");
+            puts("--------------------\n");
             break;
         case ETH_P_ARP:
             puts("ARP");
-            puts("--------------------");
+            puts("--------------------\n");
             break;
         default:
             puts("UNKNOWN");
-            puts("--------------------");
+            puts("--------------------\n");
             break;
     }
 }
@@ -96,7 +96,7 @@ void dump_ip (u_char *buf)
         tcp_buf += ip_header->ihl * 4;
         dump_tcp(tcp_buf);
     }
-    else puts("--------------------");
+    else puts("--------------------\n");
 }
 
 // TCPセグメントのダンプ
@@ -106,7 +106,7 @@ void dump_tcp (u_char *buf)
     puts("----- TCP Header -----");
     printf("Source Port: %u\n", ntohs(tcp_header->source));
     printf("Destination Port: %u\n", ntohs(tcp_header->dest));
-    puts("--------------------");
+    puts("--------------------\n");
 }
 
 // SSHかどうか(弾かないと無限ループするため)
