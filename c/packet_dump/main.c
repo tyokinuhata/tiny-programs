@@ -46,34 +46,36 @@ void dump_ethernet (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
 
-    if (ntohs(eth_header->ether_type) == ETH_P_IP) {
-        if (is_ssh(buf)) return;
-    }
+    // if (ntohs(eth_header->ether_type) == ETH_P_IP) {
+    //     if (is_ssh(buf)) return;
+    // }
 
     printf("Ether Type: ");
     switch (ntohs(eth_header->ether_type)) {
         case ETH_P_IP:
-            printf("IP\n");
-            dump_ip(buf);
+            puts("IP");
+            u_char *ip_buf = buf;
+            ip_buf += sizeof(struct ether_header);
+            dump_ip(ip_buf);
             break;
         case ETH_P_IPV6:
-            printf("IPv6\n");
+            puts("IPv6");
             break;
         case ETH_P_ARP:
-            printf("ARP\n");
+            puts("ARP");
             break;
         default:
-            printf("UNKNOWN\n");
+            puts("UNKNOWN");
             break;
     }
 }
 
-bool is_ssh (u_char *buf)
-{
-    struct tcphdr *tcp_header = (struct tcphdr *)buf;
-    if (tcp_header->dest == 22) return true;
-    return false;
-}
+// bool is_ssh (u_char *buf)
+// {
+//     struct tcphdr *tcp_header = (struct tcphdr *)buf;
+//     if (tcp_header->dest == 22) return true;
+//     return false;
+// }
 
 void dump_ip (u_char *buf)
 {
