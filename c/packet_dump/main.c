@@ -77,8 +77,16 @@ bool is_ssh (u_char *buf)
 
 void dump_ip (u_char *buf)
 {
-    // struct iphdr *ip_header = (struct iphdr *)buf;
-    printf("----- IP header -----\n");
+    struct iphdr *ip_header = (struct iphdr *)buf;
+    puts("----- IP Header -----");
+    printf("Version: %u\n", ip_header->version);
+    printf("IHL: %u\n", ip_header->ihl);
+    printf("Type of Service: %u\n", ip_header->tos);
+    printf("Total Length: %u\n", ntohs(ip_header->tot_len));
+    printf("Identification: %u\n", ntohs(ip_header->id));
+    printf("Time to Live: %u\n", ip_header->ttl);
+    printf("Protocol: %u\n", ip_header->protocol);
+    puts("");
 }
 
 void dump_tcp (u_char *buf)
