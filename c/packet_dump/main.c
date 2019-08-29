@@ -92,7 +92,8 @@ void dump_ip (u_char *buf)
 
     // 上位層のプロトコルがTCP(6)に場合
     if (ip_header->protocol == 6) {
-        buf += buf->ihl * 4;
+        u_char tcp_buf = buf;
+        tcp_buf += ip_header->ihl * 4;
         dump_tcp(tcp_buf);
     }
 }
