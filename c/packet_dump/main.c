@@ -6,7 +6,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <net/ethernet.h>
-#include <netpacket/packet.h>
+// #include <netpacket/packet.h>
 #include <netinet/ip.h>
 #include <netinet/tcp.h>
 
@@ -141,7 +141,7 @@ char *mac_ntoa (u_char *network_mac)
     #define MAX_MAC_LEN 50
     static char str_mac[MAX_MAC_LEN];
 
-    snprintf(str_mac, MAX_MAC_LEN, "%02x:%02x:%02x:%02x:%02x:%02x", network_mac[0], network_mac[1], network_mac[2], network_mac[3]network_mac[4], network_mac[5]);
+    snprintf(str_mac, MAX_MAC_LEN, "%02x:%02x:%02x:%02x:%02x:%02x", network_mac[0], network_mac[1], network_mac[2], network_mac[3], network_mac[4], network_mac[5]);
 
     return str_mac;
 }
