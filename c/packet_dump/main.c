@@ -49,8 +49,6 @@ void dump_ethernet (u_char *buf)
 {
     struct ether_header *eth_header = (struct ether_header *)buf;
 
-    if (is_ssh(buf, sizeof(buf))) return;
-
     puts("----- Ethernet Header -----");
     printf("Dest Mac: %s\n", mac_ntoa(eth_header->ether_dhost));
     printf("Source Mac: %s\n", mac_ntoa(eth_header->ether_shost));
@@ -108,33 +106,6 @@ void dump_tcp (u_char *buf)
     printf("Source Port: %u\n", ntohs(tcp_header->source));
     printf("Destination Port: %u\n", ntohs(tcp_header->dest));
     puts("--------------------\n");
-}
-
-// SSHかどうか(弾かないと無限ループするため)
-bool is_ssh (const u_char *buf, ssize_t size)
-{
-    u_char cp_buf;
-    memcpy(cp_buf, buf, size);
-    struct ether_header *eth_header = (struct ether_header *)&cp_buf;
-
-    // IPパケットかどうか
-    if (ntohs(eth_header->ether_type) == ETH_P_IP) {
-            u_char *ip_buf = &cp_buf;
-            ip_buf += sizeof(struct ether_header);
-            struct iphdr *ip_header = (struct iphdr *)ip_buf;
-
-            // TCPセグメントかどうか
-            if (ip_header->protocol == 6) {
-                u_char *tcp_buf = ip_buf;
-                tcp_buf += ip_header->ihl * 4;
-                struct tcphdr *tcp_header = (struct tcphdr *)tcp_buf;
-
-                // SSHかどうか
-                if (ntohs(tcp_header->source) == 22 || ntohs(tcp_header->dest) == 22) return true;
-            }
-            return false;
-    }
-    return false;
 }
 
 // MACアドレスを文字列に変換する
