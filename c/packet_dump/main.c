@@ -16,7 +16,6 @@
 void dump_ethernet(u_char *);
 void dump_ip(u_char *);
 void dump_tcp(u_char *);
-bool is_ssh(const u_char *, ssize_t);
 char *mac_ntoa(u_char *);
 
 int main ()
