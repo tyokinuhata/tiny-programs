@@ -24,6 +24,7 @@
 |broadcast_sender|ブロードキャストの送信サンプル|
 |byte_order|バイトオーダーのサンプル|
 |calloc|calloc関数によるメモリ確保のサンプル|
+|cat|シンプルなcatコマンドのサンプル|
 |char_bit|__CHAR_BIT__マクロのサンプル|
 |character_is_function|文字関数のis系のサンプル|
 |character_to_function|文字関数のto系のサンプル|
