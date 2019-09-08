@@ -1,10 +1,12 @@
 <?php
 
+session_start();
+
 $user_id = $_POST['user_id'];
 $password = $_POST['password'];
 
-// Set-Cookieヘッダにセットして返す
-setcookie('user_id', $user_id, time() + 60 * 60 * 24 * 14);
+// セッションに保存
+$_SESSION['user_id'] = $user_id;
 
 ?>
 
@@ -15,8 +17,10 @@ setcookie('user_id', $user_id, time() + 60 * 60 * 24 * 14);
         <title>Cookie</title>
     </head>
     <body>
-        <p>User ID: <?= $user_id ?></p>
+        <p>User ID: <?= $_SESSION['user_id'] ?></p>
         <p>Login successfull!</p>
         <a href="./login.php">< Back</a>
+        <a href="./page.php">> Page</a>
+        <a href="./logout.php">> Logout</a>
     </body>
 </html>
