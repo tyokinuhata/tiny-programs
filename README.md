@@ -146,6 +146,12 @@
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
 |xhr|XMLHttpRequestによるHTTP通信のサンプル|
 
+### PHP
+
+|ディレクトリ名|説明|
+|:--|:--|
+|cookie|Cookieのサンプル|
+
 ### Python
 
 |ディレクトリ名|説明|
