@@ -142,6 +142,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |echo_server|Dockerの最もシンプルなサンプル|
+|echo_server_compose|Docker Composeの最もシンプルなサンプル|
 
 ### JS
 
