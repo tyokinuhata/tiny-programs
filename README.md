@@ -137,7 +137,7 @@
 |void_pointer|voidポインタのサンプル|
 |wide_character|ワイド文字のサンプル|
 
-### Doker
+### Docker
 
 |ディレクトリ名|説明|
 |:--|:--|
