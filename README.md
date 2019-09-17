@@ -145,6 +145,7 @@
 |echo_server_compose|Docker Composeの最もシンプルなサンプル|
 |echo_server_docker|Dockerの最もシンプルなサンプル|
 |jenkins_compose|Docker Composeによる複数コンテナのサンプル|
+|pod_kube|KubernetesのPodのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
 |todo_app_swarm|Docker SwarmによるTODOアプリのサンプル|
 
