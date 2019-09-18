@@ -148,6 +148,7 @@
 |jenkins_compose|Docker Composeによる複数コンテナのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
+|service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
 |todo_app_swarm|Docker SwarmによるTODOアプリのサンプル|
 
