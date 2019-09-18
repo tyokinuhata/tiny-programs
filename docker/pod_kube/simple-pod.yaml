@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: gihyodocker/nginx-proxy:latest
+      image: gihyodocker/nginx:latest
       env:
         - name: BACKEND_HOST
           value: localhost:8080

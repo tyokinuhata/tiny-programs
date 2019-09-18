@@ -142,10 +142,12 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |cronjob|Docker上でcronを動かすサンプル|
+|deployment_kube|KubernetesのDeploymentのサンプル|
 |echo_server_compose|Docker Composeの最もシンプルなサンプル|
 |echo_server_docker|Dockerの最もシンプルなサンプル|
 |jenkins_compose|Docker Composeによる複数コンテナのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
+|replica_set_kube|KubernetesのReplicaSetのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
 |todo_app_swarm|Docker SwarmによるTODOアプリのサンプル|
 
