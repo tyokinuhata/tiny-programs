@@ -146,6 +146,7 @@
 |echo_server_compose|Docker Composeの最もシンプルなサンプル|
 |echo_server_docker|Dockerの最もシンプルなサンプル|
 |jenkins_compose|Docker Composeによる複数コンテナのサンプル|
+|node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
