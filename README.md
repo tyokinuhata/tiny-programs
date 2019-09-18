@@ -145,6 +145,7 @@
 |deployment_kube|KubernetesのDeploymentのサンプル|
 |echo_server_compose|Docker Composeの最もシンプルなサンプル|
 |echo_server_docker|Dockerの最もシンプルなサンプル|
+|external_name_service_kube|KubernetesのExternalName Serviceのサンプル|
 |jenkins_compose|Docker Composeによる複数コンテナのサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
