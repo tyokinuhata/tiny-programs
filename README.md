@@ -153,6 +153,7 @@
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
+|todo_app_kube|KubernetesによるTODOアプリのサンプル|
 |todo_app_swarm|Docker SwarmによるTODOアプリのサンプル|
 
 ### JS
