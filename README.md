@@ -148,12 +148,13 @@
 |external_name_service_kube|KubernetesのExternalName Serviceのサンプル|
 |ingress_kube|KubernetesのIngressのサンプル|
 |jenkins_compose|Docker Composeによる複数コンテナのサンプル|
+|job_kube|KubernetesのJobのサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
-|todo_app_kube|KubernetesによるTODOアプリのサンプル|
+|todo_app_kube|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 |todo_app_swarm|Docker SwarmによるTODOアプリのサンプル|
 
 ### JS
