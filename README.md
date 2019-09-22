@@ -153,6 +153,7 @@
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
+|secret_kube|KubernetesのSecretのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
 |todo_app_kube|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
