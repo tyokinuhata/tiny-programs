@@ -141,6 +141,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|chart_helm|Helmで独自のChartを作るサンプル|
 |cluster_role_kube|KubernetesのClusterRoleのサンプル|
 |cron_job_docker|Docker上でcronを動かすサンプル|
 |cron_job_kube|KubernetesのCronJobのサンプル|
