@@ -141,6 +141,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|cluster_role_kube|KubernetesのClusterRoleのサンプル|
 |cron_job_docker|Docker上でcronを動かすサンプル|
 |cron_job_kube|KubernetesのCronJobのサンプル|
 |deployment_kube|KubernetesのDeploymentのサンプル|
