@@ -154,6 +154,7 @@
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
+|role_kube|KubernetesのRoleのサンプル|
 |secret_kube|KubernetesのSecretのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
