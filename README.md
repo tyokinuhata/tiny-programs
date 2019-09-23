@@ -141,6 +141,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|blue_green_deployment_kube|KubernetesのBlueGreen Deploymentのサンプル|
 |chart_helm|Helmで独自のChartを作るサンプル|
 |cluster_role_kube|KubernetesのClusterRoleのサンプル|
 |cron_job_docker|Docker上でcronを動かすサンプル|
