@@ -157,6 +157,7 @@
 |redmine_helm|HelmによるRedmineの構築サンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
 |role_kube|KubernetesのRoleのサンプル|
+|rolling_update_kube|KubernetesのRollingUpdateのサンプル|
 |secret_kube|KubernetesのSecretのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
