@@ -149,10 +149,11 @@
 |echo_server_docker|Dockerの最もシンプルなサンプル|
 |external_name_service_kube|KubernetesのExternalName Serviceのサンプル|
 |ingress_kube|KubernetesのIngressのサンプル|
-|jenkins_compose|Docker Composeによる複数コンテナのサンプル|
+|jenkins_compose|Docker ComposeによるJenkinsの構築サンプル|
 |job_kube|KubernetesのJobのサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
+|redmine_helm|HelmによるRedmineの構築サンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
 |role_kube|KubernetesのRoleのサンプル|
 |secret_kube|KubernetesのSecretのサンプル|
