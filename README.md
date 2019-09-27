@@ -156,6 +156,7 @@
 |job_kube|KubernetesのJobのサンプル|
 |log_compose|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |log_kube|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
+|mirror_registry_docker|Dockerにミラーレジストリを設定するサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |redmine_helm|HelmによるRedmineの構築サンプル|
