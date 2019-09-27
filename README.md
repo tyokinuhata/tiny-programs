@@ -155,6 +155,7 @@
 |jenkins_compose|Docker ComposeによるJenkinsの構築サンプル|
 |job_kube|KubernetesのJobのサンプル|
 |log_compose|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
+|log_kube|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |redmine_helm|HelmによるRedmineの構築サンプル|
