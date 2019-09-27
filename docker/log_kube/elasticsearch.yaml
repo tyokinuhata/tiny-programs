@@ -69,6 +69,7 @@ metadata:
 data:
   elasticsearch.yaml: |-
     http.host: 0.0.0.0
+    path.scripts: /tmp/scripts
   log4j2.properties: |-
     status = error
 
