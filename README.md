@@ -158,6 +158,7 @@
 |log_compose|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |log_kube|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |mirror_registry_docker|Dockerにミラーレジストリを設定するサンプル|
+|node_affinity_kube|KubernetesのNodeAffinityのサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
 |pod_anti_affinity_kube|KubernetesのPod AntiAffinityのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
