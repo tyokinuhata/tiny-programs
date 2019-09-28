@@ -159,6 +159,7 @@
 |log_kube|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |mirror_registry_docker|Dockerにミラーレジストリを設定するサンプル|
 |node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
+|pod_anti_affinity_kube|KubernetesのPod AntiAffinityのサンプル|
 |pod_kube|KubernetesのPodのサンプル|
 |redmine_helm|HelmによるRedmineの構築サンプル|
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
