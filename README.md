@@ -152,6 +152,7 @@
 |echo_server_docker|Dockerの最もシンプルなサンプル|
 |external_name_service_kube|KubernetesのExternalName Serviceのサンプル|
 |health_check_kube|Kubernetesのヘルスチェックのサンプル|
+|horizontal_pod_autoscaler_kube|KubernetesのHorizontal Pod Autoscalerのサンプル|
 |ingress_kube|KubernetesのIngressのサンプル|
 |jenkins_compose|Docker ComposeによるJenkinsの構築サンプル|
 |job_kube|KubernetesのJobのサンプル|
