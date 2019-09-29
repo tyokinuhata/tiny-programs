@@ -158,6 +158,7 @@
 |ingress_kube|KubernetesのIngressのサンプル|
 |jenkins_compose|Docker ComposeによるJenkinsの構築サンプル|
 |job_kube|KubernetesのJobのサンプル|
+|locust_swarm|Docker SwarmでLocust(負荷テスト)を動かすサンプル|
 |log_compose|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |log_kube|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |mirror_registry_docker|Dockerにミラーレジストリを設定するサンプル|
