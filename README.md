@@ -167,6 +167,7 @@
 |replica_set_kube|KubernetesのReplicaSetのサンプル|
 |role_kube|KubernetesのRoleのサンプル|
 |rolling_update_kube|KubernetesのRollingUpdateのサンプル|
+|scratch_docker|Dockerのscratchを使った軽量イメージのサンプル|
 |secret_kube|KubernetesのSecretのサンプル|
 |service_kube|KubernetesのServiceのサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
