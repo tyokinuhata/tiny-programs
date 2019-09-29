@@ -149,6 +149,7 @@
 |cron_job_docker|Docker上でcronを動かすサンプル|
 |cron_job_kube|KubernetesのCronJobのサンプル|
 |deployment_kube|KubernetesのDeploymentのサンプル|
+|distroless_docker|Dockerのdistrolessイメージのサンプル|
 |echo_server_compose|Docker Composeの最もシンプルなサンプル|
 |echo_server_docker|Dockerの最もシンプルなサンプル|
 |external_name_service_kube|KubernetesのExternalName Serviceのサンプル|
