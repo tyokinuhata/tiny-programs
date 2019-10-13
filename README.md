@@ -192,3 +192,9 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
+
+### TS
+
+|ディレクトリ名|説明|
+|:--|:--|
+|tsc_target_module|tsconfig.jsonのtargetとmoduleのパラメータによってTSCに出力されるJSがどう変わるかのサンプル|
