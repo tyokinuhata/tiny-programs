@@ -76,7 +76,6 @@
 |no_init|変数の初期化を行わない場合のサンプル|
 |offsetof|offsetofマクロのサンプル|
 |overflow|オーバーフロー(桁あふれ)のサンプル|
-|packet_dump|簡易的なパケットアナライザのサンプル|
 |packet_socket|パケットソケット(全てのインタフェース)のサンプル|
 |packet_socket2|パケットソケット(インタフェースの指定可)のサンプル|
 |packet_socket3|パケットソケット(インタフェースの指定必須)のサンプル|
@@ -187,13 +186,6 @@
 |dom|DOMを取得するサンプル|
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
 |xhr|XMLHttpRequestによるHTTP通信のサンプル|
-
-### PHP
-
-|ディレクトリ名|説明|
-|:--|:--|
-|cookie|Cookieのサンプル|
-|session|セッションのサンプル|
 
 ### Python
 
