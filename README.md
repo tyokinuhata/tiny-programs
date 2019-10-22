@@ -210,5 +210,6 @@
 |tsc_strict|TSCで型チェックの厳格さを弱くするサンプル|
 |tsc_target_module|tsconfig.jsonのtargetとmoduleのパラメータによってTSCに出力されるJSがどう変わるかのサンプル|
 |tuple|tuple型のサンプル|
+|undefined|undefined型のサンプル|
 |unknown|unknown型のサンプル|
 |void|void型のサンプル|
