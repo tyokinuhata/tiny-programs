@@ -210,3 +210,4 @@
 |tsc_target_module|tsconfig.jsonのtargetとmoduleのパラメータによってTSCに出力されるJSがどう変わるかのサンプル|
 |tuple|tuple型のサンプル|
 |unknown|unknown型のサンプル|
+|void|void型のサンプル|
