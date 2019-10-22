@@ -201,6 +201,7 @@
 |any|any型のサンプル|
 |array|array(配列型)のサンプル|
 |boolean|boolean型のサンプル|
+|null|null型のサンプル|
 |number|number型のサンプル|
 |string|string型のサンプル|
 |tsc_declaration|TSCで型宣言ファイル(.d.ts)を出力するサンプル|
