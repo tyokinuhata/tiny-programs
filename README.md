@@ -197,4 +197,6 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|tsc_output|TSCのビルド対象ファイルと出力先を指定するサンプル|
+|tsc_strict|型チェックの厳格さを弱くするサンプル|
 |tsc_target_module|tsconfig.jsonのtargetとmoduleのパラメータによってTSCに出力されるJSがどう変わるかのサンプル|
