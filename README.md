@@ -204,6 +204,7 @@
 |never|never型のサンプル|
 |null|null型のサンプル|
 |number|number型のサンプル|
+|object|object型のサンプル|
 |string|string型のサンプル|
 |tsc_declaration|TSCで型宣言ファイル(.d.ts)を出力するサンプル|
 |tsc_js|TSCでJSをビルド対象に含めるサンプル|
