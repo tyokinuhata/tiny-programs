@@ -198,6 +198,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |annotation|型注釈(引数・戻り値)のサンプル|
+|boolean|boolean型のサンプル|
 |tsc_declaration|TSCで型宣言ファイル(.d.ts)を出力するサンプル|
 |tsc_js|TSCでJSをビルド対象に含めるサンプル|
 |tsc_output|TSCのビルド対象ファイルと出力先を指定するサンプル|
