@@ -198,6 +198,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |annotation|型注釈(引数・戻り値)のサンプル|
+|any|any型のサンプル|
 |array|array(配列型)のサンプル|
 |boolean|boolean型のサンプル|
 |number|number型のサンプル|
