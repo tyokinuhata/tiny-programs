@@ -187,6 +187,12 @@
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
 |xhr|XMLHttpRequestによるHTTP通信のサンプル|
 
+### PHP
+
+|ディレクトリ名|説明|
+|:--|:--|
+|declare_strict_types_1|PHP 7における厳密な型宣言の有効化のサンプル|
+
 ### Python
 
 |ディレクトリ名|説明|
