@@ -186,6 +186,7 @@
 |babel_log|babel-logでASTを表示するサンプル|
 |babel_transform|@babel/coreのtransform関数で二項演算子を'*'に変換するサンプル|
 |babylon|Babylon7でASTを表示するサンプル|
+|babylon_json_stringify|JSON.stringify関数でASTを表示するサンプル|
 |botkit_slack|Node.js + BotkitによるSlack Botのサンプル|
 |dom|DOMを取得するサンプル|
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
