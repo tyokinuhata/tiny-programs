@@ -4,6 +4,7 @@ const src = '1 + 2';
 console.log(src);
 
 const plugin = ({ types: t }) => ({
+    // ビジターパターン
     visitor: {
         BinaryExpression: (nodePath) => {
             if (nodePath.node.operator !== '*') {
