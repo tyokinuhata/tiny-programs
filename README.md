@@ -189,6 +189,7 @@
 |babylon_json_stringify|JSON.stringify関数でASTを表示するサンプル|
 |botkit_slack|Node.js + BotkitによるSlack Botのサンプル|
 |dom|DOMを取得するサンプル|
+|traverser_scratch|トラバーサーを自作するサンプル|
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
 |xhr|XMLHttpRequestによるHTTP通信のサンプル|
 
