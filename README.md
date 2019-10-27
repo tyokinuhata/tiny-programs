@@ -186,6 +186,7 @@
 |babel_core|@babel/coreのサンプル|
 |babel_generator|@babel/generatorのサンプル|
 |babel_log|babel-logでASTを表示するサンプル|
+|babel_prettier|@babel/coreとprettierを組み合わせたサンプル|
 |babel_transform|@babel/coreのtransform関数で二項演算子を'*'に変換するサンプル|
 |babylon|Babylon7でASTを表示するサンプル|
 |babylon_json_stringify|JSON.stringify関数でASTを表示するサンプル|

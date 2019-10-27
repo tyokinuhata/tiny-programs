@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.6.4",
+    "prettier": "^1.18.2"
+  }
+}
