@@ -183,6 +183,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |babel_transform|@babel/coreのtransform関数で二項演算子を'*'に変換するサンプル|
+|babylon|Babylon7でASTを表示してみるサンプル|
 |botkit_slack|Node.js + BotkitによるSlack Botのサンプル|
 |dom|DOMを取得するサンプル|
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
