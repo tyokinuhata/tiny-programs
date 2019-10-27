@@ -183,6 +183,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |ast_pretty_print|ast-pretty-printでASTを表示するサンプル|
+|babel_core|@babel/coreのサンプル|
 |babel_log|babel-logでASTを表示するサンプル|
 |babel_transform|@babel/coreのtransform関数で二項演算子を'*'に変換するサンプル|
 |babylon|Babylon7でASTを表示するサンプル|
