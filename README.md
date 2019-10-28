@@ -189,6 +189,7 @@
 |babel_prettier|@babel/coreとprettierを組み合わせたサンプル|
 |babel_transform|@babel/coreのtransform関数で二項演算子を'*'に変換するサンプル|
 |babel_traverse|@babel/traverseのサンプル|
+|babel_types|@babel/typesのサンプル|
 |babylon|Babylon7でASTを表示するサンプル|
 |babylon_json_stringify|JSON.stringify関数でASTを表示するサンプル|
 |botkit_slack|Node.js + BotkitによるSlack Botのサンプル|
