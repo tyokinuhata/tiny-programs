@@ -1,7 +1,6 @@
 const { transform } = require('@babel/core');
 
 const src = '1 + 2';
-console.log(src);
 
 const plugin = ({ types: t }) => ({
     // ビジターパターン
@@ -16,4 +15,5 @@ const plugin = ({ types: t }) => ({
 });
 
 const { code } = transform(src, { plugins: [ plugin ] });
+console.log(src);
 console.log(code);
