@@ -219,6 +219,7 @@
 |function|関数を定義するサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
+|import|importのサンプル|
 |list|リストのサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
