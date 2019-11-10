@@ -225,6 +225,7 @@
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_dot|NumPyでベクトルの内積を求めるサンプル|
 |numpy_empty|NumPyで未初期化の配列を生成するサンプル|
+|numpy_matrix|NumPyで二次元配列を生成するサンプル|
 |numpy_ones|NumPyでで全ての要素が1の配列を生成するサンプル|
 |numpy_reshape|NumPyでの配列の形状変換のサンプル|
 |numpy_version|NumPyのバージョンを出力するサンプル|
