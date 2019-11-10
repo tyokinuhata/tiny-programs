@@ -224,6 +224,7 @@
 |list|リストのサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_dot|NumPyでベクトルの内積を求めるサンプル|
+|numpy_dtype|NumPyで配列のデータ型を取得するサンプル|
 |numpy_empty|NumPyで未初期化の配列を生成するサンプル|
 |numpy_matrix|NumPyで二次元配列を生成するサンプル|
 |numpy_ndim|NumPyで次元数を取得するサンプル|
