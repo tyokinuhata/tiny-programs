@@ -226,6 +226,7 @@
 |numpy_dot|NumPyでベクトルの内積を求めるサンプル|
 |numpy_reshape|NumPyでの配列の形状変換のサンプル|
 |numpy_version|NumPyのバージョンを出力するサンプル|
+|numpy_zeros|NumPyで全ての要素が0の配列を生成するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
