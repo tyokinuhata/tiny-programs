@@ -219,6 +219,7 @@
 |hello_world|hello, world!を出力するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |list|リストのサンプル|
+|range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
 
