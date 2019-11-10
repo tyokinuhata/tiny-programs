@@ -222,6 +222,7 @@
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
 |list|リストのサンプル|
+|numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_version|NumPyのバージョンを出力するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
