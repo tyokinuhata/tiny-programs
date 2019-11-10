@@ -222,6 +222,7 @@
 |range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
+|while|while文によるループのサンプル|
 
 ### TS
 
