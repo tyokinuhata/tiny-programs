@@ -226,6 +226,7 @@
 |numpy_dot|NumPyでベクトルの内積を求めるサンプル|
 |numpy_empty|NumPyで未初期化の配列を生成するサンプル|
 |numpy_matrix|NumPyで二次元配列を生成するサンプル|
+|numpy_ndim|NumPyで次元数を取得するサンプル|
 |numpy_ones|NumPyでで全ての要素が1の配列を生成するサンプル|
 |numpy_reshape|NumPyでの配列の形状変換のサンプル|
 |numpy_shape|NumPyで各次元のサイズを取得するサンプル|
