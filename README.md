@@ -209,6 +209,8 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|calc|加減乗除, 剰余のサンプル|
+|cast|型変換(キャスト)のサンプル|
 |comment|コメントのサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |hello_world|hello, world!を出力するサンプル|
