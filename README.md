@@ -209,6 +209,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|comment|コメントのサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |hello_world|hello, world!を出力するサンプル|
 
