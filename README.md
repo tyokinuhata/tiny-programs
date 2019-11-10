@@ -210,6 +210,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
+|hello_world|hello, world!を出力するサンプル|
 
 ### TS
 
