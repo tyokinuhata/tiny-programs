@@ -222,6 +222,7 @@
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
 |list|リストのサンプル|
+|numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_dot|NumPyでベクトルの内積を求めるサンプル|
 |numpy_dtype|NumPyで配列のデータ型を取得するサンプル|
