@@ -140,43 +140,44 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
-|alpine_linux_docker|DockerのAlpine Linuxのサンプル|
-|blue_green_deployment_kube|KubernetesのBlueGreen Deploymentのサンプル|
-|chart_helm|Helmで独自のChartを作るサンプル|
-|cluster_role_kube|KubernetesのClusterRoleのサンプル|
-|container_structure_test_docker|Dockerイメージのテストをするサンプル|
-|cron_job_docker|Docker上でcronを動かすサンプル|
-|cron_job_kube|KubernetesのCronJobのサンプル|
-|deployment_kube|KubernetesのDeploymentのサンプル|
-|distroless_docker|Dockerのdistrolessイメージのサンプル|
-|echo_server_compose|Docker Composeの最もシンプルなサンプル|
-|echo_server_docker|Dockerの最もシンプルなサンプル|
-|external_name_service_kube|KubernetesのExternalName Serviceのサンプル|
-|health_check_kube|Kubernetesのヘルスチェックのサンプル|
-|horizontal_pod_autoscaler_kube|KubernetesのHorizontal Pod Autoscalerのサンプル|
-|ingress_kube|KubernetesのIngressのサンプル|
-|jenkins_compose|Docker ComposeによるJenkinsの構築サンプル|
-|job_kube|KubernetesのJobのサンプル|
-|locust_swarm|Docker SwarmでLocust(負荷テスト)を動かすサンプル|
-|log_compose|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
-|log_kube|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
-|mirror_registry_docker|Dockerにミラーレジストリを設定するサンプル|
-|multi_stage_builds_docker|Dockerのmulti-stage buildsのサンプル|
-|node_affinity_kube|KubernetesのNodeAffinityのサンプル|
-|node_port_service_kube|KubernetesのNodePort Serviceのサンプル|
-|pod_anti_affinity_kube|KubernetesのPod AntiAffinityのサンプル|
-|pod_kube|KubernetesのPodのサンプル|
-|redmine_helm|HelmによるRedmineの構築サンプル|
-|replica_set_kube|KubernetesのReplicaSetのサンプル|
-|role_kube|KubernetesのRoleのサンプル|
-|rolling_update_kube|KubernetesのRollingUpdateのサンプル|
-|scratch_docker|Dockerのscratchを使った軽量イメージのサンプル|
-|scratch2_docker|DockerのscratchでHTTPS接続するサンプル|
-|secret_kube|KubernetesのSecretのサンプル|
-|service_kube|KubernetesのServiceのサンプル|
+
+|compose_echo_server|Docker Composeの最もシンプルなサンプル|
+|compose_jenkins|Docker ComposeによるJenkinsの構築サンプル|
+|compose_log|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
+|docker_alpine_linux|DockerのAlpine Linuxのサンプル|
+|docker_container_structure_test|Dockerイメージのテストをするサンプル|
+|docker_cron_job|Docker上でcronを動かすサンプル|
+|docker_distroless|Dockerのdistrolessイメージのサンプル|
+|docker_echo_server|Dockerの最もシンプルなサンプル|
+|docker_mirror_registry|Dockerにミラーレジストリを設定するサンプル|
+|docker_multi_stage_builds|Dockerのmulti-stage buildsのサンプル|
+|docker_scratch|Dockerのscratchを使った軽量イメージのサンプル|
+|docker_scratch2|DockerのscratchでHTTPS接続するサンプル|
+|helm_chart|Helmで独自のChartを作るサンプル|
+|helm_redmine|HelmによるRedmineの構築サンプル|
+|kube_blue_green_deployment|KubernetesのBlueGreen Deploymentのサンプル|
+|kube_cluster_role|KubernetesのClusterRoleのサンプル|
+|kube_cron_job|KubernetesのCronJobのサンプル|
+|kube_deployment|KubernetesのDeploymentのサンプル|
+|kube_external_name_service|KubernetesのExternalName Serviceのサンプル|
+|kube_health_check|Kubernetesのヘルスチェックのサンプル|
+|kube_horizontal_pod_autoscaler|KubernetesのHorizontal Pod Autoscalerのサンプル|
+|kube_ingress|KubernetesのIngressのサンプル|
+|kube_job|KubernetesのJobのサンプル|
+|kube_log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
+|kube_node_affinity|KubernetesのNodeAffinityのサンプル|
+|kube_node_port_service|KubernetesのNodePort Serviceのサンプル|
+|kube_pod|KubernetesのPodのサンプル|
+|kube_pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
+|kube_replica_set|KubernetesのReplicaSetのサンプル|
+|kube_role|KubernetesのRoleのサンプル|
+|kube_rolling_update|KubernetesのRollingUpdateのサンプル|
+|kube_secret|KubernetesのSecretのサンプル|
+|kube_service|KubernetesのServiceのサンプル|
+|kube_todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 |swarm|Docker Swarmの最もシンプルなサンプル|
-|todo_app_kube|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
-|todo_app_swarm|Docker SwarmによるTODOアプリのサンプル|
+|swarm_locust|Docker SwarmでLocust(負荷テスト)を動かすサンプル|
+|swarm_todo_app|Docker SwarmによるTODOアプリのサンプル|
 
 ### JS
 
