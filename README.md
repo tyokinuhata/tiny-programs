@@ -214,6 +214,7 @@
 |comment|コメントのサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |hello_world|hello, world!を出力するサンプル|
+|if|if〜elif〜elseによる条件分岐のサンプル|
 |list|リストのサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
