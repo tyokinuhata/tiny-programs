@@ -228,6 +228,7 @@
 |numpy_matrix|NumPyで二次元配列を生成するサンプル|
 |numpy_ones|NumPyでで全ての要素が1の配列を生成するサンプル|
 |numpy_reshape|NumPyでの配列の形状変換のサンプル|
+|numpy_shape|NumPyで各次元のサイズを取得するサンプル|
 |numpy_version|NumPyのバージョンを出力するサンプル|
 |numpy_zeros|NumPyで全ての要素が0の配列を生成するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
