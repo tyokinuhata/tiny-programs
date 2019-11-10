@@ -213,6 +213,7 @@
 |calc|加減乗除, 剰余のサンプル|
 |cast|型変換(キャスト)のサンプル|
 |comment|コメントのサンプル|
+|enumerate|enumerateによるインデックスの取得のサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |for|for文によるループのサンプル|
 |hello_world|hello, world!を出力するサンプル|
