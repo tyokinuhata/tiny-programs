@@ -216,6 +216,7 @@
 |enumerate|enumerateによるインデックスの取得のサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |for|for文によるループのサンプル|
+|function|関数を定義するサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |list|リストのサンプル|
