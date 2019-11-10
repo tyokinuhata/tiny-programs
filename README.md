@@ -214,6 +214,7 @@
 |cast|型変換(キャスト)のサンプル|
 |comment|コメントのサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
+|for|for文によるループのサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |list|リストのサンプル|
