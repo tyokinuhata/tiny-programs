@@ -212,6 +212,7 @@
 |comment|コメントのサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |hello_world|hello, world!を出力するサンプル|
+|variable|変数のサンプル|
 
 ### TS
 
