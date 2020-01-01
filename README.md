@@ -247,6 +247,7 @@
 |opencv_bin|OpenCVで画像の２値化を行うサンプル|
 |opencv_blur|OpenCVで画像をぼかすサンプル|
 |opencv_color|OpenCVで画像の色調を変えてみるサンプル|
+|opencv_filter|OpenCVで画像の膨張と縮小のフィルターをかけるサンプル|
 |opencv_resize|OpenCVで画像のリサイズを行うサンプル|
 |opencv_rotate|OpenCVで画像を回転させるサンプル|
 |opencv_save|OpenCVで画像を保存するサンプル|
