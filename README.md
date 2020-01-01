@@ -245,6 +245,7 @@
 |numpy_version|NumPyのバージョンを出力するサンプル|
 |numpy_zeros|NumPyで全ての要素が0の配列を生成するサンプル|
 |opencv_color|OpenCVで画像の色調を変えてみるサンプル|
+|opencv_resize|OpenCVで画像のリサイズを行うサンプル|
 |opencv_save|OpenCVで画像を保存するサンプル|
 |opencv_trim|OpenCVで画像のトリムを行うサンプル|
 |opencv_version|OpenCVのバージョンを確認するサンプル|
