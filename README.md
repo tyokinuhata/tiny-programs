@@ -220,6 +220,8 @@
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
 |list|リストのサンプル|
+|matplotlib_line_graph|Matplotlibで折れ線グラフを描画するサンプル|
+|matplotlib_trigonometric_function​s|Matplotlibで三角関数を描画するサンプル|
 |numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_astype|NumPyでdtypeを変換するサンプル|
