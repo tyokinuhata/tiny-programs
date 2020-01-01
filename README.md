@@ -220,6 +220,7 @@
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
 |list|リストのサンプル|
+|matplotlib_3d_graph|Matplotlibで３次元グラフを描画するサンプル|
 |matplotlib_graph_name|Matplotlibでタイトルとラベルを表示するサンプル|
 |matplotlib_grid|Matplotlibでグリッドをオンにするサンプル|
 |matplotlib_line_graph|Matplotlibで折れ線グラフを描画するサンプル|
