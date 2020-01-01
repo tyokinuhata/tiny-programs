@@ -224,6 +224,7 @@
 |matplotlib_grid|Matplotlibでグリッドをオンにするサンプル|
 |matplotlib_line_graph|Matplotlibで折れ線グラフを描画するサンプル|
 |matplotlib_scale|Matplotlibで目盛りを設定するサンプル|
+|matplotlib_size|Matplotlibでグラフのサイズを変更するサンプル|
 |matplotlib_trigonometric_function​s|Matplotlibで三角関数を描画するサンプル|
 |numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
