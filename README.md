@@ -221,6 +221,7 @@
 |import|importのサンプル|
 |list|リストのサンプル|
 |matplotlib_graph_name|Matplotlibでタイトルとラベルを表示するサンプル|
+|matplotlib_grid|Matplotlibでグリッドをオンにするサンプル|
 |matplotlib_line_graph|Matplotlibで折れ線グラフを描画するサンプル|
 |matplotlib_trigonometric_function​s|Matplotlibで三角関数を描画するサンプル|
 |numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
