@@ -139,7 +139,6 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
-
 |compose_echo_server|Docker Composeの最もシンプルなサンプル|
 |compose_jenkins|Docker ComposeによるJenkinsの構築サンプル|
 |compose_log|Docker ComposeでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
