@@ -21,3 +21,8 @@ plt.show()
 img_gs = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)
 plt.imshow(img_gs)
 plt.show()
+
+# LAB(L(輝度), A(赤-緑成分), B(黃-青成分))
+img_lab = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2LAB)
+plt.imshow(img_lab)
+plt.show()
