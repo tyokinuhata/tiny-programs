@@ -244,6 +244,7 @@
 |numpy_size|NumPyで配列全体の要素数を取得するサンプル|
 |numpy_version|NumPyのバージョンを出力するサンプル|
 |numpy_zeros|NumPyで全ての要素が0の配列を生成するサンプル|
+|opencv_color|OpenCVで画像の色調を変えてみるサンプル|
 |opencv_version|OpenCVのバージョンを確認するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
