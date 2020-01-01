@@ -246,6 +246,7 @@
 |numpy_zeros|NumPyで全ての要素が0の配列を生成するサンプル|
 |opencv_color|OpenCVで画像の色調を変えてみるサンプル|
 |opencv_save|OpenCVで画像を保存するサンプル|
+|opencv_trim|OpenCVで画像のトリムを行うサンプル|
 |opencv_version|OpenCVのバージョンを確認するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |type|型のサンプル|
