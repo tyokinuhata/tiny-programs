@@ -84,7 +84,6 @@
 |pointer_pointer|ダブルポインタ, トリプルポインタのサンプル|
 |popen|popen関数とpclose関数によるコマンドの実行のサンプル|
 |pragma_operator|プラグマ演算子のサンプル|
-|process_scheduler|プロセススケジューラのサンプル|
 |prototype_declaration|プロトタイプ宣言のサンプル|
 |random|rand関数・srand関数のサンプル|
 |realloc|realloc関数のサンプル|
