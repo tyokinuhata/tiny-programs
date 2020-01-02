@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-
 from sklearn import datasets
 
 # データセットの読み込み
