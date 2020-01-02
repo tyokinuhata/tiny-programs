@@ -256,7 +256,7 @@
 |opencv_version|OpenCVのバージョンを確認するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |sklearn_iris|scikit-learnによるアヤメの分類のサンプル|
-|sklearn_pandas|scikit-learnのデータをPandasで表示するサンプル|
+|sklearn_iris_pandas|scikit-learnのデータをPandasで表示するサンプル|
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
