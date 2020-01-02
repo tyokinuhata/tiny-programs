@@ -10,3 +10,13 @@ labels = iris.target
 
 data = data[labels != 2]
 labels = labels[labels != 2]
+
+# SVC(サポートベクタマシン)の準備
+model = SVC(C = 1.0, kernel = 'linear')
+# 学習
+model.fit(data, labels)
+
+# 回帰係数
+print(model.coef_)
+# 切片(誤差)
+print(model.intercept_)
