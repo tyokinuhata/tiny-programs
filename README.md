@@ -256,6 +256,7 @@
 |opencv_version|OpenCVのバージョンを確認するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |sklearn_iris|scikit-learnによるアヤメの分類のサンプル|
+|sklearn_iris_pca|scikitのアヤメ分類のデータをMatploitで３次元の散布図として描画するサンプル|
 |sklearn_iris_scatter|scikitのアヤメ分類のデータをMatploitで散布図として描画するサンプル|
 |sklearn_iris_table|scikit-learnのアヤメ分類のデータをPandasで表として表示するサンプル|
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
