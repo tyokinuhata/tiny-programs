@@ -257,6 +257,7 @@
 |range|rangeによる数値シーケンスの生成のサンプル|
 |sklearn_iris_cross_validation|scikit-learnのアヤメ分類の交差検証|
 |sklearn_iris_hyperplane|scikit-learnのアヤメ分類のデータから超平面を求めるサンプル|
+|sklearn_iris_mlxtend|scikitのアヤメ分類のデータをmlxtendで散布図として描画するサンプル|
 |sklearn_iris_pca|scikitのアヤメ分類のデータをMatploitで３次元の散布図として描画するサンプル|
 |sklearn_iris_scatter|scikitのアヤメ分類のデータをMatploitで散布図として描画するサンプル|
 |sklearn_iris_table|scikit-learnのアヤメ分類のデータをPandasで表として表示するサンプル|
