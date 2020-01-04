@@ -255,7 +255,8 @@
 |opencv_trim|OpenCVで画像のトリムを行うサンプル|
 |opencv_version|OpenCVのバージョンを確認するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
-|sklearn_iris_cross_validation|scikit-learnのアヤメ分類の交差検証|
+|sklearn_iris|scikit-learnのアヤメ分類のサンプル|
+|sklearn_iris_cross_validation|scikit-learnのアヤメ分類の交差検証のサンプル|
 |sklearn_iris_hyperplane|scikit-learnのアヤメ分類のデータから超平面を求めるサンプル|
 |sklearn_iris_mlxtend|scikitのアヤメ分類のデータをmlxtendで散布図として描画するサンプル|
 |sklearn_iris_pca|scikitのアヤメ分類のデータをMatploitで３次元の散布図として描画するサンプル|
