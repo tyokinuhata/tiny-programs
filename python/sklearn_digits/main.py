@@ -21,10 +21,7 @@ images_and_labels = list(zip(digits.images, digits.target))
 # print(images_and_labels)
 
 _len = len(digits.images)
-# print(_len)
-# print(digits.images.shape)
 data = digits.images.reshape((_len, -1))
-# print(data.shape)
 
 # gamma ... １つの学習データがデータを分ける超平面に対して与える影響の範囲
 #           gammaが小さいほど遠く, 大きいほど近くまで影響する
