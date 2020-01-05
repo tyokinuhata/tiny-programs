@@ -8,3 +8,5 @@ import chainer
 train_data, test_data = chainer.datasets.get_mnist(withlabel = True, ndim = 1)
 print(train_data)
 print(test_data)
+print(len(train_data))
+print(len(test_data))
