@@ -257,6 +257,7 @@
 |range|rangeによる数値シーケンスの生成のサンプル|
 |sklearn_digits|scikit-learnの手書き数字認識のサンプル|
 |sklearn_digits_img|scikit-learnの手書き数字認識の画像データをMatplotlibで描画するサンプル|
+|sklearn_digits_scatter|scikit-learnの手書き数字認識のデータをMatplotlibで散布図として描画するサンプル|
 |sklearn_iris|scikit-learnのアヤメ分類のサンプル|
 |sklearn_iris_cross_validation|scikit-learnのアヤメ分類の交差検証のサンプル|
 |sklearn_iris_hyperplane|scikit-learnのアヤメ分類のデータから超平面を求めるサンプル|
