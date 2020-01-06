@@ -112,4 +112,4 @@ while train_iterator.epoch < MAX_EPOCH:
 
     optimizer.update()
     if train_iterator.is_new_epoch:
-        testEpoch(train_iterator)
+        testEpoch(train_iterator, loss)
