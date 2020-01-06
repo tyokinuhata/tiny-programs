@@ -68,31 +68,38 @@ test_iterator = iterators.SerialIterator(test_data, BATCH_SIZE, repeat = False, 
 optimizer = optimizers.SGD(lr = 0.01)
 optimizer.setup(model)
 
-
-def testEpoch(train_iterator, loss):
-    print('学習回数: {:02d} --> 学習誤差: {:.02f}' .format(train_iterator.epoch, float(loss.data)), end = '')
+# 検証処理
+def testEpoch(train_iterator, train_loss):
+    print('学習回数: {:02d} --> 学習誤差: {:.02f}' .format(train_iterator.epoch, float(train_loss.data)), end = '')
 
     test_losses = []
     test_accuracies = []
 
     while True:
         test_dataset = test_iterator.next()
+        # タプルに変換
         test_data, test_labels = concat_examples(test_dataset)
 
+        # 検証データをモデルに渡す
         prediction_test = model(test_data)
 
-        loss_test = F.softmax_cross_entropy(prediction_test, test_labels)
-        test_losses.append(loss_test.data)
+        # 検証データに対して得られた予測値とラベルを比較してロスの計算を行う
+        test_loss = F.softmax_cross_entropy(prediction_test, test_labels)
+        test_losses.append(test_loss.data)
 
+        # 精度の計算
         accuracy = F.accuracy(prediction_test, test_labels)
 
         test_accuracies.append(accuracy.data)
 
         if test_iterator.is_new_epoch:
-            test_iterator.epoch = 0
-            test_iterator.current_position = 0
-            test_iterator.is_new_epoch = False
-            test_iterator._pushed_position = None
+            test_iterator.reset()
+        # 書籍通りにやると落ちる(バージョンの問題？)
+        # AttributeError: can't set attribute
+        #     test_iterator.epoch = 0
+        #     test_iterator.current_position = 0
+        #     test_iterator.is_new_epoch = False
+        #     test_iterator._pushed_position = None
             break
 
         print('検証誤差: {:.04f} 検証精度: {:.02f}' .format(np.mean(test_losses), np.mean(test_accuracies)))
@@ -105,11 +112,14 @@ while train_iterator.epoch < MAX_EPOCH:
 
     prediction_train = model(train_data)
 
-    loss = F.softmax_cross_entropy(prediction_train, train_labels)
+    train_loss = F.softmax_cross_entropy(prediction_train, train_labels)
 
+    # 勾配の計算
     model.cleargrads()
-    loss.backward()
-
+    # 誤差を逆伝播
+    train_loss.backward()
+    # 誤差を反映してパラメータを更新
     optimizer.update()
+
     if train_iterator.is_new_epoch:
-        testEpoch(train_iterator, loss)
+        testEpoch(train_iterator, train_loss)
