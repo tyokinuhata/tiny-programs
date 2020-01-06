@@ -68,7 +68,6 @@ test_iterator = iterators.SerialIterator(test_data, BATCH_SIZE, repeat = False, 
 optimizer = optimizers.SGD(lr = 0.01)
 optimizer.setup(model)
 
-MAX_EPOCH = 20
 
 def testEpoch(train_iterator, loss):
     print('学習回数: {:02d} --> 学習誤差: {:.02f}' .format(train_iterator.epoch, float(loss.data)), end = '')
@@ -97,3 +96,20 @@ def testEpoch(train_iterator, loss):
             break
 
         print('検証誤差: {:.04f} 検証精度: {:.02f}' .format(np.mean(test_losses), np.mean(test_accuracies)))
+
+MAX_EPOCH = 20
+while train_iterator.epoch < MAX_EPOCH:
+    train_dataset = train_iterator.next()
+
+    train_data, train_labels = concat_examples(train_dataset)
+
+    prediction_train = model(train_data)
+
+    loss = F.softmax_cross_entropy(prediction_train, train_labels)
+
+    model.cleargrads()
+    loss.backward()
+
+    optimizer.update()
+    if train_iterator.is_new_epoch:
+        testEpoch(train_iterator)
