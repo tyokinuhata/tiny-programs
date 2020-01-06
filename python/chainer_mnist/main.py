@@ -1,9 +1,12 @@
 import numpy as np
+import matplotlib.pyplot as plt
 import chainer
 import chainer.links as L
 import chainer.functions as F
 
 from chainer import iterators
+from chainer import optimizers
+from chainer.dataset import concat_examples
 
 # class <クラス名> (<継承するクラス名>):
 class MLP (chainer.Chain):
@@ -58,3 +61,39 @@ train_data, test_data = chainer.datasets.get_mnist(withlabel = True, ndim = 1)
 BATCH_SIZE = 100
 train_iterator = iterators.SerialIterator(train_data, BATCH_SIZE)
 test_iterator = iterators.SerialIterator(test_data, BATCH_SIZE, repeat = False, shuffle = False)
+
+# 最適化
+# SGD(勾配降下法)
+# lr ... learn rate(学習率)
+optimizer = optimizers.SGD(lr = 0.01)
+optimizer.setup(model)
+
+MAX_EPOCH = 20
+
+def testEpoch(train_iterator, loss):
+    print('学習回数: {:02d} --> 学習誤差: {:.02f}' .format(train_iterator.epoch, float(loss.data)), end = '')
+
+    test_losses = []
+    test_accuracies = []
+
+    while True:
+        test_dataset = test_iterator.next()
+        test_data, test_labels = concat_examples(test_dataset)
+
+        prediction_test = model(test_data)
+
+        loss_test = F.softmax_cross_entropy(prediction_test, test_labels)
+        test_losses.append(loss_test.data)
+
+        accuracy = F.accuracy(prediction_test, test_labels)
+
+        test_accuracies.append(accuracy.data)
+
+        if test_iterator.is_new_epoch:
+            test_iterator.epoch = 0
+            test_iterator.current_position = 0
+            test_iterator.is_new_epoch = False
+            test_iterator._pushed_position = None
+            break
+
+        print('検証誤差: {:.04f} 検証精度: {:.02f}' .format(np.mean(test_losses), np.mean(test_accuracies)))
