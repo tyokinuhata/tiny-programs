@@ -83,15 +83,13 @@ def testEpoch(train_iterator, train_loss):
 
         test_data, test_labels = concat_examples(test_dataset)
 
-        # 検証データをモデルに渡す
-        prediction_test = model(test_data)
+        test_predition = model(test_data)
 
-        # 検証データに対して得られた予測値とラベルを比較してロスの計算を行う
-        test_loss = F.softmax_cross_entropy(prediction_test, test_labels)
+        test_loss = F.softmax_cross_entropy(test_predition, test_labels)
         test_losses.append(test_loss.data)
 
         # 精度の計算
-        accuracy = F.accuracy(prediction_test, test_labels)
+        accuracy = F.accuracy(test_predition, test_labels)
 
         test_accuracies.append(accuracy.data)
 
