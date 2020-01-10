@@ -9,6 +9,7 @@ from chainer import optimizers
 from chainer.dataset import concat_examples
 
 # class <クラス名> (<継承するクラス名>):
+# MLP ... Multi-Layer Perceptron; 多層パーセプトロン
 class MLP (chainer.Chain):
 
     # __init__はPythonの特殊関数
@@ -33,6 +34,8 @@ class MLP (chainer.Chain):
     # インスタンスをメソッドっぽく書いたときに呼び出される
     # 例: model = MLP()
     #     model(input_data)
+    #
+    # relu ... ReLU関数
     def __call__ (self, input_data):
         res1 = F.relu(self.layer1(input_data))
         res2 = F.relu(self.layer2(res1))
@@ -77,7 +80,7 @@ def testEpoch(train_iterator, train_loss):
 
     while True:
         test_dataset = test_iterator.next()
-        # タプルに変換
+
         test_data, test_labels = concat_examples(test_dataset)
 
         # 検証データをモデルに渡す
@@ -104,21 +107,30 @@ def testEpoch(train_iterator, train_loss):
 
         print('検証誤差: {:.04f} 検証精度: {:.02f}' .format(np.mean(test_losses), np.mean(test_accuracies)))
 
+# ミニバッチ ... 勾配降下法で損失関数の最小値を探索する場合, データ１つ１つを用いてパラメータを更新するのは効率が悪い.
+#              そのため, データセットからランダムに取り出して複数個セットでまとめて入力する.
+# エポック ... データセット中のデータを全て使い切るまでにかかる時間.
+#             通常は複数のエポックを通して学習させる.
 MAX_EPOCH = 20
 while train_iterator.epoch < MAX_EPOCH:
     train_dataset = train_iterator.next()
 
+    # タプルに変換
     train_data, train_labels = concat_examples(train_dataset)
 
-    prediction_train = model(train_data)
+    # 学習
+    train_prediction = model(train_data)
 
-    train_loss = F.softmax_cross_entropy(prediction_train, train_labels)
+    # ソフトマックス関数 ... 出力層で多用される関数.
+    #                     特に多クラス分類において使用される.
+    #                     0~1の実数値に変換して出力する.
+    train_loss = F.softmax_cross_entropy(train_prediction, train_labels)
 
     # 勾配の計算
     model.cleargrads()
-    # 誤差を逆伝播
+    # 誤差逆伝播
     train_loss.backward()
-    # 誤差を反映してパラメータを更新
+    # 最適化(誤差を反映してパラメータを更新)
     optimizer.update()
 
     if train_iterator.is_new_epoch:
