@@ -124,11 +124,16 @@ while train_iterator.epoch < MAX_EPOCH:
     # ソフトマックス関数 ... 出力層で多用される関数.
     #                     特に多クラス分類において使用される.
     #                     0~1の実数値に変換して出力する.
+    #
+    # 交差エントロピー誤差 ... 損失関数の一種.
+    #                       重みを自動で更新する.
     train_loss = F.softmax_cross_entropy(train_prediction, train_labels)
 
     # 勾配の計算
+    # 損失関数をできるだけ小さくすることを実現するには毎回パラメータを調整する際に, 損失関数が小さくなっていく方向を知ることが重要
     model.cleargrads()
     # 誤差逆伝播
+    # 学習結果とラベルの比較結果を前にフィードバックし, 各層の損失関数が調整する.
     train_loss.backward()
     # 最適化(誤差を反映してパラメータを更新)
     optimizer.update()
