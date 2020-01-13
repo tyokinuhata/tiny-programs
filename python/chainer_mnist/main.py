@@ -7,6 +7,7 @@ import chainer.functions as F
 from chainer import iterators
 from chainer import optimizers
 from chainer.dataset import concat_examples
+from chainer import serializers
 
 # class <クラス名> (<継承するクラス名>):
 # MLP ... Multi-Layer Perceptron; 多層パーセプトロン
@@ -138,3 +139,10 @@ while train_iterator.epoch < MAX_EPOCH:
 
     if train_iterator.is_new_epoch:
         testEpoch(train_iterator, train_loss)
+
+# print(model.layer1.b.shape)
+# print(model.layer1.b.data)
+# print(model.layer1.W.array)
+
+# 学習済モデルの保存
+serializers.save_npz('chainer-mnist.model', model)
