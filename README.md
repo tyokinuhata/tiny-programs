@@ -211,8 +211,8 @@
 |bool|True/Falseとand/or/notによる演算のサンプル|
 |calc|加減乗除, 剰余のサンプル|
 |cast|型変換(キャスト)のサンプル|
-|chainer_mnist|ChainerとMNISTを用いた手書き数字認識のサンプル|
 |chainer_mnist_img|ChainerとMNISTを用いた手書き数字認識のデータをMatplotlibで表示するサンプル|
+|chainer_mnist_learn|ChainerとMNISTを用いた手書き数字認識のサンプル|
 |chainer_version|ChainerのバージョンとChainerの実行環境の情報を表示|
 |comment|コメントのサンプル|
 |enumerate|enumerateによるインデックスの取得のサンプル|
