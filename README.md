@@ -249,6 +249,7 @@
 |numpy_size|NumPyで配列全体の要素数を取得するサンプル|
 |numpy_version|NumPyのバージョンを出力するサンプル|
 |numpy_zeros|NumPyで全ての要素が0の配列を生成するサンプル|
+|oop|オブジェクト指向プログラミング(OOP)の基本をまとめたサンプル|
 |opencv_bin|OpenCVで画像の２値化を行うサンプル|
 |opencv_blur|OpenCVで画像をぼかすサンプル|
 |opencv_color|OpenCVで画像の色調を変えてみるサンプル|
