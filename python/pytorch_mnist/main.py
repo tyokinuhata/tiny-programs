@@ -58,3 +58,27 @@ loss_res = nn.CrossEntropyLoss()
 # 最適化手法
 # SGD ... Stochastic Gradient Descent. 確率勾配降下法というコスト関数の最小値を見つける手法
 optimizer = optimizer.SGD(model.parameters(), lr = 0.01)
+
+MAX_EPOCH = 4
+for epoch in range(MAX_EPOCH):
+    total_loss = 0.0
+    for i, data in enumerate(train_data_loader):
+        train_data, train_labels = data
+        # 入力をtorch.autograd.Variableに変換
+        train_data, train_labels = Variable(train_data), Variable(train_labels)
+        # 計算された勾配情報の削除
+        optimizer.zero_grad()
+        # モデルに学習データを与えて予測を計算
+        outputs = model(train_data)
+        # lossとwによる微分を計算
+        loss = loss_res(outputs, train_labels)
+        loss.backward()
+        # 勾配を更新
+        optimizer.step()
+        # 誤差を累計
+        total_loss += loss.data[0]
+        # 2000ミニバッチずつ進捗を表示
+        if i % 2000 = 1999:
+            print('学習進捗: [%d, %d] 学習誤差(loss): %.3f' % (epoch + 1, i + 1, total_loss / 2000))
+            total_loss = 0.0
+print('学習終了')
