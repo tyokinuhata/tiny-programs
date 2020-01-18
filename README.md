@@ -224,6 +224,7 @@
 |hello_world|hello, world!を出力するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
+|keras_version|Kerasのバージョンを確認するサンプル|
 |list|リストのサンプル|
 |matplotlib_3d_graph|Matplotlibで３次元グラフを描画するサンプル|
 |matplotlib_graph_name|Matplotlibでタイトルとラベルを表示するサンプル|
