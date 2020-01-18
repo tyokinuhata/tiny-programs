@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import torchvision.transforms as transforms
+import torch
 import torch.nn as nn
 import torch.optim as optimizer
 
@@ -76,9 +77,19 @@ for epoch in range(MAX_EPOCH):
         # 勾配を更新
         optimizer.step()
         # 誤差を累計
-        total_loss += loss.data[0]
+        total_loss += loss.data
         # 2000ミニバッチずつ進捗を表示
-        if i % 2000 = 1999:
+        if i % 2000 == 1999:
             print('学習進捗: [%d, %d] 学習誤差(loss): %.3f' % (epoch + 1, i + 1, total_loss / 2000))
             total_loss = 0.0
 print('学習終了')
+
+test_iterator = iter(test_data_loader)
+test_data, test_labels = test_iterator.next()
+res = model(Variable(test_data))
+_, predicted_label = torch.max(res.data, 1)
+
+location = 1
+plt.imshow(test_data[location].numpy().reshape(28, 28), cmap = 'inferno', interpolation = 'bicubic')
+plt.show()
+print(predicted_label[location])
