@@ -277,6 +277,7 @@
 |sklearn_iris_scatter|scikitのアヤメ分類のデータをMatploitで散布図として描画するサンプル|
 |sklearn_iris_table|scikit-learnのアヤメ分類のデータをPandasで表として表示するサンプル|
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
+|tensorflow_version|TensorFlowのバージョンを確認するサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
 |while|while文によるループのサンプル|
