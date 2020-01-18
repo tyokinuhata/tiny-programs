@@ -262,6 +262,7 @@
 |opencv_save|OpenCVで画像を保存するサンプル|
 |opencv_trim|OpenCVで画像のトリムを行うサンプル|
 |opencv_version|OpenCVのバージョンを確認するサンプル|
+|pillow|Pillowで画像を表示するサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
 |sklearn_digits|scikit-learnの手書き数字認識のサンプル|
 |sklearn_digits_img|scikit-learnの手書き数字認識の画像データをMatplotlibで描画するサンプル|
