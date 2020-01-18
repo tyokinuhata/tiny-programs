@@ -27,10 +27,10 @@ def show_image(img):
     plt.imshow(np.transpose(np_img, (1, 2, 0)))
     plt.show()
 
-train_data_iterator = iter(train_data_loader)
-images, labels = train_data_iterator.next()
-show_image(torchvision.utils.make_grid(images))
-print(' '.join('%5s' % class_names[labels[j]] for j in range(4)))
+# train_data_iterator = iter(train_data_loader)
+# images, labels = train_data_iterator.next()
+# show_image(torchvision.utils.make_grid(images))
+# print(' '.join('%5s' % class_names[labels[j]] for j in range(4)))
 
 # 畳み込みニューラルネットワーク
 class CNN(nn.Module):
@@ -53,8 +53,11 @@ class CNN(nn.Module):
         return input_data
 
 model = CNN()
-
+# コスト関数
+# クロスエントロピー
 criterion = nn.CrossEntropyLoss()
+# 最適化
+# SGD ... Stochastic Gradient Descent. 確率勾配降下法というコスト関数の最小値を見つける手法
 optimizer = optimizer.SGD(model.parameters(), lr = 0.001, momentum = 0.9)
 
 MAX_EPOCH = 3
@@ -62,13 +65,28 @@ for epoch in range(MAX_EPOCH):
     total_loss = 0.0
     for i, data in enumerate(train_data_loader, 0):
         train_data, train_labels = data
+        # 計算された勾配情報の削除
         optimizer.zero_grad()
+        # モデルに学習データを与えて予測を計算
         outputs = model(train_data)
+        # lossとwによる微分を計算
         loss = criterion(outputs, train_labels)
         loss.backward()
+        # 勾配を更新
         optimizer.step()
+        # 誤差を累計
         total_loss += loss.item()
+        # 2000ミニバッチずつ進捗を表示
         if i % 2000 == 1999:
             print('学習進捗: [%d, %5d] loss: %.3f' % (epoch + 1, i + 1, total_loss / 2000))
             total_loss = 0.0
 print('学習完了')
+
+test_iterator = iter(test_data_loader)
+images, labels = test_iterator.next()
+show_image(torchvision.utils.make_grid(images))
+print('正解教師ラベル: ', ' '.join('%5s' % class_names[labels[j]] for j in range(4)))
+
+outputs = model(images)
+_, predicted = torch.max(outputs, 1)
+print('予測: ', ' '.join('%5s' % class_names[predicted[j]] for j in range(4)))
