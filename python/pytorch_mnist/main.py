@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import torchvision.transforms as transforms
 import torch.nn as nn
+import torch.optim as optimizer
 
 from torch.utils.data import DataLoader
 from torchvision.datasets import MNIST
@@ -49,3 +50,11 @@ train_data_loader = DataLoader(train_data_with_labels, batch_size = BATCH_SIZE, 
 # 検証データ
 test_data_with_labels = MNIST(data_directory, train = False, download = True, transform = transforms.ToTensor())
 test_data_loader = DataLoader(test_data_with_labels, batch_size = BATCH_SIZE, shuffle = True)
+
+model = MLP()
+# コスト関数(ソフトマックス)
+# クロスエントロピー
+loss_res = nn.CrossEntropyLoss()
+# 最適化手法
+# SGD ... Stochastic Gradient Descent. 確率勾配降下法というコスト関数の最小値を見つける手法
+optimizer = optimizer.SGD(model.parameters(), lr = 0.01)
