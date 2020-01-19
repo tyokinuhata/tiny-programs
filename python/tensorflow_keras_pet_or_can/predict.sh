@@ -1,0 +1,1 @@
+python label_image.py --graph=./tmp/output_graph.py --labels=./tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=./learn_data/pet/XXXXX.jpg

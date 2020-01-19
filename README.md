@@ -280,6 +280,7 @@
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
 |tensorflow_keras_fashion_mnist|TensorFlowとKerasとFashionMNISTを用いた手書き数字認識のサンプル|
 |tensorflow_keras_mnist|TensorFlowとKerasとMNISTを用いた手書き数字認識のサンプル|
+|tensorflow_keras_pet_or_can|TensorFlowとKerasを用いた転移学習とペットボトル/空き缶の分類のサンプル|
 |tensorflow_version|TensorFlowのバージョンを確認するサンプル|
 |type|型のサンプル|
 |variable|変数のサンプル|
