@@ -27,7 +27,7 @@ fashion_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal'
 
 BATCH_SIZE = 128
 NUM_CLASSES = 10
-EPOCHS = 1
+EPOCHS = 20
 IMG_ROWS, IMG_COLS = 28, 28
 
 train_data = train_data.astype('float32')
