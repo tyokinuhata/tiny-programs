@@ -1,3 +1,5 @@
+import numpy as np
+import matplotlib.pyplot as plt
 import keras
 
 from keras.datasets import mnist
@@ -8,7 +10,7 @@ from keras.layers import Conv2D, MaxPooling2D
 
 BATCH_SIZE = 128
 NUM_CLASSES = 10
-EPOCHS = 10
+EPOCHS = 1
 IMG_ROWS, IMG_COLS = 28, 28
 
 hand_written_number_names = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -74,3 +76,81 @@ model.summary()
 
 # モデルのコンパイル
 model.compile(optimizer = keras.optimizers.Adadelta(), loss = keras.losses.categorical_crossentropy, metrics = ['accuracy'])
+
+# グラフの描画
+def plot_loss_accuracy_graph(fit_record):
+    # 誤差の履歴をプロット
+    plt.plot(fit_record.history['loss'], '-D', color = 'blue', label = 'train_loss', linewidth = 2)
+    plt.plot(fit_record.history['val_loss'], '-D', color = 'blue', label = 'train_loss', linewidth = 2)
+    plt.title('LOSS')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend(loc = 'upper right')
+    plt.show()
+    # 精度の履歴をプロット
+    plt.plot(fit_record.history['acc'], '-o', color = 'green', label = 'train_accuracy', linewidth = 2)
+    plt.plot(fit_record.history['val_acc'], '-o', color = 'black', label = 'val_accuracy', linewidth = 2)
+    plt.title('ACCURACY')
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy')
+    plt.legend(loc = 'lower right')
+    plt.show()
+
+# 学習
+fit_record = model.fit(train_data, train_labels, batch_size = BATCH_SIZE, epochs = EPOCHS, verbose = 1, validation_data = (test_data, test_labels))
+plot_loss_accuracy_graph(fit_record)
+
+# 検証
+res_score = model.evaluate(test_data, test_labels, verbose = 0)
+# 検証誤差, 検証正解率
+print(res_score[0], res_score[1])
+
+# 予測
+predictions = model.predict(test_data)
+
+# 画像の描画
+def plot_image(location, predictions, labels, dataset):
+    predictions, labels, img = predictions[location], labels[location], dataset[location]
+
+    plt.grid(False)
+    plt.xticks([])
+    plt.yticks([])
+    plt.imshow(img)
+
+    # argmax ... 配列で一番大きい要素のインデックスを返す
+    predicted_label = np.argmax(predictions)
+    if predicted_label == labels:
+        color = 'green'
+    else:
+        color = 'red'
+    # max ... 配列から最大値を取り出す
+    plt.xlabel('{} {:2.0f}% ({})'.format(hand_written_number_names[predicted_label], 100 * np.max(predictions), hand_written_number_names[labels]), color = color)
+
+# ヒストグラムの描画
+def plot_labels_graph(location, predictions, labels):
+    predictions, labels = predictions[location], labels[location]
+
+    plt.grid(False)
+    plt.xticks([])
+    plt.yticks([])
+
+    this_plot = plt.bar(range(10), predictions, color = '#666666')
+    plt.ylim([0, 1])
+    predicted_label = np.argmax(predictions)
+    this_plot[predicted_label].set_color('red')
+    this_plot[labels].set_color('green')
+
+# One-hotベクトルのラベルを整数に変換する
+def convert_one_hot_vector_2_integers(one_hot_vector):
+    return [np.where(r == 1)[0][0] for r in one_hot_vector]
+
+test_data = test_data.reshape(test_data.shape[0], IMG_ROWS, IMG_COLS)
+location = 77
+plt.figure(figsize = (6, 3))
+
+plt.subplot(1, 2, 1)
+plot_image(location, predictions, convert_one_hot_vector_2_integers(test_labels), test_data)
+
+plt.subplot(1, 2, 2)
+plot_labels_graph(location, predictions, convert_one_hot_vector_2_integers(test_labels))
+_ = plt.xticks(range(10), hand_written_number_names, rotation = 45)
