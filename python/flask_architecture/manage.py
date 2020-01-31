@@ -1,6 +1,6 @@
 from flask_script import Manager
-from hoge import app
-from hoge.scripts.db import InitDB
+from blog import app
+from blog.scripts.db import InitDB
 
 if __name__ == '__main__':
     manager = Manager(app)

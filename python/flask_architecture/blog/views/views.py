@@ -1,7 +1,7 @@
 # ビュー
 
 from flask import render_template
-from hoge import app
+from blog import app
 
 @app.route('/')
 def root():

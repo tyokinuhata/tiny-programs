@@ -1,5 +1,5 @@
 from flask_script import Command
-from hoge import db
+from entries import db
 
 class InitDB(Command):
     "Create database"
