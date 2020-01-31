@@ -219,6 +219,7 @@
 |enumerate|enumerateによるインデックスの取得のサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |flask|FlaskによるWebサーバのサンプル|
+|flask_architecture|Flaskのベストプラクティスを探るサンプル|
 |for|for文によるループのサンプル|
 |function|関数を定義するサンプル|
 |hello_world|hello, world!を出力するサンプル|
