@@ -8,4 +8,4 @@ app.config.from_object('blog.config')
 
 db = SQLAlchemy(app)
 
-from blog.views import views
+from blog.views import entries
