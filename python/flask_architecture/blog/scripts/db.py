@@ -1,5 +1,5 @@
 from flask_script import Command
-from entries import db
+from blog import db
 
 class InitDB(Command):
     "Create database"
