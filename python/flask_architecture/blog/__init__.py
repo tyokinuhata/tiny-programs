@@ -8,4 +8,7 @@ app.config.from_object('blog.config')
 
 db = SQLAlchemy(app)
 
-from blog.views import entries
+from blog.views.entries import entry
+from blog.views import views
+
+app.register_blueprint(entry)
