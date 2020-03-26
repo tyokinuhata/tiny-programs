@@ -222,6 +222,7 @@
 |flask_architecture|Flaskのベストプラクティスを探るサンプル|
 |for|for文によるループのサンプル|
 |function|関数を定義するサンプル|
+|gethostbyname|socket.gethostbyname()でホスト名からIPアドレスを取得するサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
