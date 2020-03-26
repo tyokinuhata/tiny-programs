@@ -216,6 +216,7 @@
 |chainer_mnist_learn|ChainerとMNISTを用いた手書き数字認識(学習)のサンプル|
 |chainer_version|ChainerのバージョンとChainerの実行環境の情報を表示|
 |comment|コメントのサンプル|
+|echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
 |enumerate|enumerateによるインデックスの取得のサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |flask|FlaskによるWebサーバのサンプル|
