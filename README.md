@@ -217,6 +217,7 @@
 |chainer_version|ChainerのバージョンとChainerの実行環境の情報を表示|
 |comment|コメントのサンプル|
 |echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
+|echo_server_ipv6_tcp|IPv6とTCPを用いたエコーサーバのサンプル|
 |enumerate|enumerateによるインデックスの取得のサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |flask|FlaskによるWebサーバのサンプル|
