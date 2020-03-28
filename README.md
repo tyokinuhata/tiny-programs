@@ -217,6 +217,7 @@
 |chainer_version|ChainerのバージョンとChainerの実行環境の情報を表示|
 |comment|コメントのサンプル|
 |echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
+|echo_server_ipv4_tcp_multi_thread|IPv4とTCPを用いたエコーサーバ(マルチスレッド版)のサンプル|
 |echo_server_ipv4_udp|IPv4とUDPを用いたエコーサーバのサンプル|
 |echo_server_ipv6_tcp|IPv6とTCPを用いたエコーサーバのサンプル|
 |enumerate|enumerateによるインデックスの取得のサンプル|
