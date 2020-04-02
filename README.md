@@ -216,7 +216,6 @@
 |chainer_mnist_learn|ChainerとMNISTを用いた手書き数字認識(学習)のサンプル|
 |chainer_version|ChainerのバージョンとChainerの実行環境の情報を表示|
 |comment|コメントのサンプル|
-|data_logger|クライアントから送信されたメッセージをログファイルに出力するサンプル|
 |echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
 |echo_server_ipv4_tcp_multi_thread|IPv4とTCPを用いたエコーサーバ(マルチスレッド版)のサンプル|
 |echo_server_ipv4_udp|IPv4とUDPを用いたエコーサーバのサンプル|
@@ -285,11 +284,13 @@
 |sklearn_iris_scatter|scikitのアヤメ分類のデータをMatploitで散布図として描画するサンプル|
 |sklearn_iris_table|scikit-learnのアヤメ分類のデータをPandasで表として表示するサンプル|
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
+|tcp_data_logger|クライアントから送信されたメッセージをログファイルに出力するサンプル|
 |tensorflow_keras_fashion_mnist|TensorFlowとKerasとFashionMNISTを用いた手書き数字認識のサンプル|
 |tensorflow_keras_mnist|TensorFlowとKerasとMNISTを用いた手書き数字認識のサンプル|
 |tensorflow_keras_pet_or_can|TensorFlowとKerasを用いた転移学習とペットボトル/空き缶の分類のサンプル|
 |tensorflow_version|TensorFlowのバージョンを確認するサンプル|
 |type|型のサンプル|
+|udp_chat|UDPを用いたCUIのチャットのサンプル|
 |variable|変数のサンプル|
 |while|while文によるループのサンプル|
 
