@@ -293,6 +293,7 @@
 |tensorflow_version|TensorFlowのバージョンを確認するサンプル|
 |type|型のサンプル|
 |udp_chat|UDPを用いたCUIのチャットのサンプル|
+|urllib|urllibモジュールでHTMLを取得するサンプル|
 |variable|変数のサンプル|
 |webbrowser_open|webbrowser.open()で指定したURLをブラウザ上で開くサンプル|
 |while|while文によるループのサンプル|
