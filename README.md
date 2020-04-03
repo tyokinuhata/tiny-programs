@@ -241,6 +241,7 @@
 |matplotlib_scatter_graph|Matplotlibで散布図を描画するサンプル|
 |matplotlib_size|Matplotlibでグラフのサイズを変更するサンプル|
 |matplotlib_trigonometric_function​s|Matplotlibで三角関数を描画するサンプル|
+|minimal_httpd|HTTP(のように振る舞う)最小実装のサンプル|
 |numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_astype|NumPyでdtypeを変換するサンプル|
