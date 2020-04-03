@@ -294,6 +294,7 @@
 |type|型のサンプル|
 |udp_chat|UDPを用いたCUIのチャットのサンプル|
 |variable|変数のサンプル|
+|webbrowser_open|webbrowser.open()で指定したURLをブラウザ上で開くサンプル|
 |while|while文によるループのサンプル|
 
 ### TS
