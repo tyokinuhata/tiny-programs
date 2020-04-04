@@ -228,6 +228,7 @@
 |function|関数を定義するサンプル|
 |gethostbyname|socket.gethostbyname()でホスト名からIPアドレスを取得するサンプル|
 |hello_world|hello, world!を出力するサンプル|
+|html_parser|HtmlParserモジュールでHTMLからaタグを抽出するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
 |keras_version|Kerasのバージョンを確認するサンプル|
