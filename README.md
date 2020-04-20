@@ -194,6 +194,7 @@
 |botkit_slack|Node.js + BotkitによるSlack Botのサンプル|
 |dom|DOMを取得するサンプル|
 |included_time|ある時刻が指定した範囲に含まれているかを判定するサンプル|
+|milkcocoa-chat-app|Milkcocoaを用いたチャットアプリのサンプル|
 |traverser_scratch|トラバーサーを自作するサンプル|
 |websocket|Node.jsのwsとJavaScriptのWebSocket APIによるWebSocket通信のサンプル|
 |xhr|XMLHttpRequestによるHTTP通信のサンプル|
