@@ -135,6 +135,12 @@
 |void_pointer|voidポインタのサンプル|
 |wide_character|ワイド文字のサンプル|
 
+### C++
+
+|ディレクトリ名|説明|
+|:--|:--|
+|rpn|逆ポーランド記法(Reverse Polish Notation, RPN)のサンプル|
+
 ### Docker
 
 |ディレクトリ名|説明|
