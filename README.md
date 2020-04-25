@@ -141,6 +141,12 @@
 |:--|:--|
 |rpn|逆ポーランド記法(Reverse Polish Notation, RPN)のサンプル|
 
+### Go
+
+|ディレクトリ名|説明|
+|:--|:--|
+|hello_world|hello, world!を出力するサンプル|
+
 ### Docker
 
 |ディレクトリ名|説明|
