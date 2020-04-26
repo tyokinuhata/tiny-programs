@@ -205,6 +205,7 @@
 |babylon_json_stringify|JSON.stringify関数でASTを表示するサンプル|
 |botkit_slack|Node.js + BotkitによるSlack Botのサンプル|
 |dom|DOMを取得するサンプル|
+|fetch_github_repos|GitHub APIを利用して認証ユーザーのリポジトリ一覧を表示するサンプル|
 |included_time|ある時刻が指定した範囲に含まれているかを判定するサンプル|
 |milkcocoa-chat-app|Milkcocoaを用いたチャットアプリのサンプル|
 |oppai|おっぱいでUncaught RangeError: Maximum call stack size exceededを引き起こすサンプル|
