@@ -145,6 +145,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|four_arithmetic_operators|四則演算のサンプル|
 |hello_world|hello, world!を出力するサンプル|
 
 ### Docker
