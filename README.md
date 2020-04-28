@@ -150,6 +150,7 @@
 |four_arithmetic_operators|四則演算のサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |print|Print, PrintLn, Printfのサンプル|
+|rand|疑似乱数を生成するサンプル|
 |shortcut|複数の変数を同時に定義するサンプル|
 
 ### Docker
