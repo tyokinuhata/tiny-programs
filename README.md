@@ -154,7 +154,7 @@
 |hello_world|hello, world!を出力するサンプル|
 |if|if分岐(if〜else if〜else)のサンプル|
 |logical_operators|論理演算子のサンプル|
-|omitted_declaration|省略宣言のサンプル|
+|non_declaration|省略宣言のサンプル|
 |print|Print, PrintLn, Printfのサンプル|
 |rand|疑似乱数を生成するサンプル|
 |scope|変数のスコープのサンプル|

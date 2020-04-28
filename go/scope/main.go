@@ -5,6 +5,12 @@ import (
 	"math/rand"
 )
 
+// パッケージ内で有効なスコープを持つ
+var foo = "foo"
+// 省略宣言は使用できない
+// syntax error: non-declaration statement outside function body
+// foo := "foo"
+
 func main()  {
 	// 関数スコープ
 	var count = 10

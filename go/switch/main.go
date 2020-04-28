@@ -14,6 +14,8 @@ func main() {
 		fmt.Println("Forbidden")
 	case 404:
 		fmt.Println("Not Found")
+	default:
+		fmt.Println("other status")
 	}
 
 	// fallthroughを使うと次のcaseも実行される
