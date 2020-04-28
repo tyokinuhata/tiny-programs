@@ -147,6 +147,7 @@
 |:--|:--|
 |four_arithmetic_operators|四則演算のサンプル|
 |hello_world|hello, world!を出力するサンプル|
+|print|Print, PrintLn, Printfのサンプル|
 
 ### Docker
 
