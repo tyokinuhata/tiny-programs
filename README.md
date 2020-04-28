@@ -145,6 +145,7 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
+|const_and_var|定数と変数のサンプル|
 |four_arithmetic_operators|四則演算のサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |print|Print, PrintLn, Printfのサンプル|
