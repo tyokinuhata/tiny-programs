@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-// パッケージ内で有効なスコープを持つ
+// パッケージスコープ
 var foo = "foo"
 // 省略宣言は使用できない
 // syntax error: non-declaration statement outside function body
@@ -26,4 +26,6 @@ func main()  {
 	// forループ内でのみアクセスできる
 	// undefined: n
 	// fmt.Println(n)
+
+	// またswitch文のcaseはそれぞれでスコープを持つ
 }
