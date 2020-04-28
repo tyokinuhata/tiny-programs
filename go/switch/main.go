@@ -17,6 +17,7 @@ func main() {
 	}
 
 	// fallthroughを使うと次のcaseも実行される
+	// CやJava, JS等の言語では次のcaseはデフォルトで実行される
 	var foo = "foo"
 	switch foo {
 	case "foo":
