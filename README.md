@@ -147,6 +147,7 @@
 |:--|:--|
 |assign_operators|代入演算子(複合代入演算子, インクリメント・デクリメント演算子)のサンプル|
 |bool|ブール値のサンプル|
+|comparison_operators|比較演算子のサンプル|
 |const_and_var|定数と変数のサンプル|
 |four_arithmetic_operators|四則演算のサンプル|
 |hello_world|hello, world!を出力するサンプル|
