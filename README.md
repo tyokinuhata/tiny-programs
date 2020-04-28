@@ -156,6 +156,7 @@
 |logical_operators|論理演算子のサンプル|
 |print|Print, PrintLn, Printfのサンプル|
 |rand|疑似乱数を生成するサンプル|
+|scope|変数のスコープのサンプル|
 |shortcut|複数の変数を同時に定義するサンプル|
 |switch|switch文のサンプル|
 
