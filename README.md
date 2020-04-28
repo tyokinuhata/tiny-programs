@@ -161,6 +161,7 @@
 |scope|変数のスコープのサンプル|
 |shortcut|複数の変数を同時に定義するサンプル|
 |switch|switch文のサンプル|
+|zero|ゼロ値のサンプル|
 
 ### Docker
 
