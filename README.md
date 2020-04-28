@@ -151,6 +151,7 @@
 |const_and_var|定数と変数のサンプル|
 |four_arithmetic_operators|四則演算のサンプル|
 |hello_world|hello, world!を出力するサンプル|
+|if|if分岐(if〜else if〜else)のサンプル|
 |print|Print, PrintLn, Printfのサンプル|
 |rand|疑似乱数を生成するサンプル|
 |shortcut|複数の変数を同時に定義するサンプル|
