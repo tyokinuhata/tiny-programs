@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  # Podの名前はRFC1123のホスト名の制約に則っている
+  # そのため、英小文字・数字・_・.のみしか使用できず
+  # 始まりと終わりの文字は英小文字である必要がある
+  name: sample_pod_name_fail
+spec:
+  containers:
+    - name: nginx-container-112
+      image: nginx:1.12
