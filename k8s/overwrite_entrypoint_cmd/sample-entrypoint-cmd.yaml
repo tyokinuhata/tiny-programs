@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-entrypoint-cmd
+spec:
+  containers:
+    - name: nginx-container-112
+      image: nginx:1.12
+      # DockerのENTRYPOINTを上書き
+      command: ["/bin/sleep"]
+      # DockerのCMDを上書き
+      args: ["3600"]

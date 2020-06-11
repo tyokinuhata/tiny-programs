@@ -199,6 +199,7 @@
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_affinity|KubernetesのNodeAffinityのサンプル|
 |node_port_service|KubernetesのNodePort Serviceのサンプル|
+|overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
 |pod|KubernetesのPodのサンプル|
 |pod_double|１つのマニフェストで２つのコンテナを起動するサンプル|
 |pod_double_fail|１つのマニフェストで２つのコンテナを起動させた際にエラーになるサンプル|
