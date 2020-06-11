@@ -195,6 +195,7 @@
 |helm_chart|Helmで独自のChartを作るサンプル|
 |helm_redmine|HelmによるRedmineの構築サンプル|
 |horizontal_pod_autoscaler|KubernetesのHorizontal Pod Autoscalerのサンプル|
+|host_aliases|hostAliasesでhostsを書き換えるサンプル|
 |ingress|KubernetesのIngressのサンプル|
 |job|KubernetesのJobのサンプル|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
