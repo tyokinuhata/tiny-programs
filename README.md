@@ -208,7 +208,8 @@
 |pod_name_fail|RFC1123のホスト名の制約に違反しているPod名のサンプル|
 |pod2|KubernetesのPodのサンプル その２|
 |pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
-|replica_set|KubernetesのReplicaSetのサンプル|
+|replicaset|KubernetesのReplicaSetのサンプル|
+|replicaset2|KubernetesのReplicaSetのサンプル その２|
 |role|KubernetesのRoleのサンプル|
 |rolling_update|KubernetesのRollingUpdateのサンプル|
 |secret|KubernetesのSecretのサンプル|
