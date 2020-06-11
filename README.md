@@ -209,6 +209,7 @@
 |pod2|KubernetesのPodのサンプル その２|
 |pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
 |replicaset|KubernetesのReplicaSetのサンプル|
+|replicaset_fail|ラベルの一致しないReplicaSetを作成しエラーが出るか確認するサンプル|
 |replicaset2|KubernetesのReplicaSetのサンプル その２|
 |role|KubernetesのRoleのサンプル|
 |rolling_update|KubernetesのRollingUpdateのサンプル|
