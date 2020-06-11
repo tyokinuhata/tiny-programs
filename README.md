@@ -201,6 +201,7 @@
 |node_port_service|KubernetesのNodePort Serviceのサンプル|
 |pod|KubernetesのPodのサンプル|
 |pod_double|１つのマニフェストで２つのコンテナを起動するサンプル|
+|pod_double_fail|１つのマニフェストで２つのコンテナを起動させた際にエラーになるサンプル|
 |pod2|KubernetesのPodのサンプル その２|
 |pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
 |replica_set|KubernetesのReplicaSetのサンプル|
