@@ -189,6 +189,7 @@
 |cluster_role|KubernetesのClusterRoleのサンプル|
 |cron_job|KubernetesのCronJobのサンプル|
 |deployment|KubernetesのDeploymentのサンプル|
+|deployment2|KubernetesのDeploymentのサンプル その２|
 |dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
 |external_name_service|KubernetesのExternalName Serviceのサンプル|
 |health_check|Kubernetesのヘルスチェックのサンプル|
