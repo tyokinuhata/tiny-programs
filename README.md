@@ -190,6 +190,7 @@
 |cron_job|KubernetesのCronJobのサンプル|
 |deployment|KubernetesのDeploymentのサンプル|
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
+|deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment2|KubernetesのDeploymentのサンプル その２|
 |dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
 |external_name_service|KubernetesのExternalName Serviceのサンプル|

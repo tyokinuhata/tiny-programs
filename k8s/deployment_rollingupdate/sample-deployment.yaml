@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-deployment
+spec:
+  strategy:
+    # 未指定も可
+    type: RollingUpdate
+    rollingUpdate:
+      # ↓両者ともパーセンテージによる指定も可能、両者とも0は不可
+      # デフォルト値はそれぞれ25%
+      # 許容する不足Pod数
+      maxUnavailable: 0
+      # 許容する超過Pod数
+      maxSurge: 1
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sample-app
+  template:
+    metadata:
+      labels:
+        app: sample-app
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:1.13
