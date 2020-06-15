@@ -193,7 +193,6 @@
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
 |deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment2|KubernetesのDeploymentのサンプル その２|
-|dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
 |external_name_service|KubernetesのExternalName Serviceのサンプル|
 |health_check|Kubernetesのヘルスチェックのサンプル|
 |helm_chart|Helmで独自のChartを作るサンプル|
@@ -207,11 +206,12 @@
 |node_port_service|KubernetesのNodePort Serviceのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
 |pod|KubernetesのPodのサンプル|
+|pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
+|dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
 |pod_double|１つのマニフェストで２つのコンテナを起動するサンプル|
 |pod_double_fail|１つのマニフェストで２つのコンテナを起動させた際にエラーになるサンプル|
 |pod_name_fail|RFC1123のホスト名の制約に違反しているPod名のサンプル|
 |pod2|KubernetesのPodのサンプル その２|
-|pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
 |replicaset|KubernetesのReplicaSetのサンプル|
 |replicaset_fail|ラベルの一致しないReplicaSetを作成しエラーが出るか確認するサンプル|
 |replicaset2|KubernetesのReplicaSetのサンプル その２|
