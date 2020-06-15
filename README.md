@@ -189,6 +189,7 @@
 |cluster_role|KubernetesのClusterRoleのサンプル|
 |cron_job|KubernetesのCronJobのサンプル|
 |daemonset|KubernetesのDaemonSetのサンプル|
+|daemonset_ondelete|DaemonSetのアップデート戦略をOnDeleteにしたサンプル|
 |deployment|KubernetesのDeploymentのサンプル|
 |deployment_params|Deploymentの様々なパラメータのサンプル|
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
