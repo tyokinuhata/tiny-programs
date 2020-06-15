@@ -222,6 +222,7 @@
 |rolling_update|KubernetesのRollingUpdateのサンプル|
 |secret|KubernetesのSecretのサンプル|
 |service|KubernetesのServiceのサンプル|
+|statefulset|KubernetesのStatefulSetのサンプル|
 |todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 
 ### JS
