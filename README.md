@@ -223,6 +223,7 @@
 |secret|KubernetesのSecretのサンプル|
 |service|KubernetesのServiceのサンプル|
 |statefulset|KubernetesのStatefulSetのサンプル|
+|statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
 |todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 
 ### JS
