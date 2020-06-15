@@ -189,6 +189,7 @@
 |cluster_role|KubernetesのClusterRoleのサンプル|
 |cron_job|KubernetesのCronJobのサンプル|
 |deployment|KubernetesのDeploymentのサンプル|
+|deployment_params|Deploymentの様々なパラメータのサンプル|
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
 |deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment2|KubernetesのDeploymentのサンプル その２|
