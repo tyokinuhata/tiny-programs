@@ -190,6 +190,7 @@
 |cron_job|KubernetesのCronJobのサンプル|
 |daemonset|KubernetesのDaemonSetのサンプル|
 |daemonset_ondelete|DaemonSetのアップデート戦略をOnDeleteにしたサンプル|
+|daemonset_rollingupdate|DaemonSetのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment|KubernetesのDeploymentのサンプル|
 |deployment_params|Deploymentの様々なパラメータのサンプル|
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
