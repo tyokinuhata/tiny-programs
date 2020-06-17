@@ -189,7 +189,8 @@
 |:--|:--|
 |blue_green_deployment|KubernetesのBlueGreen Deploymentのサンプル|
 |cluster_role|KubernetesのClusterRoleのサンプル|
-|cron_job|KubernetesのCronJobのサンプル|
+|cronjob|KubernetesのCronJobのサンプル|
+|cronjob2|KubernetesのCronJobのサンプル|
 |daemonset|KubernetesのDaemonSetのサンプル|
 |daemonset_ondelete|DaemonSetのアップデート戦略をOnDeleteにしたサンプル|
 |daemonset_rollingupdate|DaemonSetのアップデート戦略をRollingUpdateにしたサンプル|
