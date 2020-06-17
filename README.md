@@ -185,6 +185,8 @@
 
 ### k8s
 
+|ディレクトリ名|説明|
+|:--|:--|
 |blue_green_deployment|KubernetesのBlueGreen Deploymentのサンプル|
 |cluster_role|KubernetesのClusterRoleのサンプル|
 |cron_job|KubernetesのCronJobのサンプル|
@@ -209,6 +211,7 @@
 |job_parallel|Jobを並列実行するサンプル|
 |job_restart_never|JobのrestartPolicyをNeverにしたサンプル|
 |job_restart_onfailure|JobのrestartPolicyをOnFailureにしたサンプル|
+|job_single_work_queue|Jobの１つずつ実行するワークキューのサンプル|
 |job2|KubernetesのJobのサンプル その２|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_affinity|KubernetesのNodeAffinityのサンプル|
