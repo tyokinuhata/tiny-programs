@@ -204,13 +204,14 @@
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
 |ingress|KubernetesのIngressのサンプル|
 |job|KubernetesのJobのサンプル|
+|job2|KubernetesのJobのサンプル その２|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_affinity|KubernetesのNodeAffinityのサンプル|
 |node_port_service|KubernetesのNodePort Serviceのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
 |pod|KubernetesのPodのサンプル|
 |pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
-|dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
+|pod_dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
 |pod_double|１つのマニフェストで２つのコンテナを起動するサンプル|
 |pod_double_fail|１つのマニフェストで２つのコンテナを起動させた際にエラーになるサンプル|
 |pod_name_fail|RFC1123のホスト名の制約に違反しているPod名のサンプル|
