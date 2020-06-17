@@ -204,6 +204,7 @@
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
 |ingress|KubernetesのIngressのサンプル|
 |job|KubernetesのJobのサンプル|
+|job_multi_task|N並列で実行させるJobのサンプル|
 |job_one_shot_task|１度だけ実行するJobのサンプル|
 |job_parallel|Jobを並列実行するサンプル|
 |job_restart_never|JobのrestartPolicyをNeverにしたサンプル|
