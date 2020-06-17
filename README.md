@@ -205,6 +205,7 @@
 |ingress|KubernetesのIngressのサンプル|
 |job|KubernetesのJobのサンプル|
 |job_never_restart|JobのrestartPolicyをNeverにしたサンプル|
+|job_onfailure_restart|JobのrestartPolicyをOnFailureにしたサンプル|
 |job2|KubernetesのJobのサンプル その２|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_affinity|KubernetesのNodeAffinityのサンプル|
