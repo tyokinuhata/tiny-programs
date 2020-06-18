@@ -233,6 +233,7 @@
 |secret|KubernetesのSecretのサンプル|
 |service|KubernetesのServiceのサンプル|
 |service_clusterip|KubernetesのService(type: ClusterIP)のサンプル|
+|service_clusterip_multi|KubernetesのService(type: ClusterIP)の複数ポート版のサンプル|
 |node_port_service|KubernetesのService(type: NodePort)のサンプル|
 |statefulset|KubernetesのStatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
