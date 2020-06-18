@@ -233,6 +233,7 @@
 |rolling_update|KubernetesのRollingUpdateのサンプル|
 |secret|KubernetesのSecretのサンプル|
 |service|KubernetesのServiceのサンプル|
+|service_clusterip|KubernetesのService(type: ClusterIP)のサンプル|
 |statefulset|KubernetesのStatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
