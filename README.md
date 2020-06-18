@@ -217,7 +217,6 @@
 |job2|KubernetesのJobのサンプル その２|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_affinity|KubernetesのNodeAffinityのサンプル|
-|node_port_service|KubernetesのNodePort Serviceのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
 |pod|KubernetesのPodのサンプル|
 |pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
@@ -230,10 +229,11 @@
 |replicaset_fail|ラベルの一致しないReplicaSetを作成しエラーが出るか確認するサンプル|
 |replicaset2|KubernetesのReplicaSetのサンプル その２|
 |role|KubernetesのRoleのサンプル|
-|rolling_update|KubernetesのRollingUpdateのサンプル|
+|rollingupdate|KubernetesのRollingUpdateのサンプル|
 |secret|KubernetesのSecretのサンプル|
 |service|KubernetesのServiceのサンプル|
 |service_clusterip|KubernetesのService(type: ClusterIP)のサンプル|
+|node_port_service|KubernetesのService(type: NodePort)のサンプル|
 |statefulset|KubernetesのStatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
