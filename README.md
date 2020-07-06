@@ -234,6 +234,7 @@
 |service|KubernetesのServiceのサンプル|
 |service_clusterip|KubernetesのService(type: ClusterIP)のサンプル|
 |service_clusterip_multi|KubernetesのService(type: ClusterIP)の複数ポート版のサンプル|
+|service_clusterip_vip|ClusterIPに静的に仮想IPを割り当てるサンプル|
 |node_port_service|KubernetesのService(type: NodePort)のサンプル|
 |statefulset|KubernetesのStatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
