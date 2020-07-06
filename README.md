@@ -237,6 +237,7 @@
 |service_clusterip_vip|ClusterIPに静的に仮想IPを割り当てるサンプル|
 |service_externalip|ExternalIPのサンプル|
 |service_nodeport|KubernetesのService(type: NodePort)のサンプル|
+|service_nodeport|KubernetesのService(type: NodePort)のサンプル２|
 |statefulset|KubernetesのStatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
