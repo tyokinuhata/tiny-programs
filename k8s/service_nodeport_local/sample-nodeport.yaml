@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample-nodeport
+spec:
+  type: NodePort
+  # デフォルトはCluster
+  # Localを指定するとNodeを跨いだLBが行われなくなる
+  externalTrafficPolicy: Local
+  ports:
+    - name: "http-port"
+      protocol: "TCP"
+      port: 8080
+      targetPort: 80
+      nodePort: 30081
+  selector:
+    app: sample-app

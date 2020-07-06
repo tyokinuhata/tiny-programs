@@ -236,6 +236,7 @@
 |service_clusterip_multi|KubernetesのService(type: ClusterIP)の複数ポート版のサンプル|
 |service_clusterip_vip|ClusterIPに静的に仮想IPを割り当てるサンプル|
 |service_externalip|ExternalIPのサンプル|
+|service_nodeport_local|NodePortのexternalTrafficPolicyをLocalに設定したサンプル|
 |service_nodeport|KubernetesのService(type: NodePort)のサンプル|
 |service_nodeport|KubernetesのService(type: NodePort)のサンプル２|
 |statefulset|KubernetesのStatefulSetのサンプル|
