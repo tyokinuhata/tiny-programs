@@ -187,26 +187,25 @@
 
 |ディレクトリ名|説明|
 |:--|:--|
-|blue_green_deployment|KubernetesのBlueGreen Deploymentのサンプル|
-|cluster_role|KubernetesのClusterRoleのサンプル|
-|cronjob|KubernetesのCronJobのサンプル|
-|cronjob2|KubernetesのCronJobのサンプル|
-|daemonset|KubernetesのDaemonSetのサンプル|
+|blue_green_deployment|BlueGreen Deploymentのサンプル|
+|cluster_role|ClusterRoleのサンプル|
+|cronjob|CronJobのサンプル|
+|cronjob2|CronJobのサンプル その２|
+|daemonset|DaemonSetのサンプル|
 |daemonset_ondelete|DaemonSetのアップデート戦略をOnDeleteにしたサンプル|
 |daemonset_rollingupdate|DaemonSetのアップデート戦略をRollingUpdateにしたサンプル|
-|deployment|KubernetesのDeploymentのサンプル|
+|deployment|Deploymentのサンプル|
 |deployment_params|Deploymentの様々なパラメータのサンプル|
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
 |deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
-|deployment2|KubernetesのDeploymentのサンプル その２|
-|external_name_service|KubernetesのExternalName Serviceのサンプル|
-|health_check|Kubernetesのヘルスチェックのサンプル|
+|deployment2|Deploymentのサンプル その２|
+|health_check|ヘルスチェックのサンプル|
 |helm_chart|Helmで独自のChartを作るサンプル|
 |helm_redmine|HelmによるRedmineの構築サンプル|
-|horizontal_pod_autoscaler|KubernetesのHorizontal Pod Autoscalerのサンプル|
+|horizontal_pod_autoscaler|Horizontal Pod Autoscalerのサンプル|
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
-|ingress|KubernetesのIngressのサンプル|
-|job|KubernetesのJobのサンプル|
+|ingress|Ingressのサンプル|
+|job|Jobのサンプル|
 |job_multi_task|N並列で実行するJobのサンプル|
 |job_multi_work_queue|N並列で実行するワークキューのサンプル|
 |job_one_shot_task|１度だけ実行するJobのサンプル|
@@ -214,32 +213,34 @@
 |job_restart_never|JobのrestartPolicyをNeverにしたサンプル|
 |job_restart_onfailure|JobのrestartPolicyをOnFailureにしたサンプル|
 |job_single_work_queue|Jobの１つずつ実行するワークキューのサンプル|
-|job2|KubernetesのJobのサンプル その２|
+|job2|Jobのサンプル その２|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
-|node_affinity|KubernetesのNodeAffinityのサンプル|
+|node_affinity|NodeAffinityのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
-|pod|KubernetesのPodのサンプル|
-|pod_anti_affinity|KubernetesのPod AntiAffinityのサンプル|
+|pod|Podのサンプル|
+|pod_anti_affinity|Pod AntiAffinityのサンプル|
 |pod_dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
 |pod_double|１つのマニフェストで２つのコンテナを起動するサンプル|
 |pod_double_fail|１つのマニフェストで２つのコンテナを起動させた際にエラーになるサンプル|
 |pod_name_fail|RFC1123のホスト名の制約に違反しているPod名のサンプル|
-|pod2|KubernetesのPodのサンプル その２|
-|replicaset|KubernetesのReplicaSetのサンプル|
+|pod2|Podのサンプル その２|
+|replicaset|ReplicaSetのサンプル|
 |replicaset_fail|ラベルの一致しないReplicaSetを作成しエラーが出るか確認するサンプル|
-|replicaset2|KubernetesのReplicaSetのサンプル その２|
-|role|KubernetesのRoleのサンプル|
-|rollingupdate|KubernetesのRollingUpdateのサンプル|
-|secret|KubernetesのSecretのサンプル|
-|service|KubernetesのServiceのサンプル|
-|service_clusterip|KubernetesのService(type: ClusterIP)のサンプル|
-|service_clusterip_multi|KubernetesのService(type: ClusterIP)の複数ポート版のサンプル|
+|replicaset2|ReplicaSetのサンプル その２|
+|role|Roleのサンプル|
+|rollingupdate|RollingUpdateのサンプル|
+|secret|Secretのサンプル|
+|service|Serviceのサンプル|
+|service_clusterip|Service(ClusterIP)のサンプル|
+|service_clusterip_multi|Service(ClusterIP)の複数ポート版のサンプル|
 |service_clusterip_vip|ClusterIPに静的に仮想IPを割り当てるサンプル|
-|service_externalip|ExternalIPのサンプル|
+|service_externalip|Service(ExternalIP)のサンプル|
+|service_externalname|Service(ExternalName)のサンプル|
+|service_lb|Service(LoadBalancer)のサンプル|
 |service_nodeport_local|NodePortのexternalTrafficPolicyをLocalに設定したサンプル|
-|service_nodeport|KubernetesのService(type: NodePort)のサンプル|
-|service_nodeport|KubernetesのService(type: NodePort)のサンプル２|
-|statefulset|KubernetesのStatefulSetのサンプル|
+|service_nodeport|Service(NodePort)のサンプル|
+|service_nodeport|Service(NodePort)のサンプル２|
+|statefulset|StatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
 |statefulset_rollingupdate|StatefulSetのアップデート戦略をRollingUpdateにしたサンプル|
