@@ -236,6 +236,7 @@
 |service_clusterip_vip|ClusterIPに静的に仮想IPを割り当てるサンプル|
 |service_externalip|Service(ExternalIP)のサンプル|
 |service_externalname|Service(ExternalName)のサンプル|
+|service_externalname2|Service(ExternalName)のサンプル その２|
 |service_headless|Service(Headless)のサンプル|
 |service_lb|Service(LoadBalancer)のサンプル|
 |service_lb_fw|LoadBalancerでアクセス制御を行うサンプル|
