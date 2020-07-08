@@ -237,6 +237,7 @@
 |service_externalip|Service(ExternalIP)のサンプル|
 |service_externalname|Service(ExternalName)のサンプル|
 |service_lb|Service(LoadBalancer)のサンプル|
+|service_lb_fw|LoadBalancerでアクセス制御を行うサンプル|
 |service_lb_ip|LoadBalancerで仮想IPを指定するサンプル|
 |service_nodeport_local|NodePortのexternalTrafficPolicyをLocalに設定したサンプル|
 |service_nodeport|Service(NodePort)のサンプル|
