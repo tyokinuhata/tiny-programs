@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-env
+  labels:
+    app: sample-app
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.12
+      command: ["echo"]
+      # ${} ではなく $()
+      # また、そのPodマニフェスト内で定義された環境変数しか参照できない
+      # 他のPodマニフェスト、OSが定義している環境変数を参照したい場合は command にシェルスクリプトを登録し、その先で処理を行うようにする
+      args: ["$(K8S_NODE)"]
+      env:
+        # 静的設定
+        - name: MAX_CONNECTION
+          value: "100"
+        - name: TZ
+          value: Asia/Tokyo
+        # Podの情報
+        - name: K8S_NODE
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        # コンテナの設定
+        - name: CPU_REQUESTS
+          valueFrom:
+            resourceFieldRef:
+              containerName: nginx-container
+              resource: requests.cpu

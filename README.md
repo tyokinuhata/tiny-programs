@@ -199,6 +199,7 @@
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
 |deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment2|Deploymentのサンプル その２|
+|env|環境変数の設定サンプル|
 |health_check|ヘルスチェックのサンプル|
 |helm_chart|Helmで独自のChartを作るサンプル|
 |helm_redmine|HelmによるRedmineの構築サンプル|
