@@ -205,6 +205,7 @@
 |horizontal_pod_autoscaler|Horizontal Pod Autoscalerのサンプル|
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
 |ingress|Ingressのサンプル|
+|ingress2|Ingressのサンプル その２|
 |job|Jobのサンプル|
 |job_multi_task|N並列で実行するJobのサンプル|
 |job_multi_work_queue|N並列で実行するワークキューのサンプル|
