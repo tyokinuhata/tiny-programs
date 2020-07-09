@@ -243,7 +243,8 @@
 |service_lb_ip|LoadBalancerで仮想IPを指定するサンプル|
 |service_nodeport_local|NodePortのexternalTrafficPolicyをLocalに設定したサンプル|
 |service_nodeport|Service(NodePort)のサンプル|
-|service_nodeport|Service(NodePort)のサンプル２|
+|service_nodeport|Service(NodePort)のサンプル その２|
+|service_none_selector|Service(None-Selector)のサンプル|
 |statefulset|StatefulSetのサンプル|
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
