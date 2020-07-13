@@ -232,6 +232,7 @@
 |role|Roleのサンプル|
 |rollingupdate|RollingUpdateのサンプル|
 |secret|Secretのサンプル|
+|secret_docker_registry|認証が必要なDockerレジストリからイメージを取得するPodのサンプル|
 |secret_generic_from_env_file|Secret(type: generic)を--from-env-fileで作成するサンプル|
 |secret_generic_from_file|Secret(type: generic)を--from-fileで作成するサンプル|
 |secret_generic_manifest|Secret(type: generic)をマニフェストから作成するサンプル|
