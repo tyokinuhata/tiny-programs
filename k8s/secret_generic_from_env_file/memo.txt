@@ -1,0 +1,1 @@
+kubectl create secret generic --save-config sample-secret --from-env-file ./env.txt
