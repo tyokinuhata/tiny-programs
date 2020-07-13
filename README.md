@@ -200,7 +200,8 @@
 |deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment2|Deploymentのサンプル その２|
 |env|環境変数の設定サンプル|
-|env_secret|Podの環境変数にSecretリソースを渡すサンプル|
+|env_secret|Podの環境変数にSecretリソースを渡す(キー指定)サンプル|
+|env_sedret_multi|Podの環境変数にSecretリソースを渡す(全て)サンプル|
 |health_check|ヘルスチェックのサンプル|
 |helm_chart|Helmで独自のChartを作るサンプル|
 |helm_redmine|HelmによるRedmineの構築サンプル|
