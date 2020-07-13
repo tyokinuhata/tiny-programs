@@ -232,6 +232,7 @@
 |role|Roleのサンプル|
 |rollingupdate|RollingUpdateのサンプル|
 |secret|Secretのサンプル|
+|secret_generic_from_file|Secret(type: generic)を--from-fileで作成するサンプル|
 |service|Serviceのサンプル|
 |service_clusterip|Service(ClusterIP)のサンプル|
 |service_clusterip_multi|Service(ClusterIP)の複数ポート版のサンプル|
