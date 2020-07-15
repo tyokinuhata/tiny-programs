@@ -264,6 +264,7 @@
 |statefulset_rollingupdate|StatefulSetのアップデート戦略をRollingUpdateにしたサンプル|
 |todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 |volume_configmap|PodでConfigMapをVolumeとしてマウントするサンプル|
+|volume_configmap_multi|PodでConfigMapをVolumeとしてマウントする(ファイルごと)サンプル|
 |volume_secret|PodでSecretをVolumeとしてマウントするサンプル|
 |volume_secret_multi|PodでSecretをVolumeとしてマウントする(ファイルごと)サンプル|
 
