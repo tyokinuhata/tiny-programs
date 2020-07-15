@@ -259,6 +259,7 @@
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
 |statefulset_rollingupdate|StatefulSetのアップデート戦略をRollingUpdateにしたサンプル|
 |todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
+|volume_secret|PodでSecretをVolumeとしてマウントするサンプル|
 
 ### JS
 
