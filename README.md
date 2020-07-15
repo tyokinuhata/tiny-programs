@@ -266,6 +266,7 @@
 |volume_configmap|PodでConfigMapをVolumeとしてマウントするサンプル|
 |volume_configmap_multi|PodでConfigMapをVolumeとしてマウントする(ファイルごと)サンプル|
 |volume_empdir|VolumeプラグインのempDirのサンプル|
+|volume_hostpath|VolumeプラグインのhostPathのサンプル|
 |volume_secret|PodでSecretをVolumeとしてマウントするサンプル|
 |volume_secret_multi|PodでSecretをVolumeとしてマウントする(ファイルごと)サンプル|
 

@@ -7,8 +7,10 @@ spec:
     - image: nginx:1.12
       name: nginx-container
       volumeMounts:
-        - mountPath: /cache
-          name: cache-volume
+        - mountPath: /srv
+          name: hostpath-sample
   volumes:
-    - name: cache-volume
-      emptyDir: {}
+    - name: hostpath-sample
+      hostpath:
+        path: /etc
+        type: DirectoryOrCreate
