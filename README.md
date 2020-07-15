@@ -265,6 +265,7 @@
 |todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 |volume_configmap|PodでConfigMapをVolumeとしてマウントするサンプル|
 |volume_configmap_multi|PodでConfigMapをVolumeとしてマウントする(ファイルごと)サンプル|
+|volume_downwardapi|VolumeプラグインのdownwardAPIのサンプル|
 |volume_empdir|VolumeプラグインのempDirのサンプル|
 |volume_hostpath|VolumeプラグインのhostPathのサンプル|
 |volume_secret|PodでSecretをVolumeとしてマウントするサンプル|

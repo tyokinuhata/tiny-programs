@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-pod
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:1.12
+      volumeMounts:
+        - name: downwardapi-volume
+          mountPath: /srv
+  volumes:
+    - name: downwardapi-volume
+      downwardAPI:
+        items:
+          - path: "podname"
+            fieldRef:
+              fieldPath: metadata.name
+          - path: "cpu-request"
+            resourceFieldRef:
+              containerName: nginx-container
+              resource: requests.cpu
