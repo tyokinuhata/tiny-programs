@@ -1,0 +1,1 @@
+kubectl create configmap --save-config sample-configmap --from-file=./nginx.conf
