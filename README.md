@@ -190,6 +190,7 @@
 |blue_green_deployment|BlueGreen Deploymentのサンプル|
 |cluster_role|ClusterRoleのサンプル|
 |configmap_from_file|ConfigMapをファイルから生成するサンプル|
+|configmap_manifest|ConfigMapをマニフェストから生成するサンプル|
 |cronjob|CronJobのサンプル|
 |cronjob2|CronJobのサンプル その２|
 |daemonset|DaemonSetのサンプル|
