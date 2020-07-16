@@ -226,6 +226,7 @@
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |node_affinity|NodeAffinityのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
+|persistentvolume|PersistentVolumeのサンプル|
 |pod|Podのサンプル|
 |pod_anti_affinity|Pod AntiAffinityのサンプル|
 |pod_dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
