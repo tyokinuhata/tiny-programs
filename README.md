@@ -201,6 +201,7 @@
 |deployment_recreate|Deploymentのアップデート戦略をRecreateにしたサンプル|
 |deployment_rollingupdate|Deploymentのアップデート戦略をRollingUpdateにしたサンプル|
 |deployment2|Deploymentのサンプル その２|
+|dynamic_provisioning|Dynamic Provisioningのサンプル|
 |env|環境変数の設定サンプル|
 |env_configmap|Podの環境変数にConfigMapを渡すサンプル|
 |env_configmap_multi|Podの環境変数にConfigMapを渡す(全て)サンプル|
