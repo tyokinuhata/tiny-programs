@@ -276,6 +276,7 @@
 |volume_secret|PodでSecretをVolumeとしてマウントするサンプル|
 |volume_secret_multi|PodでSecretをVolumeとしてマウントする(ファイルごと)サンプル|
 |volumemounts_readonly|PodのvolumeMountsでreadOnlyに設定するサンプル|
+|volumemounts_subpath|PodのvolumeMountsで特定のディレクトリをルートとしてマウントするサンプル|
 
 ### JS
 
