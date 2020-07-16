@@ -265,6 +265,7 @@
 |statefulset_ondelete|StatefulSetのアップデート戦略をOnDeleteにしたサンプル|
 |statefulset_parallel|StatefulSetのpodManagementPolicyをParallel(並列)にしたサンプル|
 |statefulset_rollingupdate|StatefulSetのアップデート戦略をRollingUpdateにしたサンプル|
+|statefulset_volumeclaimtemplate|StatefulSetのvolumeClaimTemplateのサンプル|
 |todo_app|KubernetesによるTODOアプリ(GKE上で動作)のサンプル|
 |volume_configmap|PodでConfigMapをVolumeとしてマウントするサンプル|
 |volume_configmap_multi|PodでConfigMapをVolumeとしてマウントする(ファイルごと)サンプル|
