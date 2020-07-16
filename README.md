@@ -275,6 +275,7 @@
 |volume_projected|Volumeプラグインのprojectedのサンプル|
 |volume_secret|PodでSecretをVolumeとしてマウントするサンプル|
 |volume_secret_multi|PodでSecretをVolumeとしてマウントする(ファイルごと)サンプル|
+|volumemounts_readonly|PodのvolumeMountsでreadOnlyに設定するサンプル|
 
 ### JS
 
