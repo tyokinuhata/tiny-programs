@@ -227,6 +227,7 @@
 |node_affinity|NodeAffinityのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
 |persistentvolume|PersistentVolumeのサンプル|
+|persistentvolumeclaim|PersistentVolumeClaimのサンプル|
 |pod|Podのサンプル|
 |pod_anti_affinity|Pod AntiAffinityのサンプル|
 |pod_dns_policy|spec.dnsPolicyとspec.dnsConfigの設定のサンプル|
