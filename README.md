@@ -225,6 +225,7 @@
 |job_single_work_queue|Jobの１つずつ実行するワークキューのサンプル|
 |job2|Jobのサンプル その２|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
+|namespace|Namespaceを作成するサンプル|
 |node_affinity|NodeAffinityのサンプル|
 |overwrite_entrypoint_cmd|DockerのENTRYPOINTとCMDをk8sで上書きするサンプル|
 |persistentvolume|PersistentVolumeのサンプル|
