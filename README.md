@@ -241,6 +241,7 @@
 |replicaset_fail|ラベルの一致しないReplicaSetを作成しエラーが出るか確認するサンプル|
 |replicaset2|ReplicaSetのサンプル その２|
 |resources|CPU/メモリにリソース制限をかけるサンプル|
+|resources_gpu_nvidia|NVIDIA製GPUにリソース制限をかけるサンプル|
 |role|Roleのサンプル|
 |rollingupdate|RollingUpdateのサンプル|
 |secret|Secretのサンプル|
