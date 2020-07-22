@@ -225,6 +225,7 @@
 |job_single_work_queue|Jobの１つずつ実行するワークキューのサンプル|
 |job2|Jobのサンプル その２|
 |limitrange_container|Containerに対するLimitRangeのサンプル|
+|limitrange_persistentvolumeclaim||
 |limitrange_pod|Podに対するLimitRangeのサンプル|
 |log|KubernetesでFluentd + Elasticsearch + Kibanaでログを取るサンプル|
 |namespace|Namespaceを作成するサンプル|
