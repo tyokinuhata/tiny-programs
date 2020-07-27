@@ -213,6 +213,7 @@
 |helm_redmine|HelmによるRedmineの構築サンプル|
 |horizontal_pod_autoscaler|Horizontal Pod Autoscalerのサンプル|
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
+|hpa|Horizontal Pod Autoscalerのサンプル|
 |ingress|Ingressのサンプル|
 |ingress2|Ingressのサンプル その２|
 |job|Jobのサンプル|
