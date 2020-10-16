@@ -35,6 +35,7 @@
 |const|const指定子のサンプル|
 |copy_on_write|コピーオンライトのサンプル|
 |ctime|ctime関数のサンプル|
+|custom_resource_definition|独自リソースを作るサンプル|
 |daemon|バックグラウンド実行のサンプル|
 |define|define命令のサンプル|
 |define_if|if命令のサンプル|
