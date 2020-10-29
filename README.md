@@ -210,7 +210,8 @@
 |env_secret_multi|Podの環境変数にSecretリソースを渡す(全て)サンプル|
 |env_secret_prefix|Podの環境変数にSecretリソースを渡す(プレフィックス指定)サンプル|
 |health_check|ヘルスチェックのサンプル|
-|helm_chart|Helmで独自のChartを作るサンプル|
+|helm_create|Helmで独自のChartを作るサンプル|
+|helm_create2|Helmで独自のChartを作るサンプル|
 |helm_redmine|HelmによるRedmineの構築サンプル|
 |horizontal_pod_autoscaler|Horizontal Pod Autoscalerのサンプル|
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
