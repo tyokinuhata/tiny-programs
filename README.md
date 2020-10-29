@@ -211,7 +211,7 @@
 |env_secret_prefix|Podの環境変数にSecretリソースを渡す(プレフィックス指定)サンプル|
 |health_check|ヘルスチェックのサンプル|
 |helm_create|Helmで独自のChartを作るサンプル|
-|helm_create2|Helmで独自のChartを作るサンプル|
+|helm_create2|Helmで独自のChartを作るサンプル その２|
 |helm_redmine|HelmによるRedmineの構築サンプル|
 |horizontal_pod_autoscaler|Horizontal Pod Autoscalerのサンプル|
 |host_aliases|hostAliasesでhostsを書き換えるサンプル|
@@ -227,6 +227,7 @@
 |job_restart_onfailure|JobのrestartPolicyをOnFailureにしたサンプル|
 |job_single_work_queue|Jobの１つずつ実行するワークキューのサンプル|
 |job2|Jobのサンプル その２|
+|ksonnet|Ksonnetのサンプル|
 |limitrange_container|Containerに対するLimitRangeのサンプル|
 |limitrange_persistentvolumeclaim||
 |limitrange_pod|Podに対するLimitRangeのサンプル|
