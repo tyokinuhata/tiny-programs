@@ -11,6 +11,6 @@
   "author": "Kazukichi <kazukiti201@gmail.com> (https://tyokinuhata.github.io/portfolio/)",
   "license": "GPL-3.0",
   "dependencies": {
-    "ws": "^6.1.2"
+    "ws": "^7.4.6"
   }
 }
