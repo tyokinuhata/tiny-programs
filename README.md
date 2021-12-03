@@ -414,6 +414,7 @@
 |variable|変数のサンプル|
 |webbrowser_open|webbrowser.open()で指定したURLをブラウザ上で開くサンプル|
 |while|while文によるループのサンプル|
+|with|with文のサンプル|
 
 ### TS
 
