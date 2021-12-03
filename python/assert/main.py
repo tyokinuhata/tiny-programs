@@ -1,3 +1,6 @@
+# assert文
+# アサーション(内部セルフチェック)を行うための言語機能
+
 def apply_discount(product, discount):
     price = int(product["price"] * (1.0 - discount))
     assert 0 <= price <= product["price"], ("foo", "bar", "baz")
