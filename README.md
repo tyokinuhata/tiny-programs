@@ -331,6 +331,7 @@
 |chainer_mnist_learn|ChainerとMNISTを用いた手書き数字認識(学習)のサンプル|
 |chainer_version|ChainerのバージョンとChainerの実行環境の情報を表示|
 |comment|コメントのサンプル|
+|context_manager|コンテキストマネージャーのサンプル|
 |echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
 |echo_server_ipv4_tcp_multi_thread|IPv4とTCPを用いたエコーサーバ(マルチスレッド版)のサンプル|
 |echo_server_ipv4_udp|IPv4とUDPを用いたエコーサーバのサンプル|
