@@ -5,7 +5,7 @@ class Test:
     def __init__(self):
         self.foo = 11
         self._bar = 23
-        # 先頭を二重のアンダースコアで始めることでネームマングリングが行われる
+        # 先頭を二重のアンダースコア(ダンダー)で始めることでネームマングリングが行われる
         self.__baz = 42
 
 class ExtendedTest(Test):
