@@ -333,6 +333,7 @@
 |comment|コメントのサンプル|
 |context_manager|クラスベースのコンテキストマネージャーのサンプル|
 |context_manager2|関数ベースのコンテキストマネージャーのサンプル|
+|context_manager3|コンテキストマネージャーを用いたDSLのサンプル|
 |echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
 |echo_server_ipv4_tcp_multi_thread|IPv4とTCPを用いたエコーサーバ(マルチスレッド版)のサンプル|
 |echo_server_ipv4_udp|IPv4とUDPを用いたエコーサーバのサンプル|
