@@ -411,6 +411,7 @@
 |sklearn_iris_table|scikit-learnのアヤメ分類のデータをPandasで表として表示するサンプル|
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
 |string_format|printfベースの文字列フォーマットのサンプル|
+|string_format2|format関数による文字列フォーマットのサンプル|
 |string_literal_concat|文字列リテラル連結のサンプル|
 |tcp_data_logger|クライアントから送信されたメッセージをログファイルに出力するサンプル|
 |tensorflow_keras_fashion_mnist|TensorFlowとKerasとFashionMNISTを用いた手書き数字認識のサンプル|
