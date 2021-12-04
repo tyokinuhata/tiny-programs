@@ -390,6 +390,7 @@
 |opencv_trim|OpenCVで画像のトリムを行うサンプル|
 |opencv_version|OpenCVのバージョンを確認するサンプル|
 |pillow|Pillowで画像を表示するサンプル|
+|private|プライベート関数のサンプル|
 |pytorch_cifar10|PyTorchとCIFAR-10を用いた画像分類のサンプル|
 |pytorch_mnist|PyTorchとMNISTを用いた手書き数字認識のサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
