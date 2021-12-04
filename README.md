@@ -364,6 +364,7 @@
 |name_mangling|ネームマングリングのサンプル|
 |name_mangling2|ネームマングリングのサンプル|
 |name_mangling3|ネームマングリングのサンプル|
+|name_mangling4|ネームマングリングのサンプル|
 |numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_astype|NumPyでdtypeを変換するサンプル|
