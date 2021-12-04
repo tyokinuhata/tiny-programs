@@ -361,6 +361,7 @@
 |matplotlib_size|Matplotlibでグラフのサイズを変更するサンプル|
 |matplotlib_trigonometric_function​s|Matplotlibで三角関数を描画するサンプル|
 |minimal_httpd|HTTP(のように振る舞う)最小実装のサンプル|
+|name_mangling|ネームマングリングのサンプル|
 |numpy_arange|NumPyで指定した要素数の配列を生成するサンプル|
 |numpy_array|NumPyで配列を生成・演算するサンプル|
 |numpy_astype|NumPyでdtypeを変換するサンプル|
