@@ -346,6 +346,7 @@
 |flask_architecture|Flaskのベストプラクティスを探るサンプル|
 |for|for文によるループのサンプル|
 |function|関数を定義するサンプル|
+|functional_object|関数のように振る舞うオブジェクトのサンプル|
 |gethostbyname|socket.gethostbyname()でホスト名からIPアドレスを取得するサンプル|
 |hello_world|hello, world!を出力するサンプル|
 |higher_order_function|高階関数のサンプル|
