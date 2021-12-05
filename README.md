@@ -420,6 +420,7 @@
 |tensorflow_keras_mnist|TensorFlowとKerasとMNISTを用いた手書き数字認識のサンプル|
 |tensorflow_keras_pet_or_can|TensorFlowとKerasを用いた転移学習とペットボトル/空き缶の分類のサンプル|
 |tensorflow_version|TensorFlowのバージョンを確認するサンプル|
+|the_zen_of_python|The Zen of Python, by Tim Petersを出力するサンプル|
 |type|型のサンプル|
 |udp_chat|UDPを用いたCUIのチャットのサンプル|
 |urllib|urllibモジュールでHTMLを取得するサンプル|
