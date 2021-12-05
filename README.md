@@ -339,6 +339,7 @@
 |echo_server_ipv4_udp|IPv4とUDPを用いたエコーサーバのサンプル|
 |echo_server_ipv6_tcp|IPv6とTCPを用いたエコーサーバのサンプル|
 |enumerate|enumerateによるインデックスの取得のサンプル|
+|first_class_object|関数が第一級オブジェクトであることのサンプル|
 |fizzbuzz|ワンライナーのFizzBuzzのサンプル|
 |flask|FlaskによるWebサーバのサンプル|
 |flask_architecture|Flaskのベストプラクティスを探るサンプル|
