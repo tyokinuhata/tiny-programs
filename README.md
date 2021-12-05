@@ -348,6 +348,7 @@
 |function|関数を定義するサンプル|
 |gethostbyname|socket.gethostbyname()でホスト名からIPアドレスを取得するサンプル|
 |hello_world|hello, world!を出力するサンプル|
+|higher_order_function|高階関数のサンプル|
 |html_parser|HtmlParserモジュールでHTMLからaタグを抽出するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
