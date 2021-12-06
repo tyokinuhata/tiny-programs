@@ -323,6 +323,7 @@
 |ディレクトリ名|説明|
 |:--|:--|
 |args_kwargs|位置パラメータ(*args)とキーワードパラメータ(**kwargs)のサンプル|
+|args_kwargs2|位置パラメータ(*args)とキーワードパラメータ(**kwargs)のサンプル|
 |assert|アサーションのサンプル|
 |bool|True/Falseとand/or/notによる演算のサンプル|
 |calc|加減乗除, 剰余のサンプル|
