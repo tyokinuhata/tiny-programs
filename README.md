@@ -324,6 +324,7 @@
 |:--|:--|
 |args_kwargs|位置パラメータ(*args)とキーワードパラメータ(**kwargs)のサンプル|
 |args_kwargs2|位置パラメータ(*args)とキーワードパラメータ(**kwargs)のサンプル|
+|args_unpack|引数のアンパックのサンプル|
 |assert|アサーションのサンプル|
 |bool|True/Falseとand/or/notによる演算のサンプル|
 |calc|加減乗除, 剰余のサンプル|
