@@ -412,6 +412,7 @@
 |pytorch_cifar10|PyTorchとCIFAR-10を用いた画像分類のサンプル|
 |pytorch_mnist|PyTorchとMNISTを用いた手書き数字認識のサンプル|
 |range|rangeによる数値シーケンスの生成のサンプル|
+|return_none|暗黙のreturn None文のサンプル|
 |simple_http_server|SimpleHTTPServerのサンプル|
 |sklearn_digits|scikit-learnの手書き数字認識のサンプル|
 |sklearn_digits_img|scikit-learnの手書き数字認識の画像データをMatplotlibで描画するサンプル|
