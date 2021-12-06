@@ -337,6 +337,7 @@
 |decorator|デコレータのサンプル|
 |decorator2|デコレータのサンプル|
 |decorator3|デコレータのサンプル|
+|decorator4|デコレータのサンプル|
 |echo_server_ipv4_tcp|IPv4とTCPを用いたエコーサーバのサンプル|
 |echo_server_ipv4_tcp_multi_thread|IPv4とTCPを用いたエコーサーバ(マルチスレッド版)のサンプル|
 |echo_server_ipv4_udp|IPv4とUDPを用いたエコーサーバのサンプル|
