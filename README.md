@@ -361,6 +361,7 @@
 |html_parser|HtmlParserモジュールでHTMLからaタグを抽出するサンプル|
 |if|if〜elif〜elseによる条件分岐のサンプル|
 |import|importのサンプル|
+|is_and_equal|is演算子と==演算子の違いについてのサンプル|
 |keras_version|Kerasのバージョンを確認するサンプル|
 |lambda|ラムダ関数のサンプル|
 |lexical_closure|レキシカルクロージャのサンプル|
