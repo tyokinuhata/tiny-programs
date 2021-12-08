@@ -442,6 +442,7 @@
 |the_zen_of_python|The Zen of Python, by Tim Petersを出力するサンプル|
 |type|型のサンプル|
 |udp_chat|UDPを用いたCUIのチャットのサンプル|
+|unicode|Python 2のunicodeのサンプル|
 |urllib|urllibモジュールでHTMLを取得するサンプル|
 |variable|変数のサンプル|
 |webbrowser_open|webbrowser.open()で指定したURLをブラウザ上で開くサンプル|
