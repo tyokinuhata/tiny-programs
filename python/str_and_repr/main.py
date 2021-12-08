@@ -52,3 +52,5 @@ print(repr(car))
 # __repr__ for Car
 # PythonのREPLを使用してcarを直接見た場合、__repr__が呼び出される
 # >>> car
+
+# ちなみにreprはrepresentationの略でレパー等と読むそう

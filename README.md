@@ -428,6 +428,7 @@
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
 |str_and_repr|__str__と__repr__のサンプル|
 |str_and_repr2|__str__と__repr__のサンプル|
+|str_and_repr3|__str__と__repr__のサンプル|
 |string_format|printfベースの文字列フォーマットのサンプル|
 |string_format2|format関数による文字列フォーマットのサンプル|
 |string_format3|フォーマット済み文字列リテラルによる文字列フォーマットのサンプル|
