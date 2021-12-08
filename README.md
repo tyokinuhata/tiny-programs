@@ -426,6 +426,7 @@
 |sklearn_iris_scatter|scikitのアヤメ分類のデータをMatploitで散布図として描画するサンプル|
 |sklearn_iris_table|scikit-learnのアヤメ分類のデータをPandasで表として表示するサンプル|
 |sklearn_version|scikit-learnのバージョンを確認するサンプル|
+|str_and_repr|__str__と__repr__のサンプル|
 |string_format|printfベースの文字列フォーマットのサンプル|
 |string_format2|format関数による文字列フォーマットのサンプル|
 |string_format3|フォーマット済み文字列リテラルによる文字列フォーマットのサンプル|
