@@ -337,6 +337,8 @@
 |context_manager|クラスベースのコンテキストマネージャーのサンプル|
 |context_manager2|関数ベースのコンテキストマネージャーのサンプル|
 |context_manager3|コンテキストマネージャーを用いたDSLのサンプル|
+|custom_exception|カスタム例外のサンプル|
+|custom_exception2|カスタム例外のサンプル|
 |decorator|デコレータのサンプル|
 |decorator2|デコレータのサンプル|
 |decorator3|デコレータのサンプル|

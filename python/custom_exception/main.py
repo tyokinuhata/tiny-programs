@@ -9,7 +9,7 @@ def validate(name):
 # validate("joe")
 
 
-# 一般的に、カスタム例外はルートクラスExceptionか組み込み例外のValueError/TypeError等の派生クラスとして実装することが多い
+# 一般的に、カスタム例外はルートクラスExceptionか組み込み例外のValueError/TypeError/KeyError等の派生クラスとして実装することが多い
 class NameTooShortError(ValueError):
     pass
 
